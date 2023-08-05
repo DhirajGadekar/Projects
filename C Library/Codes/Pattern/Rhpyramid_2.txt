@@ -1,0 +1,30 @@
+#include<stdio.h>
+
+void Rhpyramid_2(int row){
+        int x = row;
+        for(int i = 1;i <= row;i++){
+
+                for(int k = row;k > i;k--){
+
+                        printf(" \t");
+                }
+                for(int j = 1;j <= i;j++){
+
+                        printf("%d\t",x * j);
+
+                }
+                x--;
+                printf("\n");
+        }
+
+}
+
+void main() {
+
+        int row;
+        printf("Enter the no of rows : ");
+        scanf("%d",&row);
+
+        Rhpyramid_2(row);
+}
+

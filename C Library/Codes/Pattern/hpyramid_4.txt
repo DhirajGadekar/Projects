@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+void hpyramid_4(int row){
+        char x = 'a';
+        for(int i = 1;i <= row;i++){
+
+                for(int j = 1;j <= i;j++){
+
+                        printf("%c\t",x);
+                        x++;
+                }
+
+                printf("\n");
+        }
+
+}
+
+void main() {
+
+        int row;
+        printf("Enter the no of rows : ");
+        scanf("%d",&row);
+
+        hpyramid_4(row);
+}
+

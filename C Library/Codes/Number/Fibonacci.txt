@@ -1,0 +1,34 @@
+/*  Fibonacci */
+
+#include<stdio.h>
+
+void Fibonacci(int num){
+        int n1 = 0,n2 = 1,next = 0;
+
+        if(num > 0){
+
+                printf("Fibonacci Series : %d, %d, ",n1,n2);
+                next = n1 + n2;
+                while(next <= num){
+
+                        printf("%d, ",next);
+                        n1 = n2;
+                        n2 = next;
+                        next = n1 + n2;
+
+                }
+                printf("\n");
+        }else{
+
+                printf("Invalid Number.\n");
+        }
+
+}
+void main(){
+
+        int num ;
+        printf("Enter the Number you want check : ");
+        scanf("%d",&num);
+        Fibonacci(num);
+}
+

@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+void Ihpyramid_2(int row){
+        int x;
+        for(int i = 1;i <= row;i++){
+                x = 1;   
+                for(int j = row;j >= i;j--){
+
+                        printf("%d\t",x);
+                        x++;
+
+                }
+
+                printf("\n");
+        }
+
+}
+
+void main() {
+
+        int row;
+        printf("Enter the no of rows : ");
+        scanf("%d",&row);
+
+        Ihpyramid_2(row);
+}
+

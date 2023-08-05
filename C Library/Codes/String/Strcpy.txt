@@ -1,0 +1,29 @@
+/* String Copy in Another String */
+
+#include<stdio.h>
+
+char* mystrcpy(char *dest,char *src){
+
+        while(*src != '\0'){
+
+                *dest = *src;
+                dest++;
+                src++;
+        }
+        *dest = '\0';
+        return dest;
+}
+void main() {
+
+        char str1[20];
+        printf("Enter the String  : ");
+        fgets(str1,20,stdin);
+
+        char str2[20];
+
+        mystrcpy(str2,str1);
+
+        puts(str2);
+
+}
+

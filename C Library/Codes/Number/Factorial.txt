@@ -1,0 +1,29 @@
+/*  Factorial */
+
+#include<stdio.h>
+
+void Factorial(int num){
+        int sum = 1;
+
+        if(num > 0){
+
+                for(int i = 1;i <= num;i++){
+
+                        sum = sum * i;
+
+                }
+                printf("Factorial of %d is %d.\n",num,sum);
+        }else{
+
+                printf("Factorial of %d is %d.\n",num,num);
+        }
+
+}
+void main(){
+
+        int num ;
+        printf("Enter the Number you want check : ");
+        scanf("%d",&num);
+        Factorial(num);
+}
+

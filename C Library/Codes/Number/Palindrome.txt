@@ -1,0 +1,31 @@
+/* Palindrome Number Code :: */
+
+#include<stdio.h>
+
+void palindrome(int num){
+
+        int sum = 0,rem,temp;
+        temp = num;
+        while(num != 0){
+
+                rem = num % 10;
+                sum = (sum * 10) + rem;
+                num = num / 10;
+
+        }
+        if(temp == sum){
+
+                printf("%d is Palindrome Number\n",sum);
+        }else{
+
+                printf("%d is Not Palindrome Number.\n",sum);
+        }
+
+}
+void main(){
+
+        int num ;
+        printf("Enter the Number you want check : ");
+        scanf("%d",&num);
+        palindrome(num);
+}

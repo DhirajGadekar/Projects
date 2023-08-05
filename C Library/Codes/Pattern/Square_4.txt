@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+void square_4(int row){
+        int x = 1;
+        for(int i = 1;i <= row;i++){
+
+                for(int j = 1;j <= row;j++){
+
+                        printf("%d\t",x);
+                }
+                x++;
+                printf("\n");
+        }
+
+}
+
+void main() {
+
+        int row;
+        printf("Enter the no of rows : ");
+        scanf("%d",&row);
+
+        square_4(row);
+}
+
