@@ -1,0 +1,46 @@
+
+
+
+        SELECTED METHOD : 
+
+            4. FIND THE NUMBER IN THE ARRAY
+
+        DESCRIPTION :
+
+            Finding a number in the array means checking the entered number             
+            by the user is present in the array or not if it's present in the
+            array the returns the index of that number in the array or if not
+            then it will return the -1 index
+
+        EXAMPLE :
+
+            INPUT 1: 
+
+                INPUT ARRAY : 
+                | 10 | 20 | 30 | 40 |
+
+                TARGET NUMBER :
+
+                    30 
+
+            OUTPUT 1:
+
+                30 is present in the array at index 2
+
+
+            INPUT 2: 
+
+                INPUT ARRAY : 
+                | 10 | 20 | 30 | 40 |
+
+                TARGET NUMBER :
+
+                    50 
+
+            OUTPUT 2:
+
+                50 is not present in the array 
+
+
+
+                

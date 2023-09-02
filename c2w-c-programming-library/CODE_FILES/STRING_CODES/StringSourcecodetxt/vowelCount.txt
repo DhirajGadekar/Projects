@@ -1,0 +1,36 @@
+
+
+
+#include<stdio.h>
+
+int vowelCount(char *str){
+	int count=0;
+	while(*str!='\0'){
+		//check vowel character
+		if(*str=='A' || *str=='E' ||  *str=='I' ||  *str=='O' || *str=='U' || *str=='a' || *str=='e' ||  *str=='i' ||  *str=='o' || *str=='u')				
+			count++;
+		str++;
+	}
+	return count;
+}
+
+void main(){
+	char str[20];
+	
+	printf("Enter String:\n");
+	char ch;
+	int i=0;
+	//get string from user
+	while((ch=getchar())!='\n'){
+		str[i]=ch;
+		i++;
+	}
+	str[i]='\0';
+	
+	//print string
+	printf("%d\n",vowelCount(str));
+	
+}
+
+
+

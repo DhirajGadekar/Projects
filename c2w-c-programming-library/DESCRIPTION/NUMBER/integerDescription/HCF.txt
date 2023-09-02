@@ -1,0 +1,24 @@
+	
+	
+	
+	SELECTED:
+	
+		HCF:
+		
+	DESCRIPTION:
+
+		The H.C.F. defines the greatest factor present 
+		in between given two or more numbers, whereas 
+		L.C.M. defines  the  least  number  which is 
+		exactly  divisible  by  two  or more  numbers. 
+		H.C.F. is  also  called  the  greatest common 
+		factor.
+		
+	EXAMPLE:
+	
+		factors of 12 and 16 are −
+		12 → 1, 2, 3, 4, 6, 12
+		16 → 1, 2, 4, 8, 16
+		
+		
+		

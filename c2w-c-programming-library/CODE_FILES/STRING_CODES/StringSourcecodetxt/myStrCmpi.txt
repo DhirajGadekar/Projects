@@ -1,0 +1,65 @@
+
+
+
+	//compare two string by ignoring case
+	#include<stdio.h>
+	#include <string.h>
+
+	//compare ignore case function
+	int myStrCmpi(char *str1,char* str2){
+
+		//traverse string one by one up to \0 found 
+		while (*str1 != '\0' || *str2 != '\0'){
+			
+			if (*str1 != *str2){
+				
+				//condition for ignoring case
+				if (*str1 == *str2 + 32 || *str2 == *str1 + 32){		
+					
+					str1++;
+					str2++;
+					continue;
+				}else
+					return 0;
+			}
+			str1++;
+			str2++;
+		}
+		return 1; 
+	}
+
+	//Entry Function
+	void main(){
+
+		//initilisation of variable
+		char str1[100],str2[100],ch;
+		int i = 0;
+
+		//to get input string1 from user
+		printf("Enter string-1: ");
+		while((ch = getchar()) != '\n')
+			str1[i++] = ch;
+		str1[i]='\0';
+
+		//to get input string2 from user
+		i=0;
+		printf("Enter string-2 : ");
+		while((ch = getchar()) != '\n')
+			str2[i++] = ch;
+		str1[i]='\0';
+
+		//calling function and put the value in variable
+		int flag=myStrCmpi(str1,str2);
+
+		//condition if string is same
+		if(flag==1){
+
+			printf("'%s' and '%s' both String is same\n",str1,str2);
+		}else{
+			printf("'%s' and '%s' both String is Not same\n",str1,str2);			
+		
+		}
+	}
+
+
+

@@ -1,0 +1,32 @@
+      
+      
+      
+	SELECTED METHOD:
+
+		ADD NODE AT FIRST
+
+    DESCRIPTION:
+	      
+        A Doubly Linked List (DLL) contains an extra pointer, typically called the previous pointer,
+        together with the next pointer and data which are there in the singly linked list. Doubly Linked 
+        list can be traversed in both forward and backward directions. 
+    
+        Insertion of a new node at the start of a doubly linked list is carried out in the following manner.
+
+        1.Make the newnode's next point to HEAD.
+        2.Make the previous of first node to newnode.
+        3.Make head to point to newnode.
+
+	EXAMPLE:
+
+        Input:
+            NULL<--|10|<-->|20|<-->|30|<-->|40|-->NULL
+
+        Output:
+            
+            NULL--|50|<-->|10|<-->|20|<-->|30|<-->|40|-->NULL
+                    |
+                    |
+                newNode
+
+

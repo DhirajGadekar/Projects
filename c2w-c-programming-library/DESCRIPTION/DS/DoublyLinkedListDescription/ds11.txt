@@ -1,0 +1,30 @@
+      
+      
+      
+    SELECTED METHOD:
+
+        DELETE NODE AT POSITION
+
+    DESCRIPTION:
+	      
+        A Doubly Linked List (DLL) contains an extra pointer, typically called the previous pointer,
+        together with the next pointer and data which are there in the singly linked list. Doubly Linked 
+        list can be traversed in both forward and backward directions. 
+
+        The deletion after a specific node can be formed in the following way,
+
+        1.Reach the desired node after which the node is to be deleted.
+        2.Make the current node's next point to the next of next element.
+        3.A node to be deleted say temp,make temp's next of previous equal to current node.
+        4.free() temp.
+
+	EXAMPLE:
+
+        Input:
+            NULL<--|10|<-->|20|<-->|30|<-->|40|-->NULL
+            Pos:2
+
+    Output:
+            NULL<--|10|<-->|30|<--->|40|--->NULL
+
+

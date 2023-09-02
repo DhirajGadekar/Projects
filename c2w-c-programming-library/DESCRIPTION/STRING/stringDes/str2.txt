@@ -1,0 +1,21 @@
+
+
+
+	SELECTED METHOD : 
+			
+			String is alpha	
+
+	DESCRIPTION :  
+			
+			Its shows the given string is only alphabetic or not	
+
+	EXAMPLE :	
+
+			Input :“biencaps” 	
+			Output :"The String is only alphabetic"	
+
+			Input :“core2web” 	
+			Output :"The String is not alphabetic"	
+
+
+

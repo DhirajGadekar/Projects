@@ -1,0 +1,23 @@
+
+
+
+		SELECTED METHOD : 	
+	
+			22. PRODUCT OF ARRAY ELEMENTS
+
+		DESCRIPTION : 	
+
+			This function returns product of array elements.	 	
+
+		EXAMPLE : 	
+		
+			INPUT ARRAY :	
+				
+				| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |	
+				
+			OUTPUT :	
+	
+				55 is sum of all numbers in the array 		
+
+
+

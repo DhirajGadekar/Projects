@@ -1,0 +1,28 @@
+﻿		
+
+
+		SELECTED METHOD:
+
+			16. CYCLICALLY ROTATE AN ARRAY  BY ONE 
+
+		DESCRIPTION:	
+		
+			Given an array, cyclically rotate the array clockwise by one.		
+			Following are steps.
+			1) Store last element in a variable say x.
+			2) Shift all elements one position ahead.
+			3) Replace first element of array with x.
+
+		EXAMPLE:
+		
+			INPUT ARRAY :
+				
+				| 10 | 5 | 1 | 5 | 6 | 16 |
+
+			OUTPUT ARRAY : 
+
+				| 16 | 10 | 5 | 1 | 5 | 6 |
+
+
+
+

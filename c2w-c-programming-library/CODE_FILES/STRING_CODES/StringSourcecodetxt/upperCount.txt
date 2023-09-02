@@ -1,0 +1,35 @@
+
+
+
+	#include<stdio.h>
+
+	int upperCount(char *str){
+		int count=0;
+		while(*str!='\0'){
+			//check character is alphabate or not			
+			if(*str>='A' && *str<='Z')
+				count++;
+			str++;
+		}
+		return count;
+	}
+
+	void main(){
+		char str[20];
+		
+		printf("Enter String:\n");
+		char ch;
+		int i=0;
+		//get string from user
+		while((ch=getchar())!='\n'){
+			str[i]=ch;
+			i++;
+		}
+		str[i]='\0';
+		
+		//print string
+		printf("%d\n",upperCount(str));		
+		
+	}
+
+

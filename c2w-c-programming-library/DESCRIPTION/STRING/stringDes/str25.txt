@@ -1,0 +1,19 @@
+
+
+
+	SELECTED METHOD : 
+	
+			Get space count	
+
+	DESCRIPTION :  
+	
+			This function gives number of spaces 
+			in a given string.	
+
+	EXAMPLE :	
+
+			Input :“Core2Web technologies biencaps” 	
+			Output : “The number of space is 2”  	
+
+
+

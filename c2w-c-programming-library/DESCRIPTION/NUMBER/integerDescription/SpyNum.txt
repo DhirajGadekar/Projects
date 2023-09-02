@@ -1,0 +1,24 @@
+
+
+
+	SELECTED:
+		
+		Spy Number
+	
+	DESCRIPTION:
+	
+ 		A number is said to be a Spy number if the sum of all the digits 
+		is equal to the product of all digits.
+ 	
+ 	EXAMPLE:
+ 		
+ 		Input : 1412
+		Output : Spy Number
+	
+		Explanation :
+		sum = (1 + 4 + 1 + 2) = 8
+		product = (1 * 4 * 1 * 2) = 8
+		since, sum == product == 8
+		
+		
+		

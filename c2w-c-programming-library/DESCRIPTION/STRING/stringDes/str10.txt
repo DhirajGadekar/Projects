@@ -1,0 +1,18 @@
+
+
+
+	SELECTED METHOD : 
+	
+			Count of digit	
+
+	DESCRIPTION :  
+	
+			Its function shows the number of digits in a given string.	
+
+	EXAMPLE :	
+
+			Input :“core2web” 	
+			Output :“The number of digit in a given string is 1” 	
+
+
+

@@ -1,0 +1,250 @@
+
+
+
+	Union
+
+		1. Union is Used Where the Memory is Not Luxurious (mainly Used At System Level i.e. BIOS).
+		2. When their is a Fixed task then and then only Union is Used Instead of Structure.
+		3.In Union , they get the memory of high data type as a base value and address of all data types is same.
+		4.For One 'Union' We Make the Multiple Objects as Like in 'Structure'.
+
+	Ex :
+	#include<stdio.h>
+
+	struct Demo1{
+        		int x;
+        		float f;
+        		double d;
+	};
+
+	union Demo2{
+        		int x;
+        		float f;
+        		double d;
+	};
+
+	void main(){
+
+        		printf("Structure Size = %ld\n",sizeof(struct Demo1));  //16
+        		printf("Union Size = %ld\n",sizeof(union Demo2));       //8
+	}
+
+
+	Initialization in Union :-
+
+	#include<stdio.h>
+
+	union Employee{
+        		int empId;
+        		float sal;
+
+	};
+
+	void main(){
+
+        	//Problem.
+        	//union Employee emp1 = {10,50.00};     //warning: excess elements in union initializer.
+                                                			//because We use memory for one data at only one time memory.
+
+        	//Proper Way.
+        	union Employee emp2;
+
+        	emp2.empId = 10;
+        	printf("Employee Id = %d\n",emp2.empId);
+
+        	emp2.sal = 50.00;
+        	printf("Employee Sal = %f\n",emp2.sal);
+
+	}
+
+
+
+	Union Address :- Address of Union for each data is same.
+
+	#include<stdio.h>
+
+	union Demo{
+        		int x;
+        		char ch;
+
+	};
+
+	void main(){
+
+        		union Demo obj1;
+
+        		obj1.x = 10;
+        		printf("%p\n",&obj1.x);         //0x100.
+
+        		obj1.ch = 'a';
+        		printf("%p\n",&obj1.ch);        //0x100.
+
+	}
+
+
+	typedef in Union :-
+        		- we use typedef in Union Also.
+        		- typedef means second name i.e aliases.
+
+	#include<stdio.h>
+
+	typedef union Employee{
+
+        		int empId;
+        		float sal;
+
+	}Emp;
+
+	void main(){
+
+        		Emp obj1;
+
+        		obj1.empId=10;
+        		obj1.sal = 40.99;
+	}
+
+
+	Anonymous or Unnamed Union :-
+
+        	- Their is Not concept of Unnamed Union.
+	Ex :
+	#include<stdio.h>
+	union {
+        		int x;
+        		char ch;
+
+	}obj = {10,'a'};        // warning: excess elements in union initializer.
+
+	void main(){
+
+        		printf("%d\n",obj.x);
+        		printf("%c\n",obj.ch);
+
+	}
+
+
+	Passing Union to a Function.
+        		1) Passing object of Structure.
+        		2) Passing address of Object.
+	Ex :
+	#include<stdio.h>
+	union Demo1{
+        		int x;
+        		float f;
+
+	};
+	void fun(union Demo1 obj){
+        		printf("%d\n",obj.x);   //GV
+        		printf("%f\n",obj.f);   //20.87
+
+	}
+	void gun(union Demo1 *obj){
+        		printf("%d\n",obj->x);  //GV
+        		printf("%f\n",(*obj).f);//20.87
+	}
+	void main(){
+        		union Demo1 obj;
+        		obj.x=10;
+        		obj.f=20.88;
+
+        		fun(obj);       //Passing Object to Function.
+        		gun(&obj);      //Passing address of Object to a Function.
+
+	}
+
+
+	Nested Union:-
+
+	#include<stdio.h>
+	#include<string.h>
+	union MovieInfo{
+
+        		char actorName[20];
+        		float imdbRate;
+	};
+
+	union Movie{
+
+        		char mName[20];
+        		union MovieInfo obj1;
+	};
+	void main(){
+        		union Movie obj2;
+        		strcpy(obj2.mName,"Kantara");
+        		strcpy(obj2.obj1.actorName,"Rishabh");
+        		obj2.obj1.imdbRate = 9.7;
+
+        		printf("%s\n",obj2.mName);              //GV
+        		printf("%s\n",obj2.obj1.actorName);     //GV
+        		printf("%f\n",obj2.obj1.imdbRate);      //9.700000
+	}
+
+
+	Array Of Unions :-
+
+	#include<stdio.h>
+	#include<string.h>
+	union Player{
+        		char pName[20];
+        		int jerNo;
+        		float rev;
+	};
+	void main(){
+        		union Player obj1;
+        		strcpy(obj1.pName,"Virat");
+        		obj1.jerNo = 18;
+        		obj1.rev = 980.50;
+        		union Player obj2;
+        		strcpy(obj1.pName,"Messi");
+        		obj1.jerNo = 10;
+        		obj1.rev = 1898.50;
+        		union Player obj3;
+        		strcpy(obj1.pName,"james");
+        		obj1.jerNo = 6;
+        		obj1.rev = 1980.50;
+        		union Player arr[3] = {obj1,obj2,obj3};
+        		for(int i=0; i<3; i++){
+                		printf("%s\n",arr[i].pName);
+                		printf("%d\n",arr[i].jerNo);
+                		printf("%f\n",arr[i].rev);
+        		}
+	}
+
+
+
+
+	Pointer of Union :- (Union Pointer)
+
+	#include<stdio.h>
+	#include<string.h>
+	union Movie{
+        		char mName[20];
+        		int count;
+        		float price;
+	};
+	void main(){
+        		union Movie obj1;
+        		union Movie obj2;
+
+        		union Movie *ptr1 = &obj1;
+        		union Movie *ptr2 = &obj2;
+        		strcpy(obj1.mName , "Kantara");
+        		printf("%s\n",ptr1->mName);
+        		obj1.count = 5;
+        		printf("%d\n",ptr1->count);
+        		obj1.price = 1000;
+        		printf("%f\n",ptr1->price);
+
+        		strcpy(obj2.mName , "YJHD");
+        		printf("%s\n",ptr2->mName);
+
+        		obj1.count = 10;
+        		printf("%d\n",ptr2->count);
+
+       
+        		obj1.price = 1200;
+        		printf("%f\n",ptr2->price);
+	}
+
+
+

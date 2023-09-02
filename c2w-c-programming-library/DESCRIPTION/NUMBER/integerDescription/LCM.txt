@@ -1,0 +1,21 @@
+	
+	
+	
+	SELECTED:
+	
+		LCM:
+		
+	DESCRIPTION:
+
+		Least Common Multiple(LCM) is a method to find the smallest common 
+		multiple between any two or more numbers.
+		A common multiple is a number which is a multiple of two or more 
+		numbers.
+		
+	EXAMPLE:
+	
+		L.C.M of 16 and 20 will be 2 x 2 x 2 x 2 x 5 = 80, 
+		where 80 is the smallest common multiple for numbers 16 and 20.
+		
+		
+		

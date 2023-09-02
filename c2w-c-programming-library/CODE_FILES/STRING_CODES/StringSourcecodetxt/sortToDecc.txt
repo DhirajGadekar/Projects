@@ -1,0 +1,50 @@
+
+
+
+	#include<stdio.h>
+	#include<string.h>
+
+	char* strSortDesc(char *str){
+		
+		char temp;
+
+		//length of string
+		int len=strlen(str);
+
+		for(int i=0; i<len-1;i++){
+			for(int j=i+1; j<len; j++){			
+
+				//compare character
+				if(str[i]<str[j]){
+					//swap character
+					temp=str[i];
+					str[i]=str[j];
+					str[j]=temp;
+					
+				}
+			}
+		}
+		return str;
+	}
+
+	void main(){
+
+		char str[200];
+		printf("enter the string\n");
+		char ch;
+			int i=0;
+			//to input the string from user			
+			while((ch=getchar())!='\n'){
+					str[i++]=ch;
+
+			}
+			str[i]='\0';
+
+
+		printf("%s\n",strSortDesc(str));
+
+	}
+
+
+
+

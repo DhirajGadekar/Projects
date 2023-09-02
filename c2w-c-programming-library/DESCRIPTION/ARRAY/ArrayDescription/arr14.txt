@@ -1,0 +1,27 @@
+﻿		
+
+
+		SELECTED METHOD:
+
+			14. FIND MAXSUBARRAY SUM 
+
+		DESCRIPTION:	
+		
+			Subarrays are arrays inside another array which only contains 
+			contiguous elements. Given an array of integers, the task is		
+			to find the maximum subarray sum possible of all     			
+			the non-empty subarrays.
+
+
+		EXAMPLE:
+		
+			INPUT ARRAY :
+
+				| 10 | 5 | 1 | 5 | 6 | 16 |
+
+			OUTPUT : 
+				
+				43 is max subarray sum 
+
+
+

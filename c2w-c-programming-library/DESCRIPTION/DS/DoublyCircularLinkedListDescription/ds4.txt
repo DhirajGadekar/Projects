@@ -1,0 +1,26 @@
+
+
+
+    SELECTED METHOD:
+
+        PRINT NODES IN LINKEDLIST
+
+    DESCRIPTION:
+
+        Circular Doubly Linked List has properties of both doubly linked list and circular linked list in which 
+        two consecutive elements are linked or connected by the previous and next pointer and the last node points 
+        to the first node by the next pointer and also the first node points to the last node by the previous pointer. 
+    
+     
+        1.To display the entire doubly circular linked list, we need to traverse it from first to last.
+        2.In contrast to arrays, linked list nodes cannot be accessed randomly. Hence to reach the n-th element,
+        we are bound to traverse through all (n-1) elements.
+        3.Since the entire linked list is traversed, the operation costs us O(N) time complexity.
+
+    EXAMPLE:
+ 
+		   |--><--|10|<-->|20|<-->|30|<-->|40|--><--|
+                   |________________________________________|
+
+        
+                               

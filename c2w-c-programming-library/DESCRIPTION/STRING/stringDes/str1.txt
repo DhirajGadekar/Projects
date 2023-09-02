@@ -1,0 +1,21 @@
+
+
+
+	SELECTED METHOD : 
+	
+			First repeated character	
+
+	DESCRIPTION : 
+	
+			Given a string, find the first repeated character in it.
+			We need to find the character that occurs more than once 
+			and whose index of second occurrence is smallest. 	
+
+	EXAMPLE :	
+
+			Input :“A is uppercase” 	
+			Output :"First repeated character is p"	
+
+
+
+

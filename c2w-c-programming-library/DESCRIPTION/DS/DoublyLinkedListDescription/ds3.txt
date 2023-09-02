@@ -1,0 +1,32 @@
+
+
+
+    SELECTED METHOD:
+
+        ADD NODE AT LAST
+
+    DESCRIPTION:
+
+        A Doubly Linked List (DLL) contains an extra pointer, typically called the previous pointer, 
+        together with the next pointer and data which are there in the singly linked list.Doubly Linked list 
+        can be traversed in both forward and backward directions. 
+
+        Insertion at the end Insertion of a new node at the end of a doubly linked list is performed in the following way:
+
+        1.Traverse the list from start and reach the last node.
+        2.Make the last node point to the new node.
+        3.Make the new node point to null, marking the end of the list. Inserting a new node at the end is an O(N) operation.
+
+    EXAMPLE:
+
+        Input:
+            NULL<--|10|<-->|20|<-->|30|<-->|40|-->NULL
+
+        Output:
+            NULL<---|10|<--->|20|<--->|30|<--->|40|<--->|50|-->NULL
+                                                          |
+                                                          |
+                                                        newNode
+
+
+                                                    

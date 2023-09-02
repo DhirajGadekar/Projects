@@ -1,0 +1,18 @@
+
+
+
+	SELECTED METHOD : 
+	
+			Count of alphabet	
+
+	DESCRIPTION :  
+	
+			Its function shows the number of alphabets in a given string.	
+
+	EXAMPLE :	
+
+			Input :“core2web” 	
+			Output :“The number of alphabets in a given string is 7” 	
+
+
+

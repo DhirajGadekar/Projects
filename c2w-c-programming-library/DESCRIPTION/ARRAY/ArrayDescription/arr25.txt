@@ -1,0 +1,22 @@
+
+
+
+		SELECTED METHOD : 
+	
+			25. REPLACE ELEMENTS WITH CUBE
+
+		DESCRIPTION : 	
+
+			This function replaces array elements with their cube.			 
+
+		EXAMPLE : 	
+		
+			INPUT ARRAY :	
+				
+				| 1 | 2 | 3 | 4 | 5 |	
+				
+			OUTPUT ARRAY :	
+	
+				| 1 | 8 | 27 | 64 | 125 |		
+
+

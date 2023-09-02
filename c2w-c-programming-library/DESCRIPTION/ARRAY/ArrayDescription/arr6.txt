@@ -1,0 +1,36 @@
+
+
+
+        SELECTED METHOD : 
+
+            6. N TH MINIMUM VALUE IN ARRAY
+            
+
+        DESCRIPTION :
+
+            This wil return nth MINIMUM number from the array       
+
+        EXAMPLE :
+
+            INPUT 1 :
+
+                | 10 | 3 | 4 | 16 | 1 | 65 |
+
+                nth POSITION : 2
+            
+            OUTPUT 1 :
+
+                3 is 2nd MINIMUM Number in the array 
+
+            INPUT 1 :
+
+                | 1 | 2 | 1 | 1 | 1 |
+
+                nth POSITION : 3
+            
+            OUTPUT 1 :
+
+                Not enough unique element in the array 
+            
+
+

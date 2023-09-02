@@ -1,0 +1,233 @@
+
+
+
+	Pointer :-
+
+	-> A pointer is a variable that stores the memory address of another variable as its value.
+	-> A pointer variable points to a data type (like int) of the same type, and is created with the * operator. 
+
+	    Ex : int age = 10;
+		int *iptr = &age;
+	-> In above Example , we store the address of age in Pointer.
+
+	int  Age = 21;     	//Variable declaration
+	int *iptr = &Age;	// Pointer declaration
+
+	//Reference: Output the memory address of Age with the pointer (0x100).
+	rintf("%p\n", ptr);
+
+	//Dereference: Output the value of Age with pointer (21).
+	printf("%d\n",*ptr);
+
+	->  Size of Pointer Variable is  ' 8 byte '.
+
+	
+	Note :-
+		Meaning of ' * ' , two different things in Our Code.
+
+		* When Used in Declaration , (int *ptr ) it creates a Pointer Variable.
+
+		*  When we Access the data using pointer then it acts as a Dereference.
+			i.e int age = 10;
+			     int *ptr = &age;
+			     printf("%d\n",*ptr);
+
+
+	-> Their are four types of Pointers :-
+		1)void pointer.
+		2)Wild Pointer.
+		3)NULL Pointer.
+		4)Dangling Pointer.
+
+	1)Void Pointer :-
+		
+		* Void Pointer is also Know as a Generic Pointer.
+
+		* Syntax : void *pointer_Name;
+
+		*Declaration : void *ptr;
+
+		* Size of Void Pointer is ' 8 Byte '.
+
+		*When we access the void pointer then we have to compulsory type cast at the time of Dereferencing.
+
+			Ex :  int x = 10;
+			         void *ptr = &x;
+			         printf("%d\n",*((int*)x));
+
+		* In malloc() , return type is Void *
+
+		Ex :
+			int x = 10;
+			int * ptr = (int *)malloc(sizeof(int));
+
+			printf("%d\n",*ptr)			//Access using void pointer ( 10 ).
+
+	2)Wild Pointer :-
+		
+		* Uninitialized Pointer is Know as Wild Pointer.
+			
+		     Ex : int *ptr ;
+		
+			#include<stdio.h>
+			void main(){
+
+				int x = 10;
+				int *iptr ;
+				printf("%d\n",*iptr)	//Segmentation Fault 
+
+		* In above Example at the time of dereferencing  in Wild Pointer , they gives a Segmentation fault.
+
+
+	3)NULL pointer :-
+
+		* When we dont store any address in Pointer then we Use NULL .
+		       Ex : int *ptr = NULL;
+
+			#include<stdio.h>
+			void main(){
+
+				int x = 21;
+				int *ptr = NULL;
+				ptr = &x;
+				printf("%d\n",*ptr);	//Output : 21.
+
+	4)Dangling Pointer :-
+
+		*   A dangling pointer is a pointer that occurs at the time when the object is de-allocated from memory without modifying the value of the pointer. 
+
+		Scenario 1 :
+
+				#include<stdio.h>
+				int a = 10;
+				int b;
+				int *ptr = 0;
+
+				void fun(){
+
+					int x = 30;
+					printf("%d\n",a);
+					printf("%d\n",b);
+					ptr = &x;
+				
+					printf("%p\n",ptr);
+					printf("%d\n",*ptr);
+
+				}
+				
+				void main(){
+
+					int y = 40;
+					printf("%d\n",a);
+					printf("%d\n",b);
+					
+					fun();
+
+					printf("%p\n",ptr);
+					printf("%d\n",*ptr);		//Dangling Pointer.    Segementation Fault.
+			}
+
+		Scenario 2 :
+
+				#include<stdio.h>
+				
+				void *malloc( size_t )			//Declaration of malloc().
+				
+				void dangligPtr(int x){
+					int *ptr = (int*)malloc(sizeof(int));
+					ptr = &x;
+
+					printf("%d\n",*ptr);
+					printf("%p\n",ptr);
+	
+					int *ptr2 = ptr;
+
+					printf("%d\n",*ptr2);
+
+					free(ptr);
+
+					printf("%d\n",*ptr2);		//Dangling Pointer.    Segmentation Fault.
+
+				}
+				void main() {
+					danglingPtr(10);
+
+				}
+
+			
+	
+		Array of Pointers : 
+
+			* Array have the Addresses.
+
+			Ex :
+				#include<stdio.h>
+
+				void main(){
+
+					int x = 10;
+					int y = 20;
+					int z = 30;
+					
+					int *arr[3] = { &x . &y , &z};
+
+					printf("%ld\n",sizeof(arr));
+
+					printf("%p\n",arr[0]);
+					printf("%p\n",arr[1]);
+					printf("%p\n",arr[2]);
+
+					//Accessing the Data.
+
+					printf("%d\n",*(arr[0]));
+					printf("%d\n",*(arr[1]));
+					printf("%d\n",*(arr[2]));
+
+				}
+
+			Ex :
+				#include<stdio.h>
+				void main(){
+
+					int x = 10;
+					char ch = 'a';
+					double d = 20.88;
+			
+					void *arr[3] = {&x , &ch , &d};
+
+					printf("%p\n",arr[0]);
+					printf("%p\n",arr[1]);
+					printf("%p\n",arr[2]);
+
+					printf("%d\n",*((int *)arr[0])));
+					printf("%c\n",*((char*)arr[1])));
+					printf("%lf\n",*((double *)arr[2])));
+
+			}
+
+		
+
+	
+		Pointer to Pointer :-
+			
+			* Pointer to Pointer means Double Pointer.
+
+			* Ex :
+				#include<stdio.h>
+				void main() {
+
+					int i = 10;
+					int *iptr = &i;
+					int **iptr2 = &iptr;		//Double Pointer.
+
+					printf("%d\n",i);
+					printf("%d\n",*iptr);
+					printf("%d\n",**iptr2);
+				}
+
+
+
+
+
+
+

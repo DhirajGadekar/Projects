@@ -1,0 +1,23 @@
+
+
+
+		SELECTED METHOD : 
+	
+			27. SUM OF ALL ELEMENTS HAVING ODD INDEX
+
+		DESCRIPTION : 	
+
+			This function returns sum of array elements having odd index.	 		
+
+		EXAMPLE : 	
+		
+			INPUT ARRAY :	
+				
+				| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |	
+				
+			RETURN VALUE :	
+	
+				30 is sum of all odd index of the array 
+
+
+

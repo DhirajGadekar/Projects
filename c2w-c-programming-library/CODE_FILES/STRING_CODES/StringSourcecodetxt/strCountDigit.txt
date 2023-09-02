@@ -1,0 +1,52 @@
+
+
+
+	#include <stdio.h>
+	#include <string.h>
+
+	//find count of digit which is present in String.		
+	int strDigitCount(char str[]){
+
+		int count=0;
+		//for loop to search digit in string.
+		for(int i = 0; str[i] != '\0'; i++){
+
+			//condition for get digit count
+			if(str[i]>47 && str[i]<58){
+
+				count++;
+			}
+		}
+
+		return count;
+	}
+
+	//Entry function
+	void main(){
+
+		//variable Intitilisation
+		char str[100];
+		int i=0;
+		char c;
+		printf("Enter the String :  ");
+
+		//to get string from user
+		while((c=getchar())!='\n')
+			str[i++]=c;
+		str[i]='\0';
+		
+		//function call and return value store in variable index.		
+		int digitcount = strDigitCount(str);
+
+		//if string is empty
+		if(digitcount == 0){
+		
+			printf("String has No Digit\n");
+		
+		}else{
+			printf("The count of Digit present string %s is %d\n",str,digitcount);		
+		}
+	}
+
+
+

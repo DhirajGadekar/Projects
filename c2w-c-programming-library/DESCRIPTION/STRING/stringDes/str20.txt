@@ -1,0 +1,19 @@
+
+
+
+	SELECTED METHOD : 
+	
+			Words character reverse	
+
+	DESCRIPTION :  
+	
+			This function reverse the character 
+			word by word in a given string.	
+
+	EXAMPLE :	
+
+			Input :“Core2Web technologies” 	
+			Output : “beW2eroC seigolonhcet”  	
+
+
+

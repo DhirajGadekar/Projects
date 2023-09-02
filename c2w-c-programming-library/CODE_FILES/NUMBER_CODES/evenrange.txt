@@ -1,0 +1,30 @@
+/* Even number can be divided by 2. The remainder after dividing an even number by 2 is zero.
+ For example . . . even numbers between 1 and 5 are 2 and 4. The below given C program is used to display (print) the even numbers present in between a given range. Kindly check out to display the even numbers present in between a given range.
+*/
+
+#include<stdio.h>
+
+int evenRange(int start,int end){
+
+	for(int i=start;i<=end;i++){
+	
+			if(i%2==0){
+			
+				printf("%d ",i);
+			}
+	}
+	printf("\n");
+}
+
+void main(){
+
+	int start,end;
+
+	printf("Enter Starting number: ");
+	scanf("%d",&start);
+	
+	printf("Enter Ending number: ");
+	scanf("%d",&end);
+
+	evenRange(start,end);
+}

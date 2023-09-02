@@ -1,0 +1,18 @@
+
+
+
+	SELECTED METHOD :
+	
+			 String is only digit	
+
+	DESCRIPTION : 
+	
+			In a given string containts only digit.	
+
+	EXAMPLE :	
+
+			Input :“12345” 	
+			Output :"The given string has only digit"	
+
+
+

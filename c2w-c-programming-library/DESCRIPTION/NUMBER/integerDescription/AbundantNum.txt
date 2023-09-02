@@ -1,0 +1,19 @@
+	
+	
+	
+	SELECTED:
+	
+		Abundant Number 
+
+	DESCRIPTION: 
+	
+		In number theory, an abundant number or excessive number is a 
+		number for which the sum of its proper divisors is greater than 
+	        the number.
+	             
+	EXAMPLE:
+	 
+		The integer 12 is the first abundant number. Its 
+		proper divisors are 1, 2, 3, 4, and 6 for a total of 16.
+
+

@@ -1,0 +1,27 @@
+﻿		
+
+
+		SELECTED METHOD:
+
+			13. FIND OCCURRENCE OF ELEMENT IN ARRAY.
+
+		DESCRIPTION:	
+	
+			Find occurrence of element in array is a function which 
+			helps you to find the occurrence of a particular element 	
+			in an array.
+
+		EXAMPLE:
+		
+			INPUT ARRAY :
+
+				| 10 | 5 | 1 | 5 | 6 | 16 |
+
+			TARGET :  5
+
+			OUTPUT : 
+				
+				5 occurred in array 2 times 
+
+
+

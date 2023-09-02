@@ -1,0 +1,19 @@
+
+
+
+	SELECTED METHOD : 
+	
+			To togglecase	
+
+	DESCRIPTION :  
+	
+			In a given function the characters of the string 
+			is convert Upper case to Lower case and vice versa.	
+
+	EXAMPLE :	
+
+			Input :“Core2Web” 	
+			Output :“cORE2wEB” 	
+
+
+

@@ -1,0 +1,19 @@
+
+
+
+	SELECTED METHOD :
+	
+			Delete duplicate	
+
+	DESCRIPTION :  
+	
+			This function remove the duplicate 
+			character in a given string.	
+
+	EXAMPLE :	
+
+			Input :“Core2Web” 	
+			Output : “Cor2Wb”  	
+
+
+

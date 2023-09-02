@@ -1,0 +1,23 @@
+
+
+
+		SELECTED METHOD : 
+
+			23. REPLACE ELEMENTS WITH IS SUM OF ITS DIGITS
+
+		DESCRIPTION : 	
+
+			This function replaces array elements with their sum of digits.		 	
+
+		EXAMPLE : 	
+		
+			INPUT ARRAY :	
+				
+				| 12 | 23 | 34 | 45 | 56 |	
+				
+			OUTPUT ARRAY :	
+	
+				| 3 | 5 | 7 | 9 | 11 |		
+
+
+

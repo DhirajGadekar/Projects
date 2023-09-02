@@ -1,0 +1,32 @@
+      
+      
+      
+    SELECTED METHOD:
+
+        DELETE NODE AT POSITION
+
+    DESCRIPTION:
+	    Circular Doubly Linked List has properties of both doubly linked list and circular linked list in which two consecutive elements are linked or connected by the previous and next pointer and the last node points to the first node by the next pointer and also the first node points to the last node by the previous pointer.  
+        
+        The deletion after a specific node can be formed in the following way,
+
+        1.Reach the desired node after which the node is to be deleted.
+        2.Make the current node's next point to the next of next element.
+        3.A node to be deleted say temp,make temp's next of previous equal to current node.
+        4.free() temp.
+
+	EXAMPLE:
+
+        Input:
+               |--><--|10|<-->|20|<-->|30|<-->|40|--><--|
+               |________________________________________|
+
+            
+            Pos:2
+
+    Output:
+           
+
+                |--><--|10|<-->|30|<-->|40|--><--|
+                |________________________________|
+

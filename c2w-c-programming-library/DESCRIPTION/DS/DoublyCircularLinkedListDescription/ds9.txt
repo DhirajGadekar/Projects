@@ -1,0 +1,35 @@
+      
+      
+      
+  SELECTED METHOD:
+
+    ADD NODE AT POSITION
+
+  DESCRIPTION:
+	Circular Doubly Linked List has properties of both doubly linked list and circular linked list in which two consecutive elements are linked or connected by the previous and next         pointer and the last node points to the first node by the next pointer and also the first node points to the last node by the previous pointer.       
+    
+    Insertion of a new node after some node in a doubly Circular linked list is carried out in the following manner:
+
+    1.Reach the desired node after which the new node is to be inserted.
+    2.Make the newnodes's previous current node and newnode's next to current node's next.
+    3.Make current node's next to newnode.
+    4.newnodes's next say temp , make temp's previous newnode.
+
+	EXAMPLE:
+
+    Input:
+                |--><--|10|<-->|20|<-->|30|<-->|40|--><--|
+                |________________________________________|
+
+
+    Output:
+      
+           |--><--|10|<--->|20|<--->|50|<--->|30|<--->|40|--><--|
+           |____________________________________________________|
+                                      |
+                                      |
+                                    newNode
+
+                     
+
+                              

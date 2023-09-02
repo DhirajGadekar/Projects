@@ -1,0 +1,18 @@
+
+
+
+	SELECTED METHOD : 
+	
+			Get word count
+
+	DESCRIPTION : 
+	
+			This function shows the number of words in a given string. 
+
+	EXAMPLE :
+
+			Input :“You know the code till the core” 
+			Output :7
+
+
+

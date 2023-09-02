@@ -1,0 +1,24 @@
+
+
+
+        SELECTED METHOD : 
+
+            8. ODD NUMBER FORM ARRAY 
+
+        DESCRIPTION :
+
+            This method will remove all the even element from 
+            the array and only keep the element which are odd 
+
+        EXAMPLE :
+
+            INPUT ARRAY :
+                
+                | 1 | 2 | 3 | 4 |
+            
+            OUTPUT ARRAY :
+                
+                | 1 | 3 | 
+
+
+

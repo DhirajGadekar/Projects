@@ -1,0 +1,133 @@
+
+
+
+	Array :
+
+	-> Array is Used to store Homogeneous Data. 
+
+	Why do we need Array ?
+
+		-> If we have a small number of elements, we want 3 variables, then we can declare them separately like var1, var2, and var3. But if we required more number of variables then we can use 			   arrays to store them. 
+
+		  Ex :
+			int var1,var2,var3;			//Easy for declaration without using Array.
+
+			int var1,var2,var3,var4...varN	//Not easy to Declare multiple variables Name So Array is Used.
+
+			i.e.  int arr[N..Size]
+
+
+	Declaration Of Array :
+
+	-> Declare an array by specifying size in [].
+
+		int array1[20];
+
+		char array2[5];
+
+	-> Declare an array by specifying user defined size.
+
+		int size = 20;
+
+		int array3[size];		
+
+	-> When an array is declared without allocating any value, then it stores a garbage value.
+
+	-> Array Declaration by initializing Array 
+
+		Ex : 
+		       int  arr[5] = {1 , 2 , 3 , 4 , 5}; 
+
+	-> Array Index Start From ' 0 ' Index Always.
+
+	-> Name of Array is the same address of Array of first Element.
+	    Ex :
+		int arr[5] = {1 , 2 , 3 , 4 , 5};
+		printf("%p\n",arr)		 // 0x100
+		printf("%p\n",&arr[0]);	//0x100
+
+
+	Array Initialize by two method :-
+
+	1)Direct Initialization :-
+
+		Ex : float arr[5] = {10.00 , 20.00 , 30.00 , 40.00 , 50.00};
+
+	2)One by One Assign :-
+
+		Ex : char carr[6];
+
+		        carr[0] = 'S';
+		        carr[1] = 'h';
+		        carr[2] = 'a';
+		        carr[3] = 's';
+		        carr[4] = 'h';
+		        carr[5] = 'i';
+			
+
+
+	Accessing Array Elements :-
+
+	-> We can access the Array elements by using the index numbers.
+	
+	Ex :
+		#include<stdio.h>
+
+		void main(){
+
+			int iarr[5] = {10,20,30,40,50};
+			
+			//Access the Array elements.
+			
+			printf("Element 1 = %d\n" , iarr[0]);
+			printf("Element 2 = %d\n" , iarr[1]);
+			printf("Element 3 = %d\n" , iarr[2]);
+			printf("Element 4 = %d\n" , iarr[3]);
+			printf("Element 5 = %d\n" , iarr[4]);
+	}
+
+
+	Types of Array :-
+
+		Their are three types of Array are as follows ,
+	
+	1) 1D (Dimensional) Array.
+	2) 2D (Dimensional) Array.
+	3) 3D (Dimensional) Array.
+
+	1) 1D Array :-
+		-> In 1D array , it requires length of Array.
+
+		   Ex : int iarr[5].
+
+		-> In Above Example , length of Array is 5.
+
+		-> In 1D Array , length of Array is Compulsory.
+
+	2) 2D Array :-
+		-> In 2D array , two subscript is their i.e row and Column.
+		    Syntax : int arr[rows][columns];
+
+			Ex : int arr[3][3];
+
+		->In 2D array , size of column is Compulsory.
+
+	3) 3D Array :-
+		-> In 3D Array , three subscript is their i.e. plane , row and Column.
+		   Syntax : int arr[plane][row][column];
+
+				Ex : int arr[2][3][3];
+
+		-> In 3D Array , size of row and column is Compulsory.
+		
+		-> It's look like Cube.
+
+		Plane 1 :  1 2 3	plane 2 :  10 11 12
+ 			     4 5 6		     13 14 15
+		                 7 8 9		     16 17 18
+
+			
+			
+			
+
+

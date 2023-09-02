@@ -1,0 +1,18 @@
+
+
+
+	SELECTED METHOD : 
+	
+			String reverse	
+
+	DESCRIPTION :  
+	
+			Its convert the given string in reverse format.	
+
+	EXAMPLE :	
+
+			Input :“core2web” 	
+			Output :"bew2eroc"	
+
+
+

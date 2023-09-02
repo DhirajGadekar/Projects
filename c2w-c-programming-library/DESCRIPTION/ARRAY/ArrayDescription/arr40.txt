@@ -1,0 +1,27 @@
+
+
+
+        SELECTED METHOD :   
+                
+            40. GROUPING OF STRONG NUMBER
+
+        DESCRIPTION :   
+            
+            Strong Numbers are the numbers whose sum of             
+            factorial of digits is equal to the original number       
+
+            This function takes array address and array length          
+            as input and group Strong elements in array.  
+
+        EXAMPLE :   
+            
+            INPUT ARRAY :  
+        
+                | 1 | 2 | 13 | 145 | 15 | 16 |   
+        
+            OUTPUT ARRAY :   
+        
+                | 1 | 2 | 145 |   
+
+
+

@@ -1,0 +1,33 @@
+
+
+
+    SELECTED METHOD:
+
+        ADD NODE AT FIRST
+
+    DESCRIPTION:
+
+        In a circular Singly linked list, the last node of the list contains a pointer to the first node of the list. 
+        We traverse the circular singly linked list until we reach the same node where we started. The circular singly 
+        linked list has no beginning or end. No null value is present in the next part of any of the nodes
+        
+        Insertion of a new node at the start of a singly Circular linked list is carried out in the following manner.
+
+        1.Create a newnode and point the next of newnode to the last of newnode(i.e first node)
+        2.Make last node point at newnode.
+        3.Insert the new node at the start and make head point to newnode. 
+
+      EXAMPLE:
+
+            Input:
+
+                ---->|10|-->|20|-->|30|-->|40|----
+                |________________________________|
+            
+            Output:
+                    added node
+                       |
+                ---->|50|-->|10|-->|20|-->|30|-->|40|----
+                |_______________________________________|
+            
+

@@ -1,0 +1,21 @@
+	
+	
+	
+	SELECTED:
+	
+		Deficient Number:
+
+        DESCRIPTION: 
+        
+        	In number theory, a deficient number or defective number is a number 
+		n for which the sum of divisors of n is less than 2n. 
+    		Equivalently, it is a number for which the sum of proper divisors is
+		less than n.
+		
+	EXAMPLE:
+	 
+	 	the proper divisors of 8 are 1, 2, and 4,
+		and their sum is less than 8, so 8 is deficient.
+		
+		
+		 

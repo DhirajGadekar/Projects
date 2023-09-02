@@ -1,0 +1,20 @@
+	
+	
+	
+	SELECTED:
+	
+		Even Number:
+		
+	DESCRIPTION:
+
+		Any number that can be exactly divided by 2 is called as an even 
+		number. Even numbers always end up with the last digit as 0, 2, 
+		4, 6 or 8.
+		
+	EXAMPLE:
+	
+ 		Some examples of even numbers are 2, 4, 6, 8, 10, 12, 14, 16. 
+ 		These are even numbers as these numbers can easily be divided by 2.
+ 		
+ 		
+

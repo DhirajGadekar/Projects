@@ -1,0 +1,19 @@
+
+
+
+	SELECTED METHOD : 
+	
+			To lowercase	
+
+	DESCRIPTION : 
+	
+			This function converts a string to lowercase letters 
+			and function does not change the original string.	
+
+	EXAMPLE :	
+
+			Input :“Core2Web” 	
+			Output :“core2web” 	
+
+
+

@@ -1,0 +1,29 @@
+
+
+
+    SELECTED METHOD:
+
+        UPDATE NODE IN LINKEDLIST.
+
+    DESCRIPTION:
+
+        This function updates the node data at the given position.
+
+    EXAMPLE:
+
+        Input:
+
+            ---->|10|-->|20|-->|30|-->|40|----
+            |________________________________|
+            
+            data = 60
+            pos = 3
+
+        Output:
+
+            ---->|10|-->|20|-->|60|-->|40|----
+            |________________________________|
+            
+                            
+
+         

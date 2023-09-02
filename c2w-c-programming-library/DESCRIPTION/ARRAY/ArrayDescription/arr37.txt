@@ -1,0 +1,28 @@
+
+
+
+        SELECTED METHOD :   
+                
+            37. GROUPING OF ARMSTRONG NUMBER
+
+        DESCRIPTION :   
+            
+            An Armstrong number of three digits is an integer           
+            such that the sum of the cubes of its digits is             
+            equal to the number itself.   
+
+            This function takes array address and array length
+            as input and group Armstrong elements in array.  
+
+        EXAMPLE :   
+            
+            INPUT ARRAY :  
+        
+                | 1 | 12 | 3 | 14 | 15 | 153 | 370 | 18 | 19 |    
+        
+            OUTPUT ARRAY :   
+        
+                | 1 | 3 | 153 | 370 |   
+
+
+

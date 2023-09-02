@@ -1,0 +1,23 @@
+
+
+
+    SELECTED METHOD:
+
+        SECOND LAST OCCURRENCE OF ELEMENT IN LINKEDLIST.
+
+    DESCRIPTION:
+
+        This function checks if given number is present in LinkedList or not,
+        and return index of second last occurrence.
+
+    EXAMPLE:
+
+        Input:
+                NULL<--|10|<-->|20|<-->|20|<-->|30|<--|20|-->NULL
+                Element:20
+
+        Output:
+                3
+
+
+                    

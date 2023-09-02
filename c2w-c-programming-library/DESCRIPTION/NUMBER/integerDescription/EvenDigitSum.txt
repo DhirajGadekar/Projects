@@ -1,0 +1,18 @@
+	
+	
+	
+	SELECTED:
+	
+		Even Digit Sum:
+
+	DESCRIPTION:
+	
+		Sum of the even digits in a number.
+		
+	EXAMPLE:
+	
+		Input number: 1234
+		Output: 2+4 = 6
+		
+		
+		

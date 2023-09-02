@@ -1,0 +1,100 @@
+
+
+
+	Introduction :-
+
+	1) C is a Procedure Oriented Programming Language Created by ' Dennis Ritchie ' at the Bell Laboratories in 1972.
+
+	2) C is strongly associated with UNIX, as it was developed to write the UNIX Operating System.
+
+	3) It is Very Fast as Compared to Other Programming Language like JAVA , Python , C# etc. 
+
+	Syntax :-
+			include <stdio.h>
+			void main() {
+
+  		     	printf("Hello Core2web Coders !!!");
+
+			}
+
+	Comments in C :-
+
+	1) Comments can be used to explain code, and to make it more readable. It can also be used to prevent execution when testing alternative code.
+
+	2) The Commented Part Cannot display on Monitor.
+
+	3) Comments can be singled-lined or multi-lined.
+	
+		I) Single Line Comment Starts with the Two Forward Slashes ( // ).
+	
+			ex.  //This is a Comment.
+
+	      		printf(" C Language By Core2web !!! \n");
+	
+		II) Multi Line Comment Starts with the  /* and ends with  */ .
+
+	      	Any text between  /*  and  */  is ignore by the Compiler.
+
+			ex .  /* This Text Ignore By the Compiler */
+			
+		       	printf(" C Language By Core2web !!! \n");
+
+
+	C Variables :-
+
+	1) Variables are Container to Store the data Value like Numbers and Characters.
+
+	2) C Variables must be identified with unique Names.
+
+	3) The Unique Nmaes is Called as Identifier.
+
+	4) Synatx :  data_type_Name   varName =  value ;
+	
+	          	ex :  int  var = 10;
+
+	5) We can give the Any Name to the Variable.
+
+		ex : int myNum = 10;
+
+	       	#include<stdio.h>
+	       	void main() {
+		
+			int myNum = 10;
+			printf("%d\n",myNum);		// Access the Variable.
+
+	   	}
+
+	6) The general rules for naming variables are:
+
+		i)   Names can contain letters, digits and underscores.
+		ii)  Names must begin with a letter or an underscore (_).
+		iii) Names are case sensitive (myVar and myvar are different variables).
+		iv) Names cannot contain whitespaces or special characters like !, #, %, etc.
+		v)  Reserved words (such as int) cannot be used as names.
+
+	C Keywords :-
+
+	1) Keywords are predefined, reserved words used in programming that have special meanings to the compiler.
+
+	2) Keywords are part of the syntax and they cannot be used as an identifier.
+	
+		ex : int var;	// ' int ' is a keyword and  ' var ' is a Identifier.
+
+	3) C Keywords ...
+
+
+		auto	              	 double	int	         struct
+
+		break	     	    	else	           	long	         switch
+
+		case	     	   	enum     	register       typedef
+
+		char	     	  	extern    	return         union
+
+		continue	 	 for		signed	          void
+
+		do		   	if		static	         while
+
+		default	  	goto		sizeof	        volatile
+
+		const			float		short	         unsigned       

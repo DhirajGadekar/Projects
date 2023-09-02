@@ -1,0 +1,24 @@
+
+
+
+    SELECTED METHOD:
+
+        CHECK LINKEDLIST IS PALINDROME .
+
+    DESCRIPTION:
+
+        This function checks if given is LinkedList Palindrome or Not.
+
+    EXAMPLE:
+
+        Input:
+                 |--><--|1|<-->|2|<-->|2|<-->|1|--><--|
+                 |____________________________________|
+  
+
+
+        Output:
+                Palindrome.
+
+
+                    

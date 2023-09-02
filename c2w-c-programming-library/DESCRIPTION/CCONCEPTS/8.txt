@@ -1,0 +1,292 @@
+
+
+
+	Functions
+
+	Function : 
+
+	(1) Function are considered as Derived Data Type
+	(2) Function are nothing but it is a block of code which only runs when it is called.
+
+	Why to use function ?
+
+	- To avoid rewriting the same code again and again(Define the code Once,and use it many times)
+	- To make the program easier to understand
+
+	Facts About Functions : 
+
+	- A C program is a collection of one or more function
+	-  If a C program contains only one function then it must be 'main()'.
+	- If a C program contains more than One Function then one of these functions must be 'main()'
+	- There is no limit on number of functions used in the C program
+
+	Imp Points about Function : 
+
+	- Whenever a function is called its stack frame will get pushed and after completion, it will get popped.
+	- After the Function gets executed control returns to the main directly or indirectly.
+	- Any function can be called from any other function even main can be called from other function.
+	- A function can be called any number of times
+
+	How to declare a Function : 
+			Syntax : 
+		  		returnType FunctionName (parameters);
+	How to define a  Function :
+	        		Syntax :
+		     		returnType functionName (parameters) {
+    				//body of the function
+		  	}
+	* Return_type: The function always starts with a return type of the function. But if there is no return value then the void keyword is used as the return type of the function.
+	* Function_Name: Name of the function which should be unique.
+	* Parameters: Values that are passed during the function call.
+
+	How to Call Function : 
+			To Call a function parameters are passed along the function name.
+
+	Example :
+
+		#include<stdio.h>
+	
+		void fun(void);//Function Declaration / Function Prototype
+		void fun(){   // Function Defination
+			printf("In Fun\n");
+		}
+		void main(){
+			printf("In main\n");//Predefined Function
+			fun();//Calling function fun
+                	}
+ 		//Output : 
+			In main
+			In fun
+
+
+	Types of Functions : 
+		
+	(1)User Defined Function : 
+
+		-Function created by programmer i.e called as User Defined Functions
+     		- It is not defined in any header file , we need to declare and define by our own
+		- It is easy to understand & we can modify as per our need
+
+          	Example - fun(),run().
+
+	(2). Library Function
+
+
+     		 -A library function is also referred to as a "built-in function".
+      		- Built-in functions have the advantage of being directly usable without being defined, whereas user-defined functions must be declared and defined before being used. 
+      		-Declaration of Library function already declare in their header files.
+      
+      	Example -  strcpy() - It is declared in    #include<string.h>
+      	      malloc() - It is declared in #include<stdlib.h>
+
+	Passing Parameters to Functions:
+
+	The value of the function which is passed when the function is being called is known as the Actual parameters. In the below program 10 and 30 are known as actual parameters.
+	Formal Parameters are the variable and the data type as mentioned in the function declaration. In the below program, a and b are known as formal parameters.
+
+
+	1. Pass by Value: Parameter passing in this method copies values from actual parameters into function formal parameters. As a result, any changes made inside the functions do not reflect in the 	caller's parameters. 
+	Example :
+	#include <stdio.h>
+  
+	void swap(int a, int b)
+	{
+  	int temp = a;
+ 	a = b;
+  	b = temp;
+	}
+	void main()
+	{
+  	int a= 3, b = 2;
+  	printf("Before swap Value of a and b is: %d, %d\n"a, b);
+  	swap(a, b);
+  	printf("After swap Value of a and b is: %d, %d",a, b);
+  
+	}
+       	//Output - Before swap Value of a and b is : 3,2
+	  		     After swap Value of a and b is : 3,2
+
+	2. Pass by Address: The caller's actual parameters and the function's actual parameters refer to the same locations, so any changes made inside the function are reflected in the caller's actual 			    parameters. 
+
+
+
+	Example :
+	#include<stdio.h>
+  
+	void swap(int *a, int *b)
+	{
+  	int temp = *a;
+  	*a = *b;
+  	*b = temp;
+	}
+	void main()
+	{
+  	int a= 3, b = 2;
+  	printf("Before swap Value of a and b is: %d, %d\n",a, b);
+  	swap(&a, &b);
+  	printf("After swap Value of a and b is: %d, %d",a, b);
+  
+	}
+       	//Output - Before swap Value of a and b is : 3,2
+	  	        After swap Value of a and b is : 2,3
+
+	Types of Functions : 
+
+	* Function with no arguments and no return value:
+
+   	When a function has no arguments, it does not receive any data from the calling function. Similarly, when it does not return a value, the calling function does not receive any data from the called 	function.
+           		Example :
+     		 
+                       		void function(){
+     		
+     		   	printf("In Function\n");		
+                             	}
+	
+
+	* Function with no arguments and with return value
+	Example -
+
+	#include<stdio.h>
+
+	int fun(void); // function declaration or prototype
+	void main(){
+
+	printf("In main\n");
+	int a = fun();//function calling 
+	printf("a = %d\n",a);
+	}
+
+	int fun(){ // function defination
+
+	int a = 10;
+	printf("In fun\n");	
+	return a;
+	}
+
+	Output:  In main
+	      In fun
+	      10
+	Explanation:  It is compulsory to write a prototype if we give the body of function after the main otherwise it will give a warning . Try without prototype.
+
+
+
+	* Function with argument and with no return value
+
+	Example : 
+		
+	void function(int x){
+		
+		printf("%d\n",x);	
+	}
+
+	* Function with arguments and with return value
+
+
+
+	Example :
+		int function( int x )
+             	{
+             		  statements;
+              	  return x;
+             }
+	Applications of function :
+
+	(1) Passing Array to a function
+
+	Syntax : 
+		return_type   funName(int arr[],int size);
+	- we must pass the size of the array as a parameter. 
+	- Size may not be needed only in the case of '\0' terminated character arrays, size can be determined by checking the end of string character.
+
+
+	-In above example ..Pointer 'a' takes the base address of array 'arr'.
+	-The length if arr is passed . It is compulsory to pass size as 'a' is just a pointer .
+
+
+	****VImp****
+	(2)Function Pointer OR Pointer to a function  :
+
+		- It is Pointer which stores the address of Function.
+		Syntax :
+			returnType  (FunctionPointer)(DataTypeOfArgument);
+	Example :
+		#include<stdio.h>
+		void add(int a,int b){
+			printf("%d\n",a+b);
+		}
+		void main(){
+			void (*ptr)(int,int) = &add;//ptr is a pointer to function add()
+			(*ptr)(10,20);//Calling add() using ptr
+			OR
+			/*
+				void (*ptr)(int,int) = add;//without &
+				ptr(10,20);// without *
+			*/
+		}
+		Output : 30
+	Note - Why do we need an extra bracket around function pointers like 'ptr' in above example?
+	If we remove the bracket, then the expression "void (*ptr)(int, int)" becomes "void *ptr(int,int)" which is a declaration of a function that returns a void pointer.
+
+	(3)Array of Function Pointer : 
+
+		-Like normal pointers, we can have an array of function pointers. Below example shows syntax for array of function pointers.
+
+	#include <stdio.h>
+	void add(int a, int b)
+	{
+    	printf("Addition is %d\n", a+b);
+	}
+	void subtract(int a, int b)
+	{
+    		printf("Subtraction is %d\n", a-b);
+	}
+	void multiply(int a, int b)
+	{
+    	printf("Multiplication is %d\n", a*b);
+	}
+
+	void div(int a,int b)
+	{
+		Printf("Division is %d\n",a/b)
+	}
+  
+	int main()
+	{
+    		// fun_ptr_arr is an array of function pointers
+    		void (*ptr[])(int, int) = {add, subtract, multiply,div};
+
+			for(int i=0;i<4;i++){
+
+				ptr[i](30,20);
+       		}
+	}
+
+	Output :  Addition is 50
+		      Subtraction is 10
+	   	      Multiplication is 600
+	   	      Division is 1
+
+	(4)Passing function pointer as an argument to a function
+
+		Example - 
+			#include<stdio.h>
+			void fun() {
+				printf("In fun\n");
+			}
+	
+		void run(void (*ptr)(void)){
+			ptr();
+			printf("In run\n");
+      	}
+      
+      	void main(){
+      		run(fun);
+      	}
+      	//Output : In fun
+      		      In run
+      	Explanation : the above C program where run() receives a void ptr() as parameter and calls the passed function.
+
+
+
+
+

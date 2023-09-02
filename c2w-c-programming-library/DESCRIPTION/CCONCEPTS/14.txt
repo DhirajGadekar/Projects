@@ -1,0 +1,94 @@
+
+
+
+	Enumeration :-
+        		- Enumeration is have Bydefault 'Integer' Constant.
+		
+		ex :
+			#include<stdio.h>
+			enum Partners{
+
+        				PramodSir,      //This all Are the Interger Constants.
+        			Shri,
+        			Sachin,
+        			Akshay,
+       			Swapneel
+		};
+
+			void main(){
+
+        				enum Partners obj;
+        				printf("Size of Enum = %ld\n",sizeof(obj));             //Size of Enum. (o/p :- 4)
+       			 	printf("Size of Enum = %ld\n",sizeof(enum Partners));   //Size of Enum. (o/p :- 4)
+
+		}
+
+	How to we Access the Enum Elements :-
+	
+	ex:1)
+
+	#include<stdio.h>
+	enum Partners{
+        		PramodSir,
+        		Shri,
+        		Sachin,
+        		Swapneel
+	};
+	void main(){
+
+        		enum Parnters obj;
+       		 printf("%d\n",obj.PramodSir);   //Error :- request for member 'PramodSir' in something.
+	}
+
+	ex:2)
+
+		#include<stdio.h>
+		enum Partners{
+        			PramodSir,
+        			Shri,
+       			Sachin,
+        			Swapneel
+		};
+		void main(){
+        			printf("%d\n",PramodSir);      	 //0
+        			printf("%d\n",Shri);            	//1
+        			printf("%d\n",Sachin);          	//2
+        			printf("%d\n",Swapneel);        	//3
+	}
+
+	ex:3)
+
+	#include<stdio.h>
+	enum Partners{
+        		PramodSir,
+        		Shri=15,
+        		Sachin,
+        		Swapneel
+	};
+	void main(){
+
+	        printf("%d\n",PramodSir);       	//0
+        	        printf("%d\n",Shri);            		//15
+        	        printf("%d\n",Sachin);          	//16
+        	        printf("%d\n",Swapneel);        	//17
+
+	}
+	
+	ex:4)
+
+	#include<stdio.h>
+	enum Partners{
+        		PramodSir,
+        		Shri=15,
+        		Sachin,
+        		Swapneel
+	};
+	void main(){
+
+        		printf("%d\n",PramodSir);      	 //0
+        		printf("%d\n",Shri);            	//15
+        		int x = Swapneel;               		//16
+        		printf("%d\n",x);               		//17
+}                                                      
+
+

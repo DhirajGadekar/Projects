@@ -1,0 +1,19 @@
+
+
+
+	SELECTED METHOD :	
+		
+		 Concate up to space	
+
+	DESCRIPTION :  
+			
+			This function cancate two strings up to space.	
+
+	EXAMPLE :	
+
+			Input :“Core2Web” 	
+			Input :“Technologies Biencaps” 	
+			Output : “Core2WebTechnologies”  	
+
+
+

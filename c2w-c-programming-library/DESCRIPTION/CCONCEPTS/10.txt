@@ -1,0 +1,224 @@
+	
+
+
+	1) Stroage Classes :-
+	
+		- Storage class is mainly used for :
+		-Memory(RAM/CPU).
+		-Default Value(auto,register - Garbage Value)
+		-Lifetime(scope).
+
+      	Types of Storage Classes :
+ 
+		I)Auto.
+		II)Register.
+		III)Static.
+		IV)extern.
+
+	(1)auto :
+		 -auto added bydefault before int auto is present.
+	 	-auto is used only in local variable.
+
+
+	#include<stdio.h>
+	//auto int y = 20;// error: file-scope declaration of 'y' specifies 'auto'
+
+	void main(){
+
+	auto int x = 10;
+	printf("%d\n",x);
+
+	}
+	//Output - 10
+
+	//we can't use global variables as auto 
+
+	(2) register : 
+	    	- when we declare register before any variable then variable is requested to CPU for the space.
+	    	-May be that variable loaction is on CPU.
+	    	- We just requestd the CPU for the memory its not compulsory CPU give the Memory on cpu.
+	    	- register is also used for local variable.
+	    	- CPU not gives the Memory Address of that variable.
+
+		Ex :
+
+		#include<stdio.h>
+		void main(){
+
+			register int y = 20;
+			printf("%d\n",y);
+			printf("%p\n",&y);	//  error: address of register variable 'y' requested.
+	}
+
+		Note : 	 -register is only used as a local Variable.
+           			 -auto and register storage class only used as a local Variable.
+
+		Ex :
+		#include<stdio.h>
+
+		register int y = 20;     //  error: register name not specified for 'y'
+
+		void main(){
+
+			printf("%d\n",y);
+         	 }
+
+	(3) static :
+	
+		1) Increment the Variable in Local Scope.
+
+		Note :  In below example Every Time 'y' variable initialize beacuse after completion of fun()
+       			Stack Frame is Pop.
+
+       	- Pre-increment is Here..
+
+
+	#include<stdio.h>
+	void fun(){
+
+		int y = 10;
+		++y;
+		printf("%d\n",y);
+	}
+
+	void main(){
+
+		fun();		//11
+		fun();		//11
+		fun();		//11
+
+	}
+
+	- Increment the Variable in Global Scope.
+
+	Note : - Here 'y' variable initialize only once beacuse it takes place in Data section
+		 and we can see from any where in program.
+
+       	-Pre-increment is Here..
+
+	#include<stdio.h>
+	int y = 10;
+	void fun(){
+
+		++y;
+		printf("%d\n",y);
+	}
+
+	void main(){
+
+		fun();		//11
+		fun();		//12
+		fun();		//13
+
+	}
+
+	Static Variable :- Two Types
+
+		A) Local Static Variable :-
+		B) Global Static Variable :-
+
+	A) Local Static Variable :- (Variable is Static For Specific Function)
+	
+		- static variable also take location in Data Section.
+		- In local Static Variable,they initialize only Once.
+		- We Access the Variable Only That particular Function.
+	Ex :
+
+	#include<stdio.h>
+	void fun(){
+
+		static int y = 10;	// Local Static Variable.
+		++y;
+		printf("%d\n",y);
+	}
+	void main(){
+	
+	//	printf("%d\n",y);	//  error: 'y' undeclared (first use in this function)
+
+		fun();	//11
+		fun();	//12
+		fun();	//13
+
+	}
+
+	B) Global Static Variable :-
+	
+		- In Global Static Variable , We Access the Variable in that File.
+		- We Cannot access the global static variable out of the file.
+	Ex :
+	#include<stdio.h>
+
+	static int y = 10;
+
+	void fun(){
+
+		++y;
+		printf("%d\n",y);
+
+	}
+	void main(){
+		printf("%d\n",y);  //10
+
+		fun();	//11
+		fun();	//12
+		fun();	//13
+	}
+
+	(4)extern  :-
+		-If We do extern for that variable then We can access that variable in other file also.
+		-When we use extern Keyword then they not give the memory for that variable they just
+	 	- Declare the variable and when we declare then they just declare not give the memory.
+
+	File No 1.
+
+		#include<stdio.h>
+
+		int x = 10;
+		void fun();
+		void main(){
+
+			fun();
+
+	}
+
+	File No 2 :
+
+
+		#include<stdio.h>
+		void fun(){
+
+			extern int x;		//they search the 'x' in other file.
+			printf("%d\n",x);
+
+	}
+	Summary :
+		1) Stroage Classes :-
+	
+		I)Auto.
+		II)Register.
+		III)Static.
+		IV)extern.
+
+	2)Auto and Register storage class only used in Local Scope.
+	3)Storage class is mainly used for :
+		-Memory(RAM/CPU).
+		-Default Value(auto,register - Garbage Value)
+		-Lifetime(scope).
+
+	4)register strorage class is requestd to CPU for the Memory.
+
+	5)Static Storgae class is mainly two Types : 	I) Local Static Variable.
+					    			II)Global Static Variable.
+
+	6)Location of Static Variable is in Data Section. 
+	7)Local Static Varible Initialize Only Once but their scope is Within Function.
+	8)Global Static Variable Initialize Once but their scope is File Scope. (i.e in that program File).
+	9)extern and static storage class not use in same file having same Variable.
+
+	10)Storage class is Not for Parameeters in Function.
+	11)Bydefault Storage class for function is 'extern'.
+			ex: extern void fun(){
+					
+					}
+	12)Their is Only Two Storage class is Used in Function.
+

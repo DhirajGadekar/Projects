@@ -1,0 +1,19 @@
+
+
+
+	SELECTED:
+		
+		Odd Number
+	
+	DESCRIPTION:
+	
+		If a number is not divisible by 2, then it is a odd Number. 
+		
+		
+    	
+    	EXAMPLE:
+    		
+    		Some examples of even numbers are1,3,5,7,9,11,13,15,17,19.
+    		
+    		
+    		

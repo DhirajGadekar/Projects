@@ -1,0 +1,64 @@
+
+
+
+	#include<stdio.h>
+	#include<string.h>
+
+	//anagram function
+	int isAnagram(char *str1,char *str2){
+
+		int hash[26] = {0};
+		int len;
+
+		//comparing string length
+		if (strlen(str1) != strlen(str2))
+			return 0;
+		len = strlen(str1);
+
+		//for checking anagram
+		for (int i = 0; i < len; i++)
+		{
+			hash[str1[i] - 'a']++;
+			hash[str2[i] - 'a']--;
+		}
+		for (int i = 0; i < 26; i++)
+		{
+			if (hash[i] != 0)
+				return 0;
+		}
+		return 1;
+	}
+	//entry function
+	void main(){
+
+		//variable Initilisation
+		char str1[200], str2[200], ch;
+		int i=0;
+
+		//getting string1 input from user
+		printf("Enter string-1: ");
+		while((ch = getchar()) != '\n')
+			str1[i++] = ch;
+		str1[i]='\0';
+
+		//getting string2 input from user
+		i=0;
+		printf("Enter string-2: ");
+		while((ch = getchar()) != '\n')
+			str2[i++] = ch;
+		str2[i]='\0';
+
+		//calling function and store the return value in variable				
+		int flag=isAnagram(str1,str2);
+
+		if(flag==1){
+			
+			printf("The Given Two string is Anagram String\n");
+
+		}else{
+			printf("The Given Two string is not an Anagram String\n");				
+		}
+	}
+
+
+

@@ -1,0 +1,17 @@
+
+
+
+    SELECTED METHOD: 
+	
+			Find Character At Perticular Position		
+	
+	DESCRIPTION: 
+			
+			This Function gives the character position of given String.		
+
+	EXAMPLE: 
+			
+			Input:  str= "String"
+				  	pos = 3
+			
+			Output: r

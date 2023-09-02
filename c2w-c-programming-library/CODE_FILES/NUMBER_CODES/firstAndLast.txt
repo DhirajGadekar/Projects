@@ -1,0 +1,28 @@
+/* Write a C program to input a number from user and perform even digit number addition. 
+Example:
+Input number: 1234
+Output: 2+4 =6
+ */
+
+
+#include<stdio.h>
+
+int evenDigit(int num){
+
+	int sum=0;
+	
+	if(num%2==0){
+		
+		sum+=num;
+	}
+	
+	printf("even digit sum is = %d\n",sum);
+}
+
+void main(){
+
+	int num;
+	printf("Enter number: ");
+	scanf("%d",&num);
+	firstandLast(num);
+}

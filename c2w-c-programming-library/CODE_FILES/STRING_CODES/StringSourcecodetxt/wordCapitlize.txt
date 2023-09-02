@@ -1,0 +1,57 @@
+
+
+
+	#include<stdio.h>
+	#include<string.h>
+
+	char *wordCapitlize(char* str){
+
+		int len=strlen(str);
+		//printf("%d\n",len);
+
+		//capitalize first character of words
+		for(int i=0; str[i]!='\0'; i++){
+			//check first character is lowercase alphabet
+			if(i==0){
+				if((str[i]>='a' && str[i]<='z'))
+					str[i]=str[i]-32; 					
+					continue; 				
+			}
+			if(str[i]==' '){					
+				
+				++i;
+				//check next character is lowercase alphabet
+				if(str[i]>='a' && str[i]<='z'){
+					str[i]=str[i]-32;			 
+					continue; 				
+				}
+			}
+			else{
+				//all other uppercase characters should be in lowercase	
+				if(str[i]>='A' && str[i]<='Z')
+					str[i]=str[i]+32; 					
+			}
+		}
+		
+		return str;
+	}
+
+	void main(){
+
+		char str[200];
+		printf("Enter string:\n");
+		char ch;
+			int i=0;
+			//to input the string from user
+			while((ch=getchar())!='\n'){
+					str[i++]=ch;
+
+			}
+			str[i]='\0';
+
+
+		printf("%s\n",wordCapitlize(str));
+	}
+
+
+	

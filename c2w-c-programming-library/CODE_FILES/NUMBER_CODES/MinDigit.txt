@@ -1,0 +1,39 @@
+/*check  whether num1  is  smaller  than num2 
+using  if statement.  if num1  is   smaller 
+print  num1  using  printf  statment,  else 
+check  whether num2  is  smaller  than  num1 
+using  elseif  statement.  If num2 is smaller 
+print num2 using printf statement, else print
+num1 and num2 are equal using printf statment.*/
+
+#include<stdio.h>
+
+void main(){
+
+
+	int minDigit=20;
+	int num1;
+	printf("Enter the number1:\n");
+	scanf("%d",&num1);
+
+	if(num1<0){
+
+		printf("Invalid Input\n");
+
+	}
+	else{
+
+		while(num1>0){
+	
+			int rem=num1%10;
+			if(rem<minDigit){
+				minDigit=rem;
+			}
+			num1=num1/10;
+		}
+
+		printf("Smallest of two number is : %d\n",minDigit);
+
+	}
+}
+

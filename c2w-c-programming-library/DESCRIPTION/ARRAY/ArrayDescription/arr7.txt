@@ -1,0 +1,37 @@
+
+
+
+        SELECTED METHOD : 
+
+            7. N TH MAXIMUM VALUE IN ARRAY
+
+        DESCRIPTION :
+
+            This wil return nth MAXIMUM number from the array           
+
+
+        EXAMPLE :
+
+            INPUT 1 :
+
+                | 10 | 3 | 4 | 16 | 1 | 65 |
+
+                nth POSITION : 2
+            
+            OUTPUT 1 :
+
+                16 is 2nd MAXIMUM Number in the array 
+
+
+            INPUT 2 :
+
+                | 1 | 2 | 1 | 1 | 1 |
+
+                nth POSITION : 3
+            
+            OUTPUT 2 :
+
+                Not enough unique element in the array 
+
+
+

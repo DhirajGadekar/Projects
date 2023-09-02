@@ -1,0 +1,19 @@
+
+
+
+	SELECTED METHOD : 
+	
+			String trim	
+
+	DESCRIPTION :  
+	
+			This function remove the before and after 
+			space in a given string.	
+
+	EXAMPLE :	
+
+			Input :“    core2web     ” 	
+			Output : “core2web”  	
+
+
+

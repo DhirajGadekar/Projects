@@ -1,0 +1,602 @@
+
+
+
+	Structure :
+
+	What is Structure data type? 
+		A structure is a keyword that creates user-defined data types in C. A structure creates a data type that can be used to group items of 			possibly different types into a single type.
+
+	How to create a structure? 
+	'struct' keyword is used to create a structure. Following is an example.
+
+
+	struct Movie{
+
+		char mName[20];
+		int noOfTickets;
+		float rating;
+	};
+
+
+	How to declare structure variables/objects? 
+		A structure variable/objects can either be declared with structure declaration or as a separate declaration like basic types.
+
+	1.A object declaration with structure declaration.
+
+	struct Mall{
+
+		char mName[20];
+		int noOfFloors;
+		}m1; //// The variable m1 is declared with 'Mall'
+
+	2.A object declaration like basic data types
+
+	struct Movie{
+
+		char mName[20];
+		int noOfTickets;
+		float rating;
+	};
+	void main(){
+	
+		struct Movie m1; // The variable/object m1 is declared like a normal variable
+	}
+		
+	How do initialize structure members? 
+		Structure members cannot be initialized with declaration. For example, the following C program fails in the compilation.
+
+	struct cricPlayer{
+                 	int jerNo = 10;// // COMPILER ERROR:  cannot initialize members here
+                 	float avg = 41.56;// // COMPILER ERROR:  cannot initialize members here
+                 	char grade = 'A'; // COMPILER ERROR:  cannot initialize members here
+	};
+
+	-The reason for above error is simple, when a datatype is declared, no memory is allocated for it. Memory is allocated only when variables are 	created.
+
+		Structure members can be initialized using curly braces '{}'. For example, the following is a valid initialization.
+
+ 	#include<stdio.h>
+
+        	struct cricPlayer{
+                 	int jerNo;
+                 	float avg;
+                 	char grade;
+	};
+	void main(){
+
+        		struct cricPlayer obj1 = {10,51.03, 'A'};//// A valid initialization.
+	}
+
+	How do access structure elements? 
+	
+	Structure members are accessed using dot (.) operator.
+
+	For above ex. Of cricPlayer we are accessing data
+	void main(){
+	
+		stuct cricPlayer obj1 = {10,51.04, 'A'};
+	
+		printf("JerNo=%d,Average = %f ,Grade=%c",obj1.jerNo,obj1.avg,obj1.grade};
+
+	}
+
+	//Output :
+		JerNo = 10  ,Average = 51.04 , Grade = A 
+
+
+
+	This Code Describe the Size of Structure.
+
+	- When we calculate the size of structure they consider the highest fixed size of data type as a base.
+	- In this code, float and int has greater byte than char so here base size is 4 Byte.
+
+	diagram:- _ _ _  _
+            	    |_|_|_|_| int jerNo (4byte)
+                	    |_|_|_|_| float avg (4byte)
+                	    |_|_|_|_| char grade(1byte)  ...Here 3 bytes are loss.
+
+	#include<stdio.h>
+
+        	struct cricPlayer{
+                 	int jerNo;
+                 	float avg;
+                 	char grade;
+	};
+	void main(){
+
+        		struct cricPlayer obj1;
+
+        		printf("%ld\n",sizeof(obj1));                   		//12
+       		 printf("%ld\n",sizeof(struct cricPlayer));      //12
+
+	}
+
+
+	This Code Describe the Size of Structure.
+
+	- When we calculate the size of structure they consider the highest fixed size of data type as a base.
+	- In this code, float and int has greater byte than char so here base size is 4 Byte.
+
+	diagram:- 	  _ _  _ _
+            	            |_|_|_|_| char grade1 (1byte)...loss of 3 byte
+                		|_|_|_|_| int jerNo (4byte)
+                		|_|_|_|_| float avg(4byte)
+                		|_|_|_|_| char grade2 (1byte)...loss of 3 byte
+
+	#include<stdio.h>
+        	struct cricPlayer1{
+
+                char grade1;
+                int jerNo;
+                float avg;
+                char grade2;
+	};
+	void main(){
+
+        		struct cricPlayer1 obj1;
+
+        		printf("%ld\n",sizeof(obj1));                  		 //16
+        		printf("%ld\n",sizeof(struct cricPlayer1));     //16
+
+	}
+
+
+	This Code Describe the Size of Structure.
+	- When we calculate the structure size, they consider the highest fixed size of data type as a base.
+	- In this code, character pointer has greater byte than other remaining data type so here base size is 8 Byte.
+
+	diagram :              _   _  _  _  _  _  _  _
+            	                  |_|_|_|_|_|_|_|_| float f1 (4 byte) ...loss of 4 byte.
+                        	      |_|_|_|_|_|_|_|_| char *ch (8 byte) ... no loss.
+                              	      |_|_|_|_|_|_|_|_| int x (4 byte) and float y (4 byte).
+ 
+	#include<stdio.h>
+
+        	struct Demo{
+
+                float f1;
+                char *ch;
+                int x;
+                float y;
+	};
+	void main(){
+
+        		struct Demo obj1;
+
+        		printf("%ld\n",sizeof(obj1));           	//24
+        		printf("%ld\n",sizeof(struct Demo));    //24.
+	}
+
+
+	This Code Describe the Size of Structure.
+	- When we calculate the size of structure they consider the highest fixed size of data type as a base.
+	- In this code, int and float has greater byte than other remaining data type so here base size is 4 Byte.
+
+	diagram :  _ _ _ _ _
+          		      |_|_|_|_| char ch1 (1 byte)...loss of 3 byte.
+         		      |_|_|_|_| int x (4 byte)...no loss
+                              |_|_|_|_| float y (4 byte)...no loss
+         		      |_|_|_|_| char arr[10]...no loss
+          		      |_|_|_|_| char arr[10]...no loss
+          		      |_|_|_|_| char arr[10]... loss of 2 byte.
+ 
+	#include<stdio.h>
+        	struct Demo{
+
+                char ch1;
+                int x;
+                float y;
+                char arr[10];
+	};
+	void main(){
+
+         		struct Demo obj1;
+
+         	printf("%ld\n",sizeof(obj1));           	//24
+         	printf("%ld\n",sizeof(struct Demo));    //24.
+	}
+
+
+	- This include the pre processor derective pragma pack to avoid the loss of memory.
+	- we use the pragma pack , actual memory is allocate for structure.
+	- here they consider the minimum byte is 1.
+
+	#include<stdio.h>
+	#pragma pack(1)
+
+	struct Demo{
+
+        		char ch1;
+        		int x;
+        		int y;
+        		double arr[5];
+
+	};
+
+	void main(){
+
+
+         		struct Demo obj1;
+         		printf("%ld\n",sizeof(obj1));   //With using pragma pack have minimum byte is 1.  (size is 49)
+
+         		printf("%ld\n",sizeof(obj1));  //Without using pragma pack size is 56.
+
+	}
+
+
+	Structure Assignment :-
+
+	#include<stdio.h>
+
+	struct cricPlayer{
+
+       		 char pName[20];
+        		int jerNo;
+        		float avg;
+
+	} obj2 = {"MSD",7,45.25};
+
+	void main(){
+
+        		struct cricPlayer obj1 = {"Virat Kohli",18,50.33};
+
+        		printf("Player Name1 : %s\n",obj1.pName);
+        		printf("jersey No1 : %d\n",obj1.jerNo);
+        		printf("Average1 : %f\n",obj1.avg);
+
+        		printf("\n");
+
+        		printf("Player Name2 : %s\n",obj2.pName);
+        		printf("jersey No2 : %d\n",obj2.jerNo);
+        		printf("Average2 : %f\n",obj2.avg);
+	}
+
+
+
+	Object Initialization Using malloc() :-
+
+	#include<stdio.h>
+	void *malloc(size_t);	//Declaration Of Malloc()
+	void free(void *);		//Declaration of free()
+	void main(){
+
+        		int *ptr = (int *)malloc(sizeof(int));
+
+        		*ptr = 50;
+
+        		printf("%p\n",ptr);
+        		printf("%d\n",*ptr);
+
+        		free(ptr);
+
+	}
+
+
+	Object Initialization Using malloc() :-
+
+	#include<stdio.h>
+	char *mystrcpy(char *str2,char *str1){
+        	while(*str1 != '\0'){
+                	*str2 = *str1;
+                	str1++;
+                	str2++;
+        	}
+        	*str2 = '\0';
+        	return str2;
+	}
+	//Declaration of malloc() and free() 
+	void *malloc(size_t);
+	void free(void *);
+
+	struct IPL{
+        		char sName[20];
+        		int tTeams;
+        		double price;
+	};
+	void main(){
+
+        		struct IPL *ptr = (struct IPL *)malloc(sizeof(struct IPL));
+
+       		mystrcpy(ptr->sName, "TATA");
+         		ptr->tTeams = 8;
+        		ptr->price = 10.00;
+
+        		printf("%s\n",(*ptr).sName);
+        		printf("%d\n",ptr->tTeams);
+        		printf("%lf\n",ptr->price);
+
+        		free(ptr);
+
+	}
+
+
+	Pointer To Structure :-
+        			- Stores the address of object of Structure. members are accessed using arrow ( -> ) operator.
+
+		obj1->count  == (*obj1).count 
+
+	#include<stdio.h>
+
+	struct Movie{
+        		char mName[20];
+       		int count;
+        		float price;
+	};
+
+	void main(){
+
+        		struct Movie obj1 = {"YJHD",2,1000};
+
+        		struct Movie *ptr = &obj1;
+
+        		printf("Movie Name = %s\n",ptr->mName);
+        		printf("Count = %d\n",ptr->count);
+        		printf("Price = %f\n",ptr->price);
+	}
+
+
+	Array Of Structures :-
+        		- It is the array of structure Objects;
+
+	#include<stdio.h>
+
+	struct Player{
+
+        		char pName[20];
+        		int jerNo;
+        		float rev;
+
+	};
+
+	void main(){
+
+        		struct Player p1 = {"virat",18,986.00};
+        		struct Player p2 = {"Messi",10,1986.00};
+        		struct Player p3 = {"james",6,9086.00};
+
+        		struct Player arr[3] = {p1,p2,p3};      //Array Of Structures.
+
+        		for(int i=0; i<3; i++){
+                		printf("%s\n",arr[i].pName);
+                		printf("%d\n",arr[i].jerNo);
+               		printf("%f\n",arr[i].rev);
+        		}
+	}
+
+
+	Nested Structures :-
+	Type 1 :-
+
+
+	#include<stdio.h>
+	#include<string.h>
+	struct MovieInfo{
+
+        		char actorName[20];
+        		float imdbRate;
+
+	};
+	struct Movie{
+        		char mName[20];
+        		struct MovieInfo obj2;
+
+	};
+	void main(){
+        		struct Movie obj1;
+
+        		strcpy(obj1.mName,"Kantara");
+        		strcpy(obj1.obj2.actorName,"Rishabh");
+        		obj1.obj2.imdbRate = 9.86;
+
+        		printf("Movie Name = %s\n",obj1.mName);
+        		printf("Actor Name = %s\n",obj1.obj2.actorName);
+        		printf("imdbRating = %f\n",obj1.obj2.imdbRate);
+	}
+
+
+	Nested Structures :-
+	Type 2 :-
+
+	#include<stdio.h>
+	#include<string.h>
+	struct MovieInfo{
+
+        		char actorName[20];
+        		float imdbRate;
+
+	};
+
+	struct Movie{
+        		char mName[20];
+        		struct MovieInfo obj2;
+
+	};
+	void main(){
+        		struct Movie obj1 = {"Kantara",{"Rishabh",9.87}};
+
+        		printf("Movie Name = %s\n",obj1.mName);
+        		printf("Actor Name = %s\n",obj1.obj2.actorName);
+        		printf("imdbRating = %f\n",obj1.obj2.imdbRate);
+	}
+
+
+
+
+	Nested Structures :-
+	Type 3 :-
+
+	#include<stdio.h>
+	#include<string.h>
+	struct Movie{
+        		char mName[20];
+
+        		struct MovieInfo {
+                		char actorName[20];
+                		float imdbRate;
+        	}obj2;
+
+	};
+	void main(){
+        		struct Movie obj1;
+
+        		strcpy(obj1.mName,"Kantara");
+        		strcpy(obj1.obj2.actorName,"Rishabh");
+        		obj1.obj2.imdbRate = 9.86;
+
+        		printf("Movie Name = %s\n",obj1.mName);
+        		printf("Actor Name = %s\n",obj1.obj2.actorName);
+        		printf("imdbRating = %f\n",obj1.obj2.imdbRate);
+	}
+
+
+
+	Passing Structure To a Function :-
+
+        		i) Passing Object of Structure.
+       		ii) Passing Address of Object.
+
+	#include<stdio.h>
+	struct Demo{
+       		 int x;
+        		float f;
+	};
+	void fun(struct Demo obj){
+        		printf("%d\n",obj.x);
+        		printf("%f\n",obj.f);
+
+	}
+	void gun(struct Demo *obj){
+        		printf("%d\n",obj->x);
+       		printf("%f\n",obj->f);
+
+	}
+
+	void main(){
+
+       		 struct Demo obj = {10, 20.5f};
+
+        		fun(obj);
+        		gun(&obj);
+	}
+
+
+	Anonymous Structure or Unnamed Structure :-
+
+
+	#include<stdio.h>
+
+	struct{
+        		int x;
+        		float f;
+
+	}obj = {10,20.6f};
+
+	void main(){
+
+        		printf("%d\n",obj.x);
+        		printf("%f\n",obj.f);
+
+	}
+
+
+
+
+	Bit Field :-
+        		- When we want the bit by bit value restriction then bit field is use.
+
+	#include<stdio.h>
+
+	struct Demo{
+        		char ch;
+        		int x:1;
+        		int y;
+	};
+
+	void main(){
+
+        		printf("%ld\n",sizeof(struct Demo));    //8
+
+	}
+
+
+
+	Bit Field :-
+        		- When we want the bit by bit value restriction then bit field is use.
+
+
+	#include<stdio.h>
+
+	struct Demo{
+
+        		int x:2;
+        		int y:2;
+	};
+
+	void main(){
+
+        		printf("%ld\n",sizeof(struct Demo));    //4
+
+	}
+
+
+
+	Bit Field :-
+        		- When we want the bit by bit value restriction then bit field is use.
+
+	#include<stdio.h>
+	#pragma pack(1)
+	struct Demo{
+
+        		int x:2;
+        		int y:2;
+	};
+
+	void main(){
+
+       		 printf("%ld\n",sizeof(struct Demo));    //1
+
+	}
+
+
+	Bit Field :-
+        		- When we want the bit by bit value restriction then bit field is use.
+
+
+	#include<stdio.h>
+
+	struct Demo{
+
+        		int x:1;
+        		int y;
+	};
+
+	void main(){
+
+        		struct Demo obj = {1,15};
+
+        		printf("%d\n",obj.x);   //-1
+        		printf("%d\n",obj.y);   //15
+
+	}
+
+
+
+
+	Bit Field :-
+        		- When we want the bit by bit value restriction then bit field is use.
+
+	#include<stdio.h>
+
+	struct Demo{
+
+       		 int x:1;
+
+	};
+
+	void main(){
+
+        		struct Demo obj = {15}; //warning: overflow in conversion from 'int' to 'signed char:1' changes value from '15'to'-1'
+	}
+
+
+

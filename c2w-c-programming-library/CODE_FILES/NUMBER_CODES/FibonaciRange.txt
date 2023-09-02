@@ -1,0 +1,49 @@
+
+/*Fibonacci Series in C: In case of fibonacci series, 
+next number is the sum of previous two numbers for 
+example 0, 1, 1, 2, 3, 5, 8, 13, 21 etc. The first 
+two numbers of fibonacci series are 0 and 1.*/
+
+
+#include<stdio.h>
+int main(){
+       
+	int start;
+	printf("Enter the starting fibonaci series:\n");
+	scanf("%d",&start);
+
+	if(start<0){
+
+		printf("Invalid Input\n");
+		return 0;
+	}
+
+	int end;
+	printf("Enter the ending fiboanci series:\n");
+	scanf("%d",&end);
+
+	if(end<0){
+
+		printf("Invalid inpit\n");
+		return 0;
+	}
+	
+
+	int a=0;
+	int b=1;
+	int c=0;
+
+	for(int i=0; i<=end; i++){
+		
+		if(i>=start)
+			printf("%d\n",c);
+			c=a+b;
+			a=b;
+			b=c;
+
+			//printf("%d\n",c);
+
+	}
+
+}
+

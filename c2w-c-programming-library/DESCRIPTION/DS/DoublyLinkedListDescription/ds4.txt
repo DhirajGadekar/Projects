@@ -1,0 +1,24 @@
+
+
+
+    SELECTED METHOD:
+
+        PRINT NODES IN LINKEDLIST
+
+    DESCRIPTION:
+
+        A Doubly Linked List (DLL) contains an extra pointer, typically called the previous pointer, 
+        together with the next pointer and data which are there in the singly linked list.Doubly Linked list 
+        can be traversed in both forward and backward directions. 
+
+        1.To display the entire doubly linked list, we need to traverse it from first to last.
+        2.In contrast to arrays, linked list nodes cannot be accessed randomly. Hence to reach the n-th element,
+        we are bound to traverse through all (n-1) elements.
+        3.Since the entire linked list is traversed, the operation costs us O(N) time complexity.
+
+    EXAMPLE:
+
+        NULL<--|10|<-->|20|<-->|30|<-->|40|-->NULL
+
+        
+                               

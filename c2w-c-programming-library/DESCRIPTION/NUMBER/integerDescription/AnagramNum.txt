@@ -1,0 +1,23 @@
+	
+	
+	
+	SELECTED:
+	
+		Anagram Numbers:
+
+	DESCRIPTION: 
+
+		Just like strings, a number is said to be an anagram of some 
+		other number if it can be made equal to the other number by 
+		just shuffling the digits in it.
+
+        EXAMPLE:
+        
+		Input: A = 204, B = 240 
+		Output: Numbers Are Angrams
+	
+		Input: A = 23, B = 959 
+		Output: Numbers Are Not Anagrams
+		
+		
+		 

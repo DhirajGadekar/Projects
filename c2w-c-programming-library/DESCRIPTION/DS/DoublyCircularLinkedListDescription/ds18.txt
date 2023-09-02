@@ -1,0 +1,24 @@
+
+
+
+    SELECTED METHOD:
+
+        FIRST OCCURRENCE OF ELEMENT IN LINKEDLIST.
+
+    DESCRIPTION:
+
+        This function checks if given number is present in LinkedList or not,
+        and return index of first occurrence.
+
+    EXAMPLE:
+
+        Input:
+                |--><--|10|<-->|20|<-->|30|<-->|40|--><--|
+                |________________________________________|
+
+                Element:20
+
+        Output:
+                2
+
+

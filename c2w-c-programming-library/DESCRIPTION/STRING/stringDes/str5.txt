@@ -1,0 +1,20 @@
+
+
+
+	SELECTED METHOD : 
+	
+			Pelindrome string	
+
+	DESCRIPTION : 
+	
+			A string is said to be palindrome if it remains the same 
+			on reading from both ends. It means that when you reverse 
+			a given string it should be the same as the original string.	
+
+	EXAMPLE :	
+
+			Input :“radar” 	
+			Output :"radar is pelindrome string"	
+
+
+

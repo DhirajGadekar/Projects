@@ -1,0 +1,20 @@
+
+
+
+	SELECTED METHOD : 
+	
+			First occurance	
+
+	DESCRIPTION :  
+	
+			This function shows the position of character 
+			it will occur first time in a given string.	
+
+	EXAMPLE :	
+
+			Input :“Core2Web technologies biencaps” 	
+			Input : r
+			Output : “The first occurance of character r is at index 2”  	
+
+
+

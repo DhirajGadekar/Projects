@@ -1,0 +1,19 @@
+
+
+
+	SELECTED METHOD :
+	
+			String concat	
+
+	DESCRIPTION : 
+	
+			This function concat the two given strings.	
+
+	EXAMPLE :	
+
+			Input :“Core2Web” 	
+			Input :“Technologies” 	
+			Output : “Core2webTechnologies”  	
+
+
+

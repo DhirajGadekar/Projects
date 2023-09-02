@@ -1,0 +1,33 @@
+
+
+
+      SELECTED METHOD:
+
+            ADD NODE
+
+      DESCRIPTION:
+
+            A Singly Linked List is a specialized case of a generic linked list.
+            In a singly linked list, each node links to only the next node in the sequence,
+            i.e if we start traversing from the first node of the list, we can only move in one direction.
+
+            Insertion of a new node at the end of a singly linked list is performed in the following way:
+
+            1.Traverse the list from start and reach the last node.
+            2.Make the last node point to the new node.
+            3.Make the new node point to null, marking the end of the list. 
+            4.Inserting a new node at the end is an O(N) operation.
+
+      EXAMPLE:
+
+            Input:
+                  |10|-->|20|-->|30|-->|40|
+            
+            Output:
+                  |10|-->|20|-->|30|-->|40|-->|50|
+                                                |
+                                                |
+                                             newNode
+
+
+                                             

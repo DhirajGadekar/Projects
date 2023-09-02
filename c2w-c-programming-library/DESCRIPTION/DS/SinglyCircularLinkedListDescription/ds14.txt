@@ -1,0 +1,21 @@
+
+
+
+    SELECTED METHOD:
+
+        SUM OF DATA ELEMENT IN LINKEDLIST.
+    
+    DESCRIPTION:
+
+        This function gives the sum of data elements in LinkedList.
+
+    EXAMPLE:
+
+        Input:
+
+            ---->|10|-->|20|-->|30|-->|10|----
+            |________________________________|
+            
+
+        Output:
+                Sum:70

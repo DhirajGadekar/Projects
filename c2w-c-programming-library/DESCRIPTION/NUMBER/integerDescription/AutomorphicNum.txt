@@ -1,0 +1,23 @@
+	
+	
+	
+	SELECTED:
+	
+		Automorphic Number:
+		
+	DESCRIPTION: 
+
+    		In mathematics, an automorphic number is a natural number in a 
+    		given number base b whose square "ends" in the same digits as the 
+    		number itself.
+    		
+    	EXAMPLE:
+    	
+    		Enter a number to check: 625
+		625 is an automorphic number.
+		
+		Enter a number to check: 312
+		312 is not an automorphic number.
+		
+		
+		

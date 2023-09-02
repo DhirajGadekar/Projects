@@ -1,0 +1,38 @@
+
+
+
+    #include <stdio.h>
+    #include <string.h>
+    #include <stdlib.h>
+    char *removeDuplicates(char *s)
+    {
+        char *carr = malloc(sizeof(char) * strlen(s));      
+        int len = strlen(s);
+        int count = 0, i = 1;
+        carr[0] = s[0];
+        while (i < len)
+        {
+
+            if (count >= 0 && carr[count] == s[i])      
+                count--;
+            else
+                carr[++count] = s[i];
+
+            i++;
+        }
+        carr[count + 1] = '\0';
+        return carr;
+
+    }
+
+    void main(){
+        char str[30];
+        printf("Enter String:\n");
+        scanf("%[^\n]",str);
+
+        printf("%s",removeDuplicates(str));     
+    }
+
+
+    
+

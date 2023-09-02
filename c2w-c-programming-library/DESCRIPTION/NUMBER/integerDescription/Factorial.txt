@@ -1,0 +1,23 @@
+	
+	
+	
+	SELECTED:
+	
+		Factorial 
+		
+	DESCRIPTION:
+
+    		A factorial is a function that multiplies a number by every number 
+    		below it. For example 5!= 5*4*3*2*1=120. 
+    		The function is used, among other things, to find the number of ways 
+   	        “n” objects can be arranged.
+		Factorial Formula
+		n! = n × (n - 1) × (n - 2) × (n - 3) × ... × 1
+		
+	EXAMPLE:
+	
+		Enter a number: 5
+		Factorial of 5 is: 120
+		
+		
+		

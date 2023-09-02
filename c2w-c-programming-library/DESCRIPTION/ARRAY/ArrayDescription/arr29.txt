@@ -1,0 +1,27 @@
+
+
+
+        SELECTED METHOD :   
+                
+            29. GROUPING OF PRIME NUMBER		  	 
+
+        DESCRIPTION :   
+            
+            Prime Number is a number that can be divided exactly 
+            only by itself and 1.for example 7, 17 and 41.   
+
+            This function takes array address and array length as input             
+            and group Prime elements in array.  
+
+        EXAMPLE :   
+        
+            INPUT ARRAY :  
+        
+                | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 |    
+        
+            OUTPUT ARRAY :   
+        
+                | 11 | 13 | 17 | 19 |   
+
+
+

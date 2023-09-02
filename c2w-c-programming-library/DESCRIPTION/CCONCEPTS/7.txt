@@ -1,0 +1,125 @@
+
+
+
+	Relationship between Arrays and Pointers :-
+
+	-Array is internally pointer because array name itself address of first element
+
+	1)1-DArray :
+
+			Calculation:   arrayName[index] = *(arrName + index(sizeofDataTypeOfPointer))
+	Example :
+
+		Int arr[5] = {1,2,3,4,5};
+		arr[i] = *(arr + i)
+		&arr[i] = (arr + i)
+		
+
+	#inlcude<stdio.h>
+	void main(){
+		int arr[5];
+		printf("Enter the elements of array :");
+		for(int i=0;i<5;i++){
+			// Equivalent to scanf("%d", &arr[i]);
+   			 scanf("%d",arr+i);//By using pointer
+		}
+		
+		printf("Printing the array :");
+		for(int i=0;i<5;i++){
+			printf("%d ",*(arr + i));
+			//Equivalent to printf("%d ",arr[i]);
+		}
+	}
+
+	Assume In above Example : Base address i.e starting address of array is 100
+	That means totol size is 5*4 = 20 Bytes (totalElemnts*sizeofDataType)
+	i.e from 100 to 119
+
+	arr[1] = *(arr + 1)
+		= *(100 + 1*4)
+		= *(104)
+		= 2
+
+	2)2D Array:
+
+			Calculation :  arr[i][j] = *(*(arr + i*(sizeofWhole1DArray)) + j*(sizeofDataTypeOfPointer)))
+
+	Where  , i  = Number of Rows 
+	     	    j = Number of Coloums
+
+	Example :
+			#include <stdio.h>    
+			void main ()    
+			{    
+    				int arr[3][3],i,j;     
+   				printf("Enter the elements in 2D array :"):
+    				for (i=0;i<3;i++)    
+    				{    
+        					for (j=0;j<3;j++)    
+        						{    
+            						scanf("%d",*(arr+i)+j);    
+							// Same as  :  scanf("%d",&arr[i][j]);
+        						}    
+    					}    
+    				printf("\n printing the elements ....\n");     
+    				for(i=0;i<3;i++)    
+    				{    
+        					printf("\n");    
+        					for (j=0;j<3;j++)    
+        						{    
+            						printf("%d\t",*(*(arr+i)+j));    
+							//Same as : printf("%d\t",arr[i][j]);
+        						}    
+    					}    
+				}    
+		
+
+	3)3D Array :
+ 
+			Calculation : arr[i][j][k] = *(*(*(arr + i*(sizeOfWhole2DArray)  + j*(sizeofWhole1DArray) + k*sizeofDataTypeOfPointer)))
+
+	Where , i  = Number of Plane
+	   	   j = Number of rows
+	   	   k = Number of Columns
+
+	Example :
+
+			#include <stdio.h>
+			void main()
+			{
+  				int arr[2][3][2];
+
+  				printf("Enter 12 values: \n");
+
+  				for (int i = 0; i < 2; ++i)
+  				{
+    					for (int j = 0; j < 3; ++j)
+    						{
+      						for (int k = 0; k < 2; ++k)
+      							{
+        								scanf("%d", *(*(arr+i)+j)+k);
+      							}
+    						}
+  				}
+
+  			// Printing values with the proper index.
+
+  			printf("\nDisplaying values:\n");
+
+			  for (int i = 0; i < 2; ++i)
+  				{
+    				for (int j = 0; j < 3; ++j)
+    					{
+      					for (int k = 0; k < 2; ++k)
+      						{
+        						printf(" %d ", *(*(*(arr+i)+j)+k));
+      						}
+     					Printf("\n");
+    					}
+  				}
+
+  
+			}
+
+
+		

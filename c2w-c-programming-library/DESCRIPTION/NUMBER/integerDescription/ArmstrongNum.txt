@@ -1,0 +1,19 @@
+	
+	
+	
+	SELECTED:
+	
+		Armstrong Number
+		
+	DESCRIPTION: 
+
+    		Armstrong number is a number that is equal to the sum of cubes of i
+		ts digits.
+		
+        Example:
+        
+        	0, 1, 153, 370, 371 and 407 are the Armstrong 
+		numbers.
+		
+		
+		

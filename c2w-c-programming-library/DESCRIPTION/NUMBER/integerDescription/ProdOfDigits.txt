@@ -1,0 +1,21 @@
+
+
+
+	SELECTED:
+		
+		Product of digits
+		
+	DESCRIPTION:
+	
+		Product of digits of a number.
+		
+	EXAMPLE:
+		
+		Input:  Enter a number: 456   
+			
+			->  4*5*6 = 120
+		
+		Output:  product is : 120
+		
+		
+		

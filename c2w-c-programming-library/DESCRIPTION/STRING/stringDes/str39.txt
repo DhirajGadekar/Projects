@@ -1,0 +1,20 @@
+
+
+
+	SELECTED METHOD : 
+	
+			String reverse up to n	
+
+	DESCRIPTION :  
+	
+			This function reverse the string up to given number.	
+
+	EXAMPLE :	
+
+			Input :“Core2Web” 	
+			
+			Input : 4	
+			Output : “eroC2Web”  	
+
+
+

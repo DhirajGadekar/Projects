@@ -1,0 +1,19 @@
+	
+	
+	
+	SELECTED:
+	
+		Digit Search:
+		
+	DESCRIPTION: 
+
+		Search a digit in a number.
+		
+	EXAMPLE:
+	
+		Input : Num = 234632               Input : Num = 234632
+    	    	search= 4                          search= 8
+		Output : 4 digit is present.       Output : 8 digit is not present.
+		
+
+

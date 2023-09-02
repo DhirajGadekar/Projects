@@ -1,0 +1,21 @@
+
+
+
+	SELECTED METHOD: 
+	
+			Concat String Upto N.	
+	
+	DESCRIPTION: 
+	
+			In This Function one string is concat with other up to 
+			given number from user.		
+
+	EXAMPLE: 
+			
+			Input:  str1 = "Core2web"
+					str2 = " Technologies"
+					n = 6
+			
+			Output: "Coreweb Techn"
+
+

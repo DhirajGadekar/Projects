@@ -1,0 +1,20 @@
+	
+	
+	
+	SELECTED:
+	
+		Bell Number:
+		
+	DESCRIPTION: 
+
+    		In combinatorial mathematics, the Bell numbers count the possible partitions of a set.  
+    		Let S(n, k) be total number of partitions of n elements into k sets. The value of n’th 
+    		Bell Number is sum of S(n, k) for k = 1 to n. 
+    		Value of S(n, k) can be defined recursively as, S(n+1, k) = k*S(n, k) + S(n, k-1)
+    		
+    	EXAMPLE:
+    	
+    		The first Bell numbers are: 1, 1, 2, 5, 15, 52, 203, 877, 4140, 21147, 115975.
+
+
+

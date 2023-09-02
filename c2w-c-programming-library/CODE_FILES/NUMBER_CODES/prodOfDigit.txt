@@ -1,0 +1,27 @@
+/*Program to find the product of digits of a number
+Input:  Enter a number: 456   ->  4*5*6 = 120
+Output:  product is : 120  */
+
+
+#include<stdio.h> 
+
+int prodofDigits(int num){
+
+	int rem,prod=1;
+
+	while(num){
+	
+		rem=num%10;
+		prod=prod*rem;
+		num/=10;
+	}
+	printf("product is = %d\n",prod);
+}
+
+void main(){
+
+	int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    prodofDigits(num);
+}

@@ -1,0 +1,22 @@
+﻿		
+
+
+		SELECTED METHOD:
+
+			12. FIND MINIMUM, ELEMENT IN ARRAY
+
+		DESCRIPTION:	
+		
+			Find minimum element in array is a function which 
+			finds the minimum element among all array elements. 		
+
+		EXAMPLE:
+		
+			INPUT ARRAY :
+			| 2 | 3 | 1 | 8 | 6 |
+			
+			OUTPUT:
+			  1 is minimum number in the array 
+
+
+

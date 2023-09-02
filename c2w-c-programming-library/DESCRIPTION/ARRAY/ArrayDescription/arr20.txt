@@ -1,0 +1,24 @@
+﻿		
+
+
+		SELECTED METHOD:
+
+			20. SUM OF ALL ODD NUMBERS IN ARRAY    
+
+		DESCRIPTION:	
+		
+			Sum of all odd elements in an array is a function 				
+			which helps you calculate sum of all odd elements. 
+
+		EXAMPLE:
+		
+			INPUT ARRAY :
+				
+				| 4 | 3 | 6 | 5 | 3 | 2 |
+
+			OUTPUT : 
+				
+				11 is sum of all odd number in the array 
+
+
+

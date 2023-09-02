@@ -1,0 +1,102 @@
+
+
+
+	C-Preprocessor Directive- :-
+
+	C is a unique programming language in many respects. We have already seen features such as structures and pointers. Yet another unique		feature of the C programming language is preprocessor.
+
+	The preprocessor, as its name implies, is a program that processes the source code before it passes through the compiler.
+
+	Preprocessor directives follow special syntax They all begin With the symbol ‘#’,and not requiring any semicolon at the end.
+
+	Preprocessors are required before the main() function.
+
+	We have already used #define as well as #include at limited places.
+
+
+	1) Macros :-	 i] Object Like Macros.
+            		ii] Function Like Macros.
+
+
+	i] Object Like Macros:-
+
+	#include<stdio.h>
+	#define xyz 10
+	#define int char
+
+	void main(){
+
+        		printf("%d\n",xyz);     		//In preprocessor Stage, xyz is replace by 10. (i.e. printf("%d\n",10); )
+
+        		printf("%ld\n",sizeof(char));   	//This replace by in preprocessing Stage :- printf("%ld\n",sizeof(char));
+
+	}
+
+
+	ii] Function Like Macros:-
+        		- In Function Like Macros , their is no push pop Operation for function.
+        		- In preprocessing Stage they replace the instruction.
+        		- Only use for small function i.e. one line instructions.
+        		- It is same as that of 'Inline Function' in C++.
+
+		ex :
+			#include<stdio.h>
+
+			#define add(a,b)  a+b
+			#define sqr(x)    x*x
+
+			void main(){
+
+        				int x=10;
+        				int y=20;
+
+        				printf("Add = %d\n",add(x,y));  		//This Replace by in preprocessing Stage :- printf("%d\n",x+y);
+        				printf("Square = %d\n",sqr(x)); 		//This Replace by in Preprocessing Stage :- printf("%d\n",x*x);
+	}
+
+
+	2) PreDefined Macros:-
+
+		#include<stdio.h>
+
+		void main(){
+
+        			printf("%s\n",__FILE__);
+        			printf("%s\n",__DATE__);
+        			printf("%s\n",__TIME__);
+        			printf("%d\n",__LINE__);
+	}
+
+
+	Conditional PreProcessing :-
+
+	#include<stdio.h>
+	#define access 1
+
+	void main(){
+
+        		#if access
+                	printf("Access\n");     //Access
+
+        		#else
+                	printf("Not-Access\n");
+
+        		#endif
+                	printf("EOF\n");        //EOF
+
+	}
+
+
+
+	#include header File Directive :-
+        			1) #include<stdio.h> :- Search functions declaration PreDefined Header file.
+
+        			2) #include"stdio.h" :- Search in User Defined header File.
+						     Search header file in Current Directory.
+
+
+
+
+
+
+

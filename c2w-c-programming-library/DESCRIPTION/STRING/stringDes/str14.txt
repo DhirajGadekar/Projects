@@ -1,0 +1,20 @@
+
+
+
+	SELECTED METHOD : 
+	
+			String copy	
+
+	DESCRIPTION :  
+	
+			This function copies the given string into another string.	
+
+	EXAMPLE :	
+			str1="Core2Web"	
+			myStrCpy(str2,str1)	
+
+			Input :“Core2Web” 	
+			Output :“Core2Web”	//copied string		 	
+
+
+

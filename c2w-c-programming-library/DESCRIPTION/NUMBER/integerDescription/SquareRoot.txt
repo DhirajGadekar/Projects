@@ -1,0 +1,18 @@
+
+
+
+	SELECTED:
+		
+		Square root
+	
+	DESCRIPTION:
+	
+    		In mathematics, a square root of a number x is a number y such 
+    		that y² = x. In other words, a number y whose square is x.
+    		
+    	EXAMPLE:
+    	
+    		Square root of 23.40 =  4.84
+    		
+    		
+    		

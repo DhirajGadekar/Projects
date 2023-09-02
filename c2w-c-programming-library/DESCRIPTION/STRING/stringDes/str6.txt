@@ -1,0 +1,18 @@
+
+
+
+	SELECTED METHOD :
+	
+			 Largest ascii character	
+
+	DESCRIPTION :  
+	
+			Its shows the character whose ascii value is largest.	
+
+	EXAMPLE :	
+
+			Input :“Core2web” 	
+			Output : "The largest ascii character is w"	
+
+
+

@@ -1,0 +1,20 @@
+
+
+
+	SELECTED METHOD : 
+	
+			Count of occurence	
+
+	DESCRIPTION :  
+	
+			This function shows the given character 
+			how many time are present in a given string.	
+
+	EXAMPLE :	
+
+			Input :“Core2Web” 	
+			Input : e
+			Output : 2  	
+
+
+

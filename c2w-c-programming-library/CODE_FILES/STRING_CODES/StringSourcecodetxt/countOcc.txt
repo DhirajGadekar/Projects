@@ -1,0 +1,54 @@
+
+
+
+	#include <stdio.h>
+	#include <string.h>
+
+	//last Occurance function
+	int countOcc(char str[], char ch){
+
+		int count=0;
+		//to check char present or not in string
+		for(int i = 0; str[i] != '\0'; i++){
+
+			if(str[i] == ch){
+
+				count++;
+			}
+		}
+
+		return count;
+	}
+
+	//Enntry function
+	void main(){
+
+		//variable Intitilisation
+		char str[100], ch;
+		int count;
+		
+		int i=0;
+		char c;
+		//to get string from user
+		printf("Enter the String :  ");
+		while((c=getchar())!='\n')
+			str[i++]=c;
+		
+		printf("Enter the Character to search Occurance :  ");
+		scanf("%c", &ch);
+		
+		//function call and return value store in variable index.		
+		count = countOcc(str, ch);
+
+		//if char is not in string
+		if(count == 0){
+		
+			printf("Entered character %c is not present in Given String\n", ch);
+		
+		}else{
+			//string index starts from 0
+			printf("The count of Occurrence of the character %c is %d\n", ch, count);	
+		}
+	}
+
+

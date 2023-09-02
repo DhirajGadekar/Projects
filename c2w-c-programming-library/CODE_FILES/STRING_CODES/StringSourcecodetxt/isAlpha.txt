@@ -1,0 +1,68 @@
+
+
+
+	#include <stdio.h>
+	#include <string.h>
+
+	//find the string is only alphabetic
+	int isAlpha(char str[]){
+
+
+		int flag=0;
+		int a=0;
+		int b=0;
+		//for loop to search alphabet and Numbers in string.
+		for(int i = 0; str[i] != '\0'; i++){
+
+			//condition for check digit
+			if(str[i]>47 && str[i]<58){
+
+				a=1;
+				continue;
+
+			}
+			//condition for check for alphabet
+			else if((str[i]>=65 && str[i]<=90) || (str[i]>=97 && str[i]<=122)){				
+
+				b=1;
+				continue;
+			}
+		}
+		//condition if only aphabet found in a string
+		if(a==0 && b==1){
+
+			return 1;
+		}else{
+			return 0;
+		}
+	}
+				
+
+	//Entry function
+	void main(){
+
+		//variable Intitilisation
+		char str[100];
+		int i=0;
+		char c;
+		printf("Enter the String :  ");
+
+		//to get string from user
+		while((c=getchar())!='\n')
+			str[i++]=c;
+		
+		//function call and return value store in variable index.
+		int flag = isAlpha(str);
+
+		//if string has alpha numeric
+		if(flag == 1){
+		
+			printf("String given String is only Alphabetic string\n");
+		
+		}else{
+			printf("The Given String is Not only Alphabetic String\n");
+
+		}
+	}
+
+

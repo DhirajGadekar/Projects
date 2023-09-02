@@ -1,0 +1,28 @@
+      
+      
+      
+	SELECTED METHOD:
+
+		DELETE FIRST NODE
+
+    DESCRIPTION:
+	      
+        A Doubly Linked List (DLL) contains an extra pointer, typically called the previous pointer,
+        together with the next pointer and data which are there in the singly linked list. Doubly Linked 
+        list can be traversed in both forward and backward directions. 
+    
+        The first node of the doubly linked list can be deleted as follows:
+
+        1.Make the HEAD point to its next element.
+        2.Make next node's previous NULL.
+        3.free()first node.
+
+	EXAMPLE:
+
+        Input:
+            NULL<--|10|<-->|20|<-->|30|<-->|40|-->NULL
+
+        Output:
+            NULL<--|20|<-->|30|<-->|40|-->NULL
+
+

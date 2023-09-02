@@ -1,0 +1,35 @@
+
+
+
+	Steps Of Compiler :-
+
+
+			C program
+		    	      |	
+	            	      |
+	       	        1)Preprocessor		//cc -E file_Name.		    
+	            	      | 			
+		   	      |
+	         		2)Compiler		//cc -S file_Name.   Convert .s File.
+		   	      |		  
+		    	      |
+	       	      3)Assembly Code	//cc -C file_Name.   Convert .s to .o File.
+                    		      |
+                                          |
+		          assembler 	
+ 		    	      |
+ 		    	      |
+                	       Object Code
+ 		    	      |
+ 		                  |    
+    		  	Linker		//Link .o File + libc.so File
+        	    		      |
+	            	      |
+              	     Executable Code 	//a.out
+	            	      | 
+                    		      |
+		  	Loader
+		    	      |
+  		    	      |
+ 			Execution
+

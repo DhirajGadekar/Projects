@@ -1,0 +1,29 @@
+      
+      
+      
+	SELECTED METHOD:
+
+		DELETE FIRST NODE
+
+    DESCRIPTION:
+        Circular Doubly Linked List has properties of both doubly linked list and circular linked list in which two consecutive elements are linked or connected by the previous and next pointer and the last node points to the first node by the next pointer and also the first node points to the last node by the previous pointer.
+    
+        The first node of the doubly Circular linked list can be deleted as follows:
+
+        1.Make head's next node's previous point to head's previous.
+        2.Make the HEAD point to its next element.
+        3.free last node's prev .
+        3.Make Last nodes next point to head.
+        
+
+	EXAMPLE:
+
+        Input:
+               |--><--|10|<-->|20|<-->|30|<-->|40|--><--|
+               |________________________________________|
+
+
+        Output:
+          
+                |--><--|20|<-->|30|<-->|40|--><--|
+                |________________________________|

@@ -1,0 +1,24 @@
+
+
+
+        SELECTED METHOD :   
+                
+            33. REPLACE ELEMENT WITH ITS REVERSE NUMBER    
+
+        DESCRIPTION :   
+            
+            This function takes array address and array length as input 
+            and Replace elements Respectively with it's reverse number.             
+
+        EXAMPLE :   
+            
+            INPUT ARRAY :  
+        
+                | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 |    
+        
+            OUTPUT ARRAY :   
+        
+                | 11 | 21 | 31 | 41 | 51 | 61 | 71 | 81 | 91 |   
+
+
+

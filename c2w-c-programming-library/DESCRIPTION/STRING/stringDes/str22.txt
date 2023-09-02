@@ -1,0 +1,18 @@
+
+
+
+	SELECTED METHOD : 
+	
+			remove space from string	
+
+	DESCRIPTION :  
+	
+			This function remove all spaces in a given string.	
+
+	EXAMPLE :	
+
+			Input :“Core2Web technologies” 	
+			Output : “Core2Webtechnologies”  	
+
+
+

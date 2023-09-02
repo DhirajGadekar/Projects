@@ -1,0 +1,28 @@
+﻿		
+
+
+		SELECTED METHOD:
+
+			17. COUNT PAIRS WITH GIVEN SUM
+
+		DESCRIPTION:	
+		
+			Count Pairs With Given Sum helps to traverse each element				
+			and check if there is another number int the array which 
+			can be added to it to give sum.
+
+
+		EXAMPLE:
+		
+			INPUT ARRAY : 
+			
+				| 10 | 3 | 1 | 5 | 6 | 2 |
+
+			TARGET SUM : 4
+
+			OUTPUT : 
+				
+				1 Pairs has sum 4
+
+
+			

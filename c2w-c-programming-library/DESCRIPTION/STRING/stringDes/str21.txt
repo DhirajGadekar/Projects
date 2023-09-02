@@ -1,0 +1,19 @@
+
+
+
+	SELECTED METHOD : 
+			
+			remove similar character	
+
+	DESCRIPTION :  
+	
+			This function remove the along similar 
+			character in a given string.	
+
+	EXAMPLE :	
+
+			Input :“between” 	
+			Output : “betwn”  	
+
+
+

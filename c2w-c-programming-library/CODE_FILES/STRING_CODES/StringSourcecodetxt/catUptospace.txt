@@ -1,0 +1,56 @@
+
+
+
+	//Concat up to space
+
+	#include<stdio.h>
+	#include<string.h>
+
+	char *catUptospace(char *str1,char *str2){		
+		
+		while(*str1!='\0'){
+			str1++;
+		}
+
+		//concat upto space or single word only		
+		while(*str2 != '\0' && *str2 != ' '){
+			*str1=*str2;
+			str1++;
+			str2++;
+		}
+		
+		*str1='\0';
+
+		return str1;
+	}
+
+	void main(){
+		char str1[100];
+		char str2[100];
+
+		printf("Enter String1:\n");
+		char ch1;
+		int i=0;
+		//get string from user
+		while((ch1=getchar())!='\n'){
+			str1[i]=ch1;
+			i++;
+		}
+
+		printf("Enter String2:\n");
+		char ch2;
+		int j=0;
+		//get string from user
+		while((ch2=getchar())!='\n'){
+			str2[j]=ch2;
+			j++;
+		}
+		str[i]='\0';
+
+		catUptospace(str1,str2);
+
+		printf("%s\n",str1);	
+
+	}
+
+

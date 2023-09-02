@@ -1,0 +1,27 @@
+
+
+
+        SELECTED METHOD : 
+
+            2. SORT ARRAY ASCENDING
+
+        DESCRIPTION :
+
+            In this program, we need to sort the given array in ascending 
+            order such that elements will be arranged from smallest to largest.         
+            This can be achieved through two loops. The outer loop will select 
+            an element, and inner loop allows us to compare selected element 
+            with rest of the elements.
+
+        EXAMPLE :
+
+            INPUT ARRAY :
+
+                | 5 | 2 | 8 | 7 | 1 |
+            
+            OUTPUT ARRAY :
+
+                | 1 | 2 | 5 | 7 | 8 |   
+
+
+                

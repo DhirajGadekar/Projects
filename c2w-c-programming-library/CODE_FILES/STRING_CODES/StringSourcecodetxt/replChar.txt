@@ -1,0 +1,49 @@
+
+
+
+	#include<stdio.h>
+	#include<string.h>
+
+	char *repChar(char* str,char ch1,char ch2){
+	
+		int i=0;
+		while(str[i] != '\0'){
+			//compare character
+			if(str[i] == ch1){
+				//replace character
+				str[i]=ch2;
+			}
+			i++;
+		}
+		return str;
+	}
+
+	void main(){
+
+		char str[100];
+		printf("Enter string:\n");
+		char ch;
+		int i=0;
+		//get string from user
+		while((ch=getchar())!='\n'){
+			str[i]=ch;
+			i++;
+		}
+		
+		printf("Enter character who replace:\n");
+		char ch1;
+		scanf("%c",&ch1);
+		
+		getchar();
+		
+		printf("Enter character which replace:\n");					
+		char ch2;
+		scanf("%c",&ch2);
+
+		//print string
+		printf("%s\n",repChar(str,ch1,ch2));
+
+	}
+
+
+	

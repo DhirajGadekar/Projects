@@ -1,0 +1,22 @@
+	
+	
+	
+	SELECTED:
+	
+		Composite Number:
+		
+	DESCRIPTION: 
+
+    		A composite number is a positive integer that can be formed by
+    		multiplying two smaller positive integers. 
+    		Equivalently, it is a positive integer that has at least one 
+    		divisor other than 1 and itself.
+    		
+    	EXAMPLE:
+    	
+    		Enter a number
+    		10
+		The number is COMPOSITE
+		
+		
+

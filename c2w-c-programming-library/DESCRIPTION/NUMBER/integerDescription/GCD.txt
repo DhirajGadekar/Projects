@@ -1,0 +1,20 @@
+	
+	
+	
+	SELECTED:
+	
+		GCD :Greatest Common Divisor/HCF : Highest Common Factor 
+		
+	DESCRIPTION:
+ 
+  		It is the Greatest common divisor that completely divides two or 
+		more numbers without leaving any remainder 
+		
+	EXAMPLE:
+ 
+  		n1 = 24 -> 2 * 2 * 2 * 3
+  		n2 = 30 -> 2 * 3 * 5
+  		GCD = 2 * 3 =6
+ 
+ 	 	
+ 

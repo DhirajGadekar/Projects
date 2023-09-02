@@ -1,0 +1,28 @@
+﻿		
+
+
+		SELECTED METHOD:
+
+			18. COUNT OF DUPLICATE ELEMENTS 
+
+		DESCRIPTION:	
+		
+			In his approach, we have to traverse through the array
+			using a for loop, and then for each element in the array, 
+			we use another array to count any duplicate element on its				
+			right. Whenever we find a duplicate element, we increase the 
+			count by one and break the inner loop.
+
+
+		EXAMPLE:
+		
+			INPUT ARRAY :
+
+				| 5 | 3 | 1 | 5 | 3 | 2 |
+
+			OUTPUT : 
+				
+				Array has 2 duplicate Number
+
+
+

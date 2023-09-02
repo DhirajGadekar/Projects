@@ -1,0 +1,23 @@
+
+
+
+	SELECTED METHOD: 
+	
+			Replace Character At Position		
+	
+	DESCRIPTION: 
+			
+			This Function gives the character and position input 
+			from user and replace that character at position of given String.		
+
+	EXAMPLE: 
+			
+			Input:  str= "String"
+					ch = 'i'
+				  	pos = 3
+			
+			Output: "Stiing"
+
+
+
+

@@ -1,0 +1,36 @@
+
+
+
+    SELECTED METHOD:
+
+        DELETE NODE AT POSITION
+
+    DESCRIPTION:
+
+        In a circular Singly linked list, the last node of the list contains a pointer to the first node of the list. 
+        We traverse the circular singly linked list until we reach the same node where we started. The circular singly 
+        linked list has no beginning or end. No null value is present in the next part of any of the nodes
+        
+        The deletion after a specific node can be formed in the following way,
+
+        1.Reach the desired node after which the node is to be deleted.
+        2.Make the current node's next point to the next of next element.
+        3.A node to be deleted say temp, free() temp.
+    
+    EXAMPLE:
+
+        Input:
+
+            ---->|10|-->|20|-->|30|-->|40|----
+            |________________________________|
+
+            pos = 1;
+            
+        Output:
+                                            
+            -->|20|-->|30|-->|40|----
+            |_______________________|
+            
+
+     
+      

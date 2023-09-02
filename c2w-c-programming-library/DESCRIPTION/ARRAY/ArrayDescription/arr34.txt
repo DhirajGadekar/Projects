@@ -1,0 +1,27 @@
+
+
+
+        SELECTED METHOD :   
+                
+            34. GROUPING OF DUCK NUMBER
+
+        DESCRIPTION :   
+            
+            Duck number is another special positive non-zero number that 
+            contains zero in it  
+
+            This function takes array address and array length as input             
+            and group Duck elements in array.  
+
+        EXAMPLE :   
+        
+            INPUT ARRAY :  
+        
+                | 5 | 10 | 103 | 14 | 150 | 1006 | 187 | 189 | 1090 |    
+        
+            OUTPUT ARRAY :   
+        
+                | 10 | 103 | 150 | 1006 | 1090 |   
+
+
+

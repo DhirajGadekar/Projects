@@ -1,0 +1,38 @@
+
+
+
+	#include<stdio.h>
+
+	int spcharCount(char *str){
+		int count=0;
+		while(*str!='\0'){
+			//check special character
+			if((*str<'a' ||  *str>'z') && (*str<'A' || *str>'Z') && (*str<'0'|| *str>'9')){				
+				count++;
+			//	printf("%d",count);
+			}
+			str++;
+		}
+		return count;
+	}
+
+	void main(){
+		char str[100];
+		
+		printf("Enter String:\n");
+		char ch;
+		int i=0;
+		//get string from user
+		while((ch=getchar())!='\n'){
+			str[i]=ch;
+			i++;
+		}
+		str[i]='\0';
+
+		//print string
+		printf("%d\n",spcharCount(str));
+		
+	}
+
+
+

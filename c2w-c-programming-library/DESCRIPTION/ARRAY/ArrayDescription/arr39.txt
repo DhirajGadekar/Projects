@@ -1,0 +1,27 @@
+
+
+
+        SELECTED METHOD :   
+                
+            39. GROUPING OF SPY NUMBER
+
+        DESCRIPTION :   
+            
+            A number is said to be a Spy number if the sum of       
+            all the digits is equal to the product of all digits.            
+
+            This function takes array address and array length 
+            as input and group Spy elements in array.  
+
+        EXAMPLE :   
+            
+            INPUT ARRAY :  
+        
+                | 11 | 12 | 13 | 1412 | 15 | 132 | 17 | 18 | 19 |    
+        
+            OUTPUT ARRAY :   
+        
+                | 1412 | 132 |   
+
+
+

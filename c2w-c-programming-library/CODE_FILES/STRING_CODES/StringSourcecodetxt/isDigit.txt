@@ -1,0 +1,68 @@
+
+
+
+	#include <stdio.h>
+	#include <string.h>
+
+	//find the all string has only digit.
+	int isDigit(char str[]){
+		int flag=0;
+		int a=0;
+		int b=0;
+		//for loop to search digit
+		for(int i = 0; str[i] != '\0'; i++){
+
+			//condition for check digit
+			if(str[i]>47 && str[i]<58){
+
+				a=1;
+				continue;
+
+			}
+			//condition for check for alphabet
+			else if((str[i]>=65 && str[i]<=90) || (str[i]>=97 && str[i]<=122)){				
+
+				b=1;
+				continue;
+			}
+		}
+		//condition if only digit found
+		if(a==1 && b==0){
+
+			return 1;
+		}else{
+			return 0;
+		}
+	}
+
+
+	//Entry function
+	void main(){
+
+		//variable Intitilisation
+		char str[100];
+		int i=0;
+		char c;
+		printf("Enter the String :  ");
+
+		//to get string from user
+		while((c=getchar())!='\n')
+			str[i++]=c;
+		str[i]='\0';
+		
+		//function call and return value store in variable index.
+		int flag = isDigit(str);
+
+		//if string has digit
+		if(flag == 1){
+		
+			printf("String given String is has only digit\n");
+		
+		}else{
+			printf("The Given String contain alphabet\n");
+
+		}
+	}
+
+
+

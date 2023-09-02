@@ -1,0 +1,19 @@
+
+
+
+	SELECTED:
+		
+		Sum of digits
+	
+	DESCRIPTION :
+	
+		sum of digits of a number by adding a number's digits while ignoring the place values. 
+		
+	EXAMPLE:  
+		
+		Number is 231456
+		2 + 3 + 1 + 4 + 5 + 6 = 21
+		Sum of digit of a given number is 21
+		
+		
+		

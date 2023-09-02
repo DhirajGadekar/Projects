@@ -1,0 +1,18 @@
+
+
+
+	SELECTED METHOD : 
+	
+			Decending string sort	
+
+	DESCRIPTION : 
+			
+			This function sort the string in decending order.	
+
+	EXAMPLE :	
+
+			Input :“Biencaps” 	
+			Output : “spniecaB”  	
+
+
+

@@ -1,0 +1,51 @@
+
+
+
+	//concat Two string
+	#include <stdio.h>
+	char *myStrCat(char *str1, char *str2){
+
+		//to get str1 pointer traverse upto end until \0 found
+		while (*str1 != '\0')
+		{
+			str1++;
+		}
+		//to concat str2 at the end of str1 until \0 found in str2			
+		while (*str2 != '\0'){
+			
+			*str1 = *str2;
+			*str1++;
+			*str2++;
+		}
+		//add \0 at the end of str1
+		*str1 = '\0';
+		return str1;
+	}
+	//Entry Function
+	void main(){
+
+		//Initilisation of variable
+		char str1[100],str2[100],ch;
+		int i = 0;
+
+		//while loop to get string from user.
+		printf("Enter string-1: ");
+		while((ch = getchar()) != '\n')
+			str1[i++] = ch;
+		str1[i]='\0';
+
+		//while loop to get string2 from user.
+		i=0;
+		printf("Enter string-2 : ");
+		while((ch = getchar()) != '\n')
+			str2[i++] = ch;
+		str2[i]='\0';
+
+		//function call
+		myStrCat(str1,str2);
+
+		printf("%s\n",str1);
+
+	}
+
+

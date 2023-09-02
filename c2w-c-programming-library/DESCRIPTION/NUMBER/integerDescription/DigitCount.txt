@@ -1,0 +1,17 @@
+	
+	
+	
+	SELECTED:
+	
+		Digit count:
+		
+	DESCRIPTION: 
+
+    		Counts number of digits in a number. 
+    		
+    	EXAMPLE:
+    	
+    		162436 -> count is 6.
+    		
+    		
+    		

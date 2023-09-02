@@ -1,0 +1,19 @@
+
+
+
+	SELECTED METHOD : 
+	
+			Reverse character find	
+
+	DESCRIPTION :  
+	
+			This function finds the character position at given string from the last.	
+
+	EXAMPLE :	
+
+			Input :“Core2Web” 	
+			Input : W 	
+			Output : “Character W find 3 position from last”  	
+
+
+

@@ -1,0 +1,18 @@
+
+
+
+	SELECTED METHOD : 
+	
+			Accending string sort	
+
+	DESCRIPTION :  
+		
+			This function sort the string in accending order.	
+
+	EXAMPLE :	
+
+			Input :“Biencaps” 	
+			Output : “Baceinps”  	
+
+
+

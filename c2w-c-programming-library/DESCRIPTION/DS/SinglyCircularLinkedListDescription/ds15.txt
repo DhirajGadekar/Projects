@@ -1,0 +1,24 @@
+
+
+
+    SELECTED METHOD:
+
+        MAXIMUM ELEMENT IN LINKEDLIST.
+
+    DESCRIPTION:
+
+        This function gives the Maximum element in LinkedList.
+
+    EXAMPLE:
+
+        Input:
+
+            ---->|10|-->|20|-->|30|-->|40|----
+            |________________________________|
+            
+
+        Output:
+                Maximum Element : 40
+
+                    
+                    

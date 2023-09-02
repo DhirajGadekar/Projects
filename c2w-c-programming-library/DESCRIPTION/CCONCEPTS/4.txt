@@ -1,0 +1,382 @@
+
+
+
+	C - Statements :-
+
+	C statements consist of tokens, expressions, and other statements. 
+
+	A statement that forms a component of another statement is called the "body" of the enclosing statement. 
+
+
+						---Control Statements---
+
+		Conditional Statements	     	 Iterative Statements	  Jump Statements	
+	
+            		1)if.				   1)for loop.			  1)break.
+
+			2)if-else.			   2)while loop.		  2)continue.
+
+			3)Nested if-else.		   3)do-while loop.		  3)goto.
+
+			4)Switch.
+
+		Conditional Statements :-
+
+			1) if Statement :-
+
+			The IF statement is a decision-making statement that guides a program to make decisions based on specified criteria.
+
+			The condition of if statement is true then and only then they execute the statements in the body of 'if - stateement'.
+
+			If the contion is zero or false then they didn't execute the statemnets in If-Body.  
+
+			Syntax :-  if ( condition )
+
+			ex:1) 
+				int x = 10;
+	         			if(x==10){
+
+	                			printf("Value of x : %d\n",x);   ...Execute the ifBody Statement.
+		     		}
+
+				output = Value of x : 10.
+
+			ex:2)
+				int x = 5;
+				if(x>10){
+
+		   			 printf("Value of x :%d\n",x);   ...Doesn'tExecute the ifBody statement.
+
+					}
+
+				printf("Value of x : %d\n",x);
+
+				output = Value of x : 5.	
+
+			2) if-else Statement :-
+
+			The if-else statement is a decision-making statement that guides a program to make decisions based on specified criteria.
+
+			The condition of if statement is true then and only then they execute the statements in the body of 'if - stateement' othet than 				they execute the statement in else body..
+
+			If the condition is false then they execute the else body statements.  
+
+			Syntax :-  if ( condition ){
+
+					body...
+
+		   	 		}else {
+
+						body...
+					}
+			ex:1) 	   int x = 10;
+	         	   	   	   if(x==10){
+
+	                  			printf("Value of x : %d\n",x);   ...Execute the ifBody Statement.
+
+		     		}
+	
+		   	   	else{
+
+		      			printf("Hello\n");
+
+		    		}
+
+		   		output = Value of x : 10.
+	 		ex:2)
+				int x = 5;
+				if(x>10){
+
+		    			printf("Value of x :%d\n",x);   ...Doesn'tExecute the ifBody statement.
+
+		     		}
+				else{
+					printf("Hello.\n");
+		    		}
+
+				output = Hello.	
+	
+			3)Nested if-else :-
+
+			When an if else statement is present inside the body of another “if” or “else” then this is called nested if else.
+
+			Syntax :-
+			 	if(condition1){
+					//Nested if else inside the body of "if"
+   			 	if(condition2) {
+       					//Statements inside the body of nested "if"
+   			 	}
+				else {
+       					//Statements inside the body of nested "else"
+    				}
+			}
+				else {
+    					//Statements inside the body of "else"
+				}
+	
+				ex: 
+					#include <stdio.h>
+					void main() {
+   						int var1, var2;
+   						printf("Input the value of var1:");
+   						scanf("%d", &var1);
+   						printf("Input the value of var2:");
+   						scanf("%d",&var2);
+
+   						if (var1 != var2){
+   							printf("var1 is not equal to var2\n");
+						//Nested if else
+						if (var1 > var2){
+							printf("var1 is greater than var2\n");
+						}
+						else{
+							printf("var2 is greater than var1\n");
+						}
+					}
+   					else {
+						printf("var1 is equal to var2\n");
+				}
+			}
+		Output:
+			Input the value of var1 : 12
+			Input the value of var2 : 21
+			var1 is not equal to var2
+			var2 is greater than var1
+
+			4) Switch Statement :-
+
+			The switch statement is used for executing one condition from multiple conditions. It is similar to an if-else-if ladder.
+
+			Switch statement consists of conditional based cases and a default case.
+
+			In a switch statement, the "case value" can be of "char" and "int" type.
+
+			Following are some of the rules while using the switch statement:
+				1. There can be one or N numbers of cases.
+				2. The values in the case must be unique.
+				3. Each statement of the case can have a break statement.
+
+			Syntax :-
+
+				switch(expression) {    
+					case value1:    statement_1;
+						  	  break;
+    
+				case value2:    statement_2;
+						  break;
+					......
+					......
+					......
+
+				case value_n:    statement_n;
+						break;
+
+				default:         default statement;
+						break;
+				}
+
+			ex: 
+				#include<stdio.h>  
+				void main(){    
+					int number;     
+					printf("enter a number:");    
+					scanf("%d",&number);    
+					switch(number){    
+						case 10:    
+							printf("number is equals to 10");    
+							break;    
+						case 50:    
+							printf("number is equal to 50");    
+							break;    
+						case 100:    
+							printf("number is equal to 100");    
+							break;    
+						default:    
+							printf("number is not equal to 10, 50 or 100");    
+							break;
+   						}
+				}    
+
+
+		Iterative Statements :-
+
+			1) for Loop :-
+
+			A "For" Loop is used to repeat a specific block of code a known number of times.
+
+			Loop is used to execute the block of code several times according to the condition given in the loop.
+
+			Syntax :-  for( initialization ; condition ; Incremnt/decrement){
+						body
+						....
+					}
+		•	How it Works ? 
+
+				1)The initialization statement is executed only once.
+				2)Then, the condition is check.If the condition is evaluated to false, the for loop is terminated.
+				3)However, if the condition is true, statements inside the body of the  for loop are executed, and the update expression is 					    updated.
+				4)Then they check the Increment/decrement and check the condition
+
+		This process goes on until the condition is false. When the condition is false, the loop terminates.
+			ex:1)
+				// Print numbers from 1 to 10
+
+        					#include <stdio.h>
+					void main() {
+  						int i;
+  						for (i = 1; i < 11; ++i) {
+
+		    					printf("%d ", i);
+						}
+					}
+
+			output :-  1 2 3 4 5 6 7 8 9 10.
+
+			2) While Loop :-
+
+			A while loop in C programming repeatedly executes a target statement as long as a given condition is true.
+
+			Syntax :-   Initialization;
+		     		while(condition){
+					body
+					....
+					Increment / Decrement;
+				}
+
+			ex:1) 
+				#include <stdio.h>
+				void main () {
+
+   				/* local variable definition */
+ 		  		int a = 10;
+
+  		 		/* while loop execution */
+  		 		while ( a < 20 ) {
+      					printf("value of a: %d\n", a);
+      					a++;
+ 				}
+		}
+
+		Output : value of a : 10
+		   	     value of a : 11
+			         ....
+		   	     value of a : 19
+
+		3)Do - While Loop :-
+
+		Do - While loop  is Posted tested loop.
+
+		Using the do-while loop, we can repeat the execution of several parts of the statements. 
+
+		The do-while loop is mainly used in the case where we need to execute the loop at least once. 
+
+		The do-while loop is mostly used in menu-driven programs where the termination condition depends upon the end user.
+
+		Synatx :-  do{
+				body
+				....
+				}while(condition);
+
+		ex:
+			#include<stdio.h>  
+			void main ()  {  
+    				char c;  
+    				do{  
+    					printf("\n1. Print Hello\n2. Core2web \n3. Exit\n");
+    					int choice;  
+    					scanf("%d",&choice);  
+
+    					switch(choice)  
+    					{  
+        						case 1 :   
+        							printf("Hello\n");   
+        							break;  
+        						case 2:    
+       	 						printf("Core2web\n");  
+        							break;  
+        						case 3:  
+        							exit(0);   
+        							break;  
+        						default:   
+        							printf("please enter valid choice");      
+   				 	}  
+
+    				getchar();
+    				printf("do you want to enter more?");   
+    				scanf("%c",&c);  
+
+    				}while(c=='y' || c=='Y');  
+			}  
+
+
+	Jump Statements :-
+
+
+		1) Break Statement :-
+
+		The break statement terminates the execution of the nearest enclosing do, for, switch, or while statement in which it appears. 
+
+		Control passes to the statement that follows the terminated statement.
+
+		Within nested statements, the break statement terminates only the do, for, switch, or while statement that immediately encloses it.
+
+		ex:1)
+		#include <stdio.h>
+		void main() {
+   			for(int i=1 ; i<=5 ; i++ ) {
+      				printf( "%d ",i);
+      				if (i == 5)
+          					break;
+   		}
+	} // Loop exits only when i==5.
+
+	Output :- 1 2 3
+
+		2)Continue Statement :-
+
+		The continue statement is used to bring the program control to the beginning of the loop.
+ 
+		The continue statement skips some lines of code inside the loop and continues with the next iteration. 
+
+		It is mainly used for a condition so that we can skip some code for a particular condition.
+
+		Syntax :-  // loop statements.
+				continue;
+		  	     // Some lines of code which is to be skipped.
+
+			ex:
+				#include <stdio.h>
+				void main() {
+
+   					for(int i=1 ; i<=5 ; i++ ) {
+      						printf( "%d ",i);
+     		 				if (i == 3)
+         		    					continue;
+
+   					}
+
+				} // Loop skip when i==3 and continues.
+
+				Output :- 1 2 4 5	
+	
+		3)goto statement :-
+
+		The goto statement can be used to jump from anywhere to anywhere within a function.
+
+		Syntax :-  	Syntax1      |   Syntax2
+				----------------------------
+				goto label;  |    label:  
+				                     |    .
+			            	         |    .
+			   	  label:         |    goto label;
+
+		 	ex:
+				#include<stdio.h>
+				void main(){
+					int x = 5;
+					if(x==5){
+						goto goodMorning;
+					}
+					goodMorning :
+							printf("Good Morning\n");
+					}

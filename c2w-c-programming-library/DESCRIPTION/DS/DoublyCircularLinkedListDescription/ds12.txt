@@ -1,0 +1,24 @@
+
+
+
+    SELECTED METHOD:
+
+        PRINT PALINDROME ELEMENT INDEX IN LINKEDLIST.
+
+    DESCRIPTION:
+
+        This function checks if palindrome number is present in LinkedList or not,
+        and return index of occurrence.
+
+    EXAMPLE:
+
+        Input:
+               |--><--|10|<-->|121|<-->|30|<-->|414|--><--|
+               |__________________________________________|
+
+        Output:
+            2
+            4
+
+
+     

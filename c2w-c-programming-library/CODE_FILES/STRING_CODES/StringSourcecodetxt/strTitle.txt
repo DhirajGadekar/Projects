@@ -1,0 +1,39 @@
+
+
+
+	#include<stdio.h>
+	#include<string.h>
+
+	char *strTitle(char* str){
+
+		if(str[0]>=97 && str[0]<=122){
+
+			//convert 1st char in capital letter			
+			str[0]=str[0]-32;		
+
+		}
+		
+		return str;
+	}
+
+	void main(){
+
+		char str[200];
+		printf("Enter string:\n");
+		char ch;
+			int i=0;
+			//to input the string from user		
+			while((ch=getchar())!='\n'){
+					str[i++]=ch;
+
+			}
+			str[i]='\0';
+
+
+		printf("%s\n",strTitle(str));
+
+	}
+
+
+
+

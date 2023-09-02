@@ -1,0 +1,19 @@
+
+
+
+	SELECTED METHOD : 
+	
+			Lowercase count	
+
+	DESCRIPTION :  		
+			
+			This function gives number of lowercase 
+			character in a given string.	
+
+	EXAMPLE :	
+
+			Input :“Core2Web” 	
+			Output : “The number of lowercase character is 5”  	
+
+
+

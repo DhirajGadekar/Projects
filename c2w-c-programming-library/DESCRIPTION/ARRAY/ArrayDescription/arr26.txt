@@ -1,0 +1,24 @@
+
+
+
+		SELECTED METHOD : 
+	
+			26. PALINDROMIC ARRAY
+
+		DESCRIPTION : 
+
+			This function returns true if the entered array and 		
+			it's reverse are equal.			
+
+		EXAMPLE : 
+		
+			INPUT ARRAY :
+				
+				| 1 | 2 | 3 | 2 | 1 |
+				
+			RETURN VALUE :
+	
+				Array is palindromic.
+
+
+

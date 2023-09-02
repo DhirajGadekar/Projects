@@ -1,0 +1,27 @@
+
+
+
+    SELECTED METHOD:
+
+        SUM OF DATA DIGIT IN LINKEDLIST.
+    
+    DESCRIPTION:
+
+        This function adds the digits of a data element from singly linked list.
+        And replaces data with that sum.
+
+    EXAMPLE:
+
+        Input:
+
+            ---->|11|-->|12|-->|13|-->|14|----
+            |________________________________|
+            
+        Output:
+            
+            ---->|2|-->|3|-->|4|-->|5|----
+            |_____________________________|
+                    
+
+                    
+                    

@@ -1,0 +1,21 @@
+      
+      
+      
+	SELECTED METHOD:
+
+		COUNT NODES IN LINKEDLIST.
+
+    DESCRIPTION:
+	      
+        This function gives the count of nodes in LinkedList.
+
+	EXAMPLE:
+
+        Input:
+            NULL<--|10|<-->|20|<-->|30|<-->|40|-->NULL
+
+        Output:
+            
+            count = 4
+
+

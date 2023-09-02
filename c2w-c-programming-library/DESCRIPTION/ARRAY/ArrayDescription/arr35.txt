@@ -1,0 +1,27 @@
+
+
+
+        SELECTED METHOD :   
+                
+            35. GROUPING OF  AUTOMORPHIC NUMBER
+
+        DESCRIPTION :   
+            
+            A number is called Automorphic number if and only if its square             
+            ends in the same digits as the number itself. 
+
+            This function takes array address and array length as input 
+            and group Automorphic elements in array.  
+
+        EXAMPLE :   
+            
+            INPUT ARRAY :  
+        
+                | 10 | 15 | 25 | 30 | 45 | 52 | 60 | 76 | 80 |    
+        
+            OUTPUT ARRAY :   
+        
+                | 25 | 76 |   
+
+
+

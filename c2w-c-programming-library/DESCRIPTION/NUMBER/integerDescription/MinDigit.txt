@@ -1,0 +1,18 @@
+
+
+
+	SELECTED:
+		
+		Minimun Digit
+	
+	DESCRIPTION:
+	
+		Printing the minimun digit from the number.
+	
+	EXAMPLE:
+		
+		num = 12345. 
+		The minimun digit will be 1
+		
+		
+		

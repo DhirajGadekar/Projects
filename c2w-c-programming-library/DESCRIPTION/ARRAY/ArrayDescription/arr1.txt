@@ -1,0 +1,26 @@
+
+
+
+        SELECTED METHOD : 
+
+            1. REVERSE ARRAY 
+
+        DESCRIPTION :
+
+            Reversing the elements in array means changing the order of elements 
+            such that first element becomes last and the last element becomes           
+            first, Second becomes second last and so on .This process continues 
+            until all the elements are reversed .
+
+        EXAMPLE :
+
+            INPUT ARRAY :
+
+                | 1 | 2 | 3 | 4 |
+            
+            OUTPUT ARRAY :
+                
+                | 4 | 3 | 2 | 1 |
+            
+
+

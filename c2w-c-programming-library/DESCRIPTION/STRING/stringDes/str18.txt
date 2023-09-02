@@ -1,0 +1,19 @@
+
+
+
+	SELECTED METHOD : 
+	
+			Uppercase count	
+
+	DESCRIPTION :  
+	
+			This function gives number of uppercase 
+			character in a given string.	
+
+	EXAMPLE :	
+
+			Input :“Core2Web” 	
+			Output : “The number of uppercase character is 2”  	
+
+
+

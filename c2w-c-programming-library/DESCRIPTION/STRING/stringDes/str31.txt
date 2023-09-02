@@ -1,0 +1,18 @@
+
+
+
+	SELECTED METHOD : 
+			
+			Reverse String by words
+
+	DESCRIPTION : 
+			
+			In this function task is to reverse 
+			the order of the words in the given string. 
+
+	EXAMPLE :
+
+			Input :“Core2web Technologies” 
+			Output :“Technologies Core2web”
+
+ 

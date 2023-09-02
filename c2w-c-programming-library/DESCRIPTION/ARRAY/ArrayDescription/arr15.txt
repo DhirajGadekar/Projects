@@ -1,0 +1,25 @@
+﻿		
+
+
+		SELECTED METHOD:
+
+			15. MOVE ALL NEGATIVE TO ONE SIDE OF ARRAY
+
+		DESCRIPTION:	
+		
+			An array contains both positive and negative numbers 
+			in random order.Rearrange the array elements so that 
+			all negative numbers appear before all positive numbers.		
+
+
+		EXAMPLE:
+		
+			INPUT ARRAY :
+
+				| -10 | 5 | -1 | 5 | -6 | 16 |
+
+			OUTPUT ARRAY: 
+
+				| -10 | -1 | -6 | 5 | 5 | 16 | 
+
+

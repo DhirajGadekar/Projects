@@ -1,0 +1,19 @@
+
+
+
+	SELECTED METHOD : 
+	
+			Anagram String	
+
+	DESCRIPTION :  
+	
+			Two strings are said to be anagram if we can form one string by arranging the characters of another string.	
+
+	EXAMPLE :	
+
+			Input :“race” 	
+			Input :“care” 	
+			Output : “The given strings are anagram string”  	
+
+
+

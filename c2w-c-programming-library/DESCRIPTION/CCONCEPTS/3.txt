@@ -1,0 +1,179 @@
+
+
+
+	C Operators :- 
+
+		Operators are used to perform operations on variables and values.
+ 
+		C Divides the operators in following groups...,
+
+			I)  Unary Operators.
+
+	           		II)  Arithmetic Operators.
+
+	          		III)  Assignment Operators.
+
+	          		IV)  Comparison Operators.
+
+			V)  Logical Operators.
+
+	          		VI)  Bitwise Operators.
+
+	I)Unary Operators :-
+
+		1)  unary Operators that act upon a just a single operand for Performing operations.
+
+            	2)  All the unary operators have equal precebdence and their associativity is from left to right.
+
+		3)  we get combine the unary operator with an operand, we get the unary expression.
+
+		4)  Incerement and decrement are two types of Operators are combine with single operand to perform the operations.
+
+		5)  Increment ( ++ )  have two types i.e., PreIncrement (++a) and PostIncrement ( a++ ).
+
+		6)  Decrement ( -- ) have two types i.e., PreDecrement (--a) and PostDecrement ( a-- ).	
+
+		ex 1) . int x = 10;
+	       		int y = ++x;	...PreIncrement.
+
+	       		output : y=11.
+
+			int x = 10;
+	       		int y = x++;   ...PostIncrement.
+
+	       		output : y=10.
+
+		ex 2) . int z = 20;
+	            	int  x = --z;  ...PreDecrement.
+
+	            	output : z=19
+
+			int z = 20;
+	            	int x = z--;   ...PostDecrement.
+
+	            	output : z=20.
+
+	2)Arithmetic Operators :-
+
+		Arithmetic Operators are used to perform common Mathematical Operations.
+
+		Operator	     Name	  	   Description			Example
+
+	       	+                  Addition	          Adds together Two Values	                x + y
+
+	        	-	             Substraction         Substract one value from other	    x - y
+
+	       	*               Multiplication        Multiplies Two Values		    x * y
+
+	       	/		 Division	          Divides one value from other	    x / y
+
+	       	%		 Modulus	          Returns the division remainder	    x % y
+
+
+	3)Assignment Operators :-
+
+		Assignment Operators are used to assign values to Variables.
+
+		Operator		Example	 Same As
+		
+	      	=                     		x=5		   x=5		
+		
+	      	+=	                 	x+=3		  x = x + 3
+
+	       	-=                   		x-=5	              x = x - 5		
+	   
+	       	*=		     	x*=2	              x = x * 2
+	
+	       	/=		     	x/=2		  x = x / 2
+
+   	       	%=	     		x%=10	              x = x % 10
+
+
+	4)Comparison Operators :-
+
+         		•Comparison operators are used to compare two values (or variables).
+         		•The return value of a comparison is either 1 or 0, which means true (1) or false (0).
+
+		Operator		Name				Example
+	  	  		
+	      	==                          Equal To	 		x == y	
+		   
+	      	!=	              Not Equal to 		x != y	
+		    
+	       	>                	Greater than		 	x > y	
+			    	
+	       	<		less than                                x < y	
+
+	       	>=		Greater then equal to	x >= y	
+		    
+   	       	<=		less than equal to	   	x <= y	
+
+
+	5)Logical Operators :-
+
+         		•Logical operators are used to determine the logic between variables or value.
+	
+		Operator	Name			Description								Example
+
+	    	&& 		logical AND       Returns true if both statements are true	  	 	x<5 && x<10
+
+	     	||     		logical OR          Returns true if one of the statements true	   	             x<5 || x<4
+
+	     	 !		logical NOT       Reverse the result,returns false if the result  		!(x<5 &&x<10)
+ 				                	    is true 
+
+	6)Bitwise Operators :-
+
+		Bitwise operators are characters that represent actions (bitwise operations) to be performed on single bits.	
+
+		Operator	Name				Example
+
+	    	& 		bitwise AND    	        x=5 & y=9    int a = (x&y)
+
+	     	|     		bitwise OR         	        x=5 | y=9    int a = (x|y)
+
+	     	^		bitwise XOR	       	        x=5 ^ y=9    int a = (x^y)     
+  
+	    	>>		left shift	                    x=5 >> y=9  int a = (x>>y)
+
+	   	<<		right shift	                    x=5 << y=9  int a = (x<<y)
+
+
+	Truth Table :-
+
+	1) AND :-
+
+		T     T		T
+
+		T     F		F
+
+		F     T		F
+
+		F     F		F
+
+	2) OR :-
+
+		T     T		T
+
+		T     F		T
+
+		F     T		T
+
+		F     F		F
+
+	3) XOR :-
+
+		T     T		F
+
+		T     F		T
+
+		F     T		T
+
+		F     F		F
+	
+	    
+
+
+
+
+

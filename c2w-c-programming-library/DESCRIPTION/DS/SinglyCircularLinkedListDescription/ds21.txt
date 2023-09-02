@@ -1,0 +1,26 @@
+
+
+
+    SELECTED METHOD:
+
+        Nth OCCURRENCE OF ELEMENT IN LINKEDLIST.
+
+    DESCRIPTION:
+
+        This function checks if given number is present in LinkedList or not,
+        and return index of Nth occurrence given by user
+
+    EXAMPLE:
+
+        Input:
+            ---->|10|-->|20|-->|20|-->|30|-->|20|----
+           |________________________________________|
+            
+            Element:20
+            occurrence:3
+
+        Output:
+            5
+
+
+                    

@@ -1,0 +1,27 @@
+
+
+
+        SELECTED METHOD :   
+                
+            31. GROUPING OF PERFECT NUMBER   
+
+        DESCRIPTION :   
+            
+            Perfect number, a positive integer that is equal to the sum of          
+            its proper divisors.   
+
+            This function takes array address and array length as input 
+            and group Perfect elements in array.  
+
+        EXAMPLE :   
+            
+            INPUT ARRAY :  
+        
+                | 1 | 6 | 13 | 18 | 28 | 75 | 257 | 496 | 1578 |    
+        
+            OUTPUT ARRAY :   
+        
+                | 6 | 28 | 496 |   
+
+
+

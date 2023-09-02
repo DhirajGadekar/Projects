@@ -1,0 +1,318 @@
+
+
+
+	Strings :-
+
+	-String is nothing but it is a collection of characters which ends with character as '\0'.
+
+	Declaration of strings :
+
+		char str[size]; 
+
+	Intialization of String :
+
+	1. By Using initializer List :
+
+	Char arr[] = {'c'  , 'o'  , 'r' , 'e' , '2' , 'w' , 'e' , 'b' , '\0' };
+
+	2. By Using string literal:
+     		char *str = "Core2web";
+	-string literal in the end '\0' is added.
+	-'\0' because it can show where the string ends.
+
+      	3.   By using subscript :
+		Example :
+			#include<stdio.h>
+			void main(){
+
+				char str[8];
+
+				str[0] = 's';
+				str[1] = 'a';
+				str[2] = 'c';
+				str[3] = 'h';
+				str[4] = 'i';
+				str[5] = 'n';
+				str[6] = '\0';
+
+				printf("%s\n",str);
+	}
+    
+  	 How to take Input String from User :
+
+	(1)By using scanf ():
+		
+		#include<stdio.h>
+		void main(){
+			char name[20] ;
+			printf("Enter string :");
+			scanf("%s",name);
+			printf("%s",name);
+		}
+
+		Output : 1 :  Enter string : Core2web
+				Core2web
+
+	     2 : Enter string : Core2Web Tech
+		Core2web
+
+	We can take string input in C using scanf("%s", str). But, it accepts string only until it finds the first space. 
+
+	2 . By using gets():
+    		Syntax :    char* gets(char *str)
+
+	#include <stdio.h>
+	void main()
+	{
+   		char str[20];
+   		gets(str);
+   		printf("%s", str);
+	}
+	After Compiling warning occurs for gets():
+
+	Warning : implicit declaration of function 'gets';did you mean 'fgets'?
+ 	the 'gets' function is dangerous and should not be used 
+
+	Input: Core2web Tech
+	Output: Core2web Tech
+
+	Why gets() is Dangerous?
+
+	gets() doesn't check size of array it will take any number of inputs and due to this if our array size is 10 and we are giving charcters 20 as input 	it will take .
+	But when we try to print it :
+	******stack smashing detected ****:terminated
+	Aborted.
+
+	3.By Using fgets():
+     		To overcome gets() warning we use fgets().
+     	Syntax : 
+		char *fgets(char *str, int size, FILE *stream)
+	Example :
+    		#include<stdio.h>
+     		void main(){
+			char str[10];
+			fgets(str,10,stdin);
+			printf("%s\n",str);
+  	 }
+
+	Input : Core2web Tech
+	Output : Core2web 
+	Explanation : fgets read only character till its size
+
+
+	3. Using %[^\n]s inside scanf:
+		* It will read until we press 'Enter' it doesn't stop at space
+		#include<stdio.h>
+		void main(){
+			char str[20];
+			scanf("[^\n]s",str);
+            	printf("%s",str);
+	}
+
+	Input : Core2web Tech
+	Output : Core2web Tech
+
+	* puts()  - for printing 
+
+		- puts() is more preferred for printing string because it is easy .
+ 		   It doesn't need format specifier and '\n' for new Line.
+
+		- puts() moves the cursor to next line by default.
+		
+	Example :
+		 #include<stdio.h>
+		void main(){
+			char str[10] = "Sachin";
+			puts(str); // Sachin
+		}
+
+	String Functions :
+
+	(1)strlen(): 
+
+		It returns the length of string.
+		Syntax : 
+			size_t strlen(const char *str)
+			-size_t represents long unsigned int .
+
+       	-  It takes a string as input and writes the length of that string without including the end character '\0'.
+
+	Example : 
+
+		#include<stdio.h>
+		#include<string.h>
+		void main(){
+			char str[20] = "Core2web Tech";
+			printf("Length of  string : %d\n",strlen(str));
+		}
+		Output : Length of string : 13
+
+	(2)strcmp():
+
+		Strcmp() takes strings as input , then compares them and returns an integer based on the following condition
+	Syntax : 
+
+		int strcmp(const char *str1,const char *str2)
+   		i)0 is returned when two strings are the same
+   		ii)If str1<str2 then a negative value is returned
+   		iii)If str1>str2 then a positive value is returned
+
+			Example : 
+				#include<stdio.h>
+				#include<string.h>
+				void main(){
+					char str1[20] = "Core2Web";
+					char str2[20] = "Core2Web";
+					if(strcmp(s1,s2) ==0){
+						printf("string 1 ans string 2 are equal\n");
+				}else{	
+ 					Printf("string 1 and string 2 are different\n");		
+     			 }
+          		 }
+
+	Output : string 1 and string 2 are equal
+
+	(3)strncmp():
+		Syntax : int strncmp(const char *str1,const char *str2,size_t n)
+
+			- It Compares only the first n characters of both the strings and returns an integer value
+
+	Example : 
+	
+	#include<stdio.h>
+	#include<string.h>
+	int main() {
+
+  		char s1[20] = "Core2Web";
+  		char s2[20] = "Core2web";
+ 		 /* it only compares first 5 characters of both strings*/
+  		if (strncmp(s1, s2, 5) == 0) {
+   			 printf("string 1 and string 2 are equal");
+  		} else {
+    			printf("string 1 and 2 are different");
+ 		 }
+
+	}
+
+	Output : string 1 and string 2 are equal
+
+	(4)strcat():
+
+		Syntax :     char *strcat(char *str1, char *str2)
+
+			- It takes two strings as input and concatenates the second string to the first string, which means it will attach the second string to the end of the first string and save the concatenated 			  string to the first string. The size of the first string should be large enough to save the result.
+
+	Example :
+		#include <stdio.h>
+		#include <string.h>
+
+		void main() {
+
+ 			 char string1[20] = "Hello";
+ 			 char string2[10] = "World";
+  			strcat(string1, string2);
+  			printf("Output string after concatenation: %s", string1);
+
+	}
+		Output : Output string after concatenation : HelloWorld
+
+	(5) strncat():
+
+		Syntax :   char *strncat(char *str1, char *str2, int n)
+
+			- It takes two strings as input and attaches only the first n characters of the second string to the end of the first string.
+
+	#include <stdio.h>
+	#include <string.h>
+
+	void main () {
+
+     		char string1[10] = "Hello";
+     		char string2[10] = "World";
+     		strncat(string1,string2, 3);
+     		printf("Concatenation using strncat: %s", string1);
+	}
+
+	Output : Concatenation using strncat : HelloWor
+
+	(6)strcpy()
+
+      		Syntax : char *strcpy( char *str1, char *str2)
+			- It takes two strings as input and overwrites the data of the second string into the first string, i.e., it copies the data of the second string to the first string.
+	Example : 
+
+	#include <stdio.h>
+	#include <string.h>
+
+	void main() {
+
+  		char s1[20]; 				// string1
+  		char s2[15] = "ShashiSir"; 	// string2
+  		strcpy(s1, s2); // copying string2 to string1
+  		printf("String s1 is: %s", s1); // printing string1
+	}
+
+	Output : String s1 is : ShashiSir
+
+	(7)strncpy():
+
+ 			Syntax : char *strncpy( char *str1, char *str2, size_t n)
+
+				- It takes two strings as input and overwrites the data of the first string by the second string based on specific conditions.
+
+		-If the length of string2 is greater than n, it copies only the first n characters of string2 to string1; otherwise, it copies the entire string2 to string1.
+
+	Example :
+
+		#include <stdio.h>
+		#include <string.h>
+		void main() {
+
+  			char string1[20];
+  			char string2[20]= "SachinSir";
+  			strncpy(string1, string2, 6);
+  			printf("String s1 is: %s", string1);
+	}
+
+	Output : String s1 is : Sachin
+	(8)strlwr():
+
+		Synatx : char* strlwr(char *str)
+			- string converts into lowercase  by using strlwr()
+	Example :
+
+		#include<stdio.h>
+		#include<string.h>
+		void main(){
+		 char str[20] = "SaAhIn";
+	       printf("%s\n",strlwr(str));
+	}
+
+	Output : sachin
+
+	(9)strupr():
+
+		Synatx : char* strupr(char *str)
+
+			- string converts into UpperCase  all characters by using strlwr()
+	Example :
+
+		#include<stdio.h>
+		#include<string.h>
+		void main(){
+		 	char str[20] = "SaAhIn";
+	       		printf("%s\n",strupr(str));
+		}
+
+	Output : SACHIN
+
+
+
+	           
+         
+
+	
+
+
+	       
+

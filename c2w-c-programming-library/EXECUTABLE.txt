@@ -1,0 +1,2 @@
+#!/bin/sh
+gcc -w CPROJECT.c -o Core2Web `pkg-config --cflags --libs gtk+-3.0` -export-dynamic

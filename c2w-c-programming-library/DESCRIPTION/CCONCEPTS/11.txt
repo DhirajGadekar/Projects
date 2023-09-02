@@ -1,0 +1,231 @@
+
+
+
+	***** Dynamic memory allocation in C *****
+
+	Dynamic memory allocation used:
+                        
+                         1) memory is allocated at run time.
+                         2) memory can be increased while executing program.
+                         3) used in linked list.
+
+
+	The concept of dynamic memory allocation in c language enables the C programmer to allocate memory at runtime. Dynamic memory allocation in c    language is possible by 4 functions of stdlib.h 	header file.
+
+    	1) malloc()
+    	2) calloc()
+    	3) realloc()
+    	4) free()
+
+	*****************************************************************************************************************************************************
+
+	1) malloc() : 
+  
+  	I) What is malloc() ??
+           
+           	i) The malloc() function allocates single block of requested memory.
+          	ii) It doesn't initialize memory at execution time, so it has garbage value initially.
+         	iii) It returns a pointer of type void which can be cast into a pointer of any form.
+          	iv) If space is insufficient, allocation fails and returns a NULL pointer.
+          
+  	II) Description
+           
+          		-> The C library function void *malloc(size_t size) allocates the requested memory and returns a pointer to it.
+
+ 	III) Declaration
+
+          		-> void *malloc(size_t size)
+
+  	IV) Parameters
+
+          		-> size − This is the size of the memory block, in bytes.
+
+   	V) Return Value
+  
+          	 	-> This function returns a pointer to the allocated memory, or NULL if the request fails.
+        
+  	VI) Syntax of malloc()
+  
+          		-> ptr = (castType*) malloc(size);
+          
+  	VII)  Example:
+           
+           		#include <stdio.h>
+	   	#include <stdlib.h>
+
+	   	void fun(){
+	   	
+	   		int x=10;
+	   		int *ptr=(int*)malloc(sizeof(int));
+	   		*ptr=50;
+	   		printf("%d\n",*ptr);
+	   	
+	   		free(ptr);
+	   	}
+	   
+	   	void main(){
+	   	
+	   		fun();
+	   	}
+	   
+		OUTPUT: 
+	        	50  
+
+	********************************************************************************************************************************************************	 
+
+	2) calloc()
+    
+    	I) What is calloc() ??
+         
+            	i) The calloc() function in C is used to allocate a specified amount of memory and then initialize it to zero. 	
+           		ii) The function returns a void pointer to this memory location, which can then be cast to the desired type.
+          		iii) The function takes in two parameters that collectively specify the amount of memory ​​to be allocated.
+      
+   	II) Description
+	 
+	    	i) The C library function void *calloc(size_t nitems, size_t size) allocates the requested memory and returns a pointer to it.
+	   	ii) The difference in malloc and calloc is that malloc does not set the memory to zero where as calloc sets allocated memory to zero.
+
+  	III) Declaration
+  
+        		-> void *calloc(size_t nitems, size_t size)
+
+   	IV)  Parameters
+
+        		-> nitems − This is the number of elements to be allocated.
+        		-> size − This is the size of elements.
+
+   	V)  Return Value
+	
+        	           -> this function returns a pointer to the allocated memory, or NULL if the request fails.
+        	           -> size − This is the size of elements.
+   
+   	VI) Example
+    
+       		#include<stdio.h>
+       		#include<stdlib.h>
+       
+       		void main(){
+       		
+       			int *ptr=(int*)calloc(5,sizeof(int));
+       		
+       			for(int i=0;i<5;i++){
+       			
+       				*(ptr+i)=10+i;
+       			}
+       		
+       			for(int i=0;i<5;i++){
+       			
+       				printf("%d\n",*(ptr+i));
+       			}
+       			free(ptr);
+       
+       	}       
+      
+     	OUTPUT: 
+            	 10 11 12 13 14
+
+	******************************************************************************************************************************************************
+
+	3)Realloc()
+	
+  	 I) What is Realloc()???? 
+         
+         		i) realloc() should only be used for dynamically allocated memory. 
+        		ii) If the memory is not dynamically allocated, then behavior is undefined.
+       		iii) realloc deallocates the old object pointed to by ptr and returns a pointer to a new object that has the size specified by size. 
+   
+  	II) Description
+	
+		-> The C library function void *realloc(void *ptr, size_t size) attempts to resize the memory block
+	   	    pointed to by ptr that was previously allocated with a call to malloc or calloc.
+
+ 	III) Declaration
+
+        		-> void *realloc(void *ptr, size_t size)
+
+  	IV) Parameters
+
+    		ptr −> This is the pointer to a memory block previously allocated with malloc, calloc or realloc to be reallocated. 
+ 	    		If this is NULL, a new block is allocated and a pointer to it is returned by the function.
+
+   		size −> This is the new size for the memory block, in bytes. 
+           			If it is 0 and ptr points to an existing block of memory, the memory block pointed by ptr is deallocated and a NULL pointer is returned.
+
+   	V) Return Value
+	
+        		-> This function returns a pointer to the newly allocated memory, or NULL if the request fails.
+
+   	VI) Example
+   
+             		#include <stdio.h>
+	     		#include <stdlib.h>
+	
+	     		void main(){
+
+				int *ptr = (int *)malloc(sizeof(int)*2);
+				int i;
+				int *ptr_new;
+	
+				*ptr = 10;
+				*(ptr + 1) = 20;
+	
+				ptr_new = (int *)realloc(ptr, sizeof(int)*3);
+				*(ptr_new + 2) = 30;
+
+				for(i = 0; i < 3; i++){
+		
+					printf("%d ", *(ptr_new + i));
+			}
+			free(ptr);
+
+	      	}
+ 
+  
+  		OUTPUT: 10 20 30
+  	
+	******************************************************************************************************************************************************** 
+ 
+	4) free()
+
+   	I) what is free() ???
+       
+       	i) free method in C is used to dynamically de-allocate the memory. 
+      	ii) Dynamically allocated memory created with either calloc() or malloc() doesn't get freed on their own. 
+           		You must explicitly use free() to release the space.
+     	iii) Hence the free() method is used, whenever the dynamic memory allocation takes place. 
+      	iv) It helps to reduce wastage of memory by freeing it.  
+      
+   	II) Prototype
+    
+       	free(void *);
+ 
+	 III) example 
+ 
+ 	   	#include <stdio.h>
+	   	#include <stdlib.h>
+
+	   	void fun(){
+	   	
+	   		int x=10;
+	   		int *ptr=(int*)malloc(sizeof(int));
+	   		*ptr=100;
+	   		printf("%d\n",*ptr);
+	   	
+	   		free(ptr);
+	   	}
+	   
+	   	void main(){
+	   	
+	   		fun();
+	   	}
+	   	
+	   
+		OUTPUT: 
+	        	100
+	      
+	****************************************************************************************************************************************************  
+	 
+ 
+         
+        

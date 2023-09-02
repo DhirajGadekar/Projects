@@ -1,0 +1,28 @@
+
+
+
+        SELECTED METHOD :   
+                
+            38. GROUPING OF ABUNDANT
+
+        DESCRIPTION :   
+            
+            A number n is said to be an Abundant Number if the sum of         
+            all the proper divisors of the number denoted by sum(n) is              
+            greater than the value of the number n.   
+
+            This function takes array address and array length as input     
+            and group Abundant elements in array.  
+
+        EXAMPLE :   
+            
+            INPUT ARRAY :  
+        
+                | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 20 |    
+        
+            OUTPUT ARRAY :   
+        
+                | 12 | 18 | 20 | 
+
+                    
+

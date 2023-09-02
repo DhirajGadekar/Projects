@@ -1,0 +1,22 @@
+
+
+
+    SELECTED METHOD:
+
+        PRINT NODES IN LINKEDLIST
+
+    DESCRIPTION:
+
+        In a circular Singly linked list, the last node of the list contains a pointer to the first node of the list. 
+        We traverse the circular singly linked list until we reach the same node where we started. The circular singly 
+        linked list has no beginning or end. No null value is present in the next part of any of the nodes
+        
+        1.To display the entire singly linked list, we need to traverse it from first to last.
+        2.using temp variable we can move ahead till we don't find the head.
+
+      EXAMPLE:
+
+                ---->|10|-->|20|-->|30|-->|40|----
+                |________________________________|
+            
+

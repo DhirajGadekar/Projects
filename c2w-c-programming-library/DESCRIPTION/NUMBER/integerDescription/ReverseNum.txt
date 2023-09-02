@@ -1,0 +1,18 @@
+
+
+
+	SELECTED:
+		
+		Integer Reverse
+	
+	DESCRIPTION:
+		
+    		Integer reverse is reversing a number. 
+    		
+    	EXAMPLE:
+    		
+    		num = 12345.
+    		Reverse num = 54321.
+    		
+    		
+    		

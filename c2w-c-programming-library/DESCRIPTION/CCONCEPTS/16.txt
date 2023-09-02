@@ -1,0 +1,113 @@
+	
+
+
+	File Handling:-
+
+		Until Now we Have begun using the functions such as scanf() and printf() to read and Write data. These are console oriented I/O 				functions,Which always use the terminal (keyboard and screen) as the target place.
+
+		This Works fine as long as the data is small. However, many real-life problems involve large volumes of data and in such situations,the 			Console oriented I/O operations give major problems such as losing of data after termination of program so after that File handling comes 		into the picture.
+
+		A file is placed on the disk where a group of related data is stored. Like most other languages,
+
+		C Supports a number of functions that have ability to perform basic file operations, which include :-
+			1)Naming a file.
+			2)Opening a file.	
+			3)Reading data from a file.	
+			4)Writing data to a file. 
+
+	There are two distinct ways to perform file operations in C. The first one is known as the low-level I/O and uses UNIX system calls the second is 	referred to as the high-level I/O. 
+	Operation and uses functions in C’s standard I/O library.
+
+
+	High Level I/O Functions 
+
+		We have to use a FILE type pointer to deal with files.
+		There are some modes to do operations on a file : 
+		
+			r - open the file for reading only.
+			w - open the file for writing only.
+			a - open the file for appending (or adding) data to it. 
+			r+ the existing file is opened to the beginning for both  reading and writing.
+			W+ same as w except both for reading and writing.
+			a+ same as a except both for reading and writing. 
+
+	Some examples of File Handling Functions :-
+
+		Function name with Syntax :- 						 
+		
+		1) -----fopen()------
+			Creates a new file for use or 
+			opens an existing file for use.
+
+			Syntax : 
+				FILE *fp; 
+				fp = fopen(“filename”,”mode”);
+		
+		2) ----fclose()------ 
+			Closes a file which has been opened 
+			for use.
+
+			Syntax : 
+				FILE *fp; 
+				fclose(fp);
+
+		3) -----fscanf()------
+
+			Syntax : 
+				FILE *fp =  fopen(“core2web.txt”,”w”); 
+				fscanf(fp,”%c”,&ch);
+
+		4) -----fprintf()------
+
+			Syntax : 
+				FILE *fp =  fopen(“C2w.txt”,”w”); 
+				fprintf(fp , "Core2web");
+
+		5) -----rewind()------
+			Sets the position to a 
+			desired point in the file.
+	
+			syntax : 
+				FILE *fp; 
+	        			rewind(fp);
+	
+		6) ------ftell()----------  
+			Gives the current position in 
+			the file(in terms from the start).  
+	
+			Syntax:
+				long ftell(FILE *pointer);
+
+		7) ------fputc() and fgetc()----------  
+
+			Stores the Character value in File.  
+	
+			Syntax:
+
+				FILE  *fp1 = fopen("Success.txt" , "r");
+				FILE  *fp2 = fopen("Property.txt" , "w");
+
+				char ch;
+				while((ch=fgetc(fp1)) != EOF) {
+					
+					fputc(ch , fp2);
+
+			}
+
+		
+		8) ------fputs() and fgets()----------  
+
+			Stores the String value in File.  
+	
+			Syntax:
+
+				FILE  *fp1 = fopen("Success.txt" , "r");
+				
+				char compName[20];
+
+				fgets( compName , 20 , fp1);
+				
+				puts( compName );
+										
+																					
+	

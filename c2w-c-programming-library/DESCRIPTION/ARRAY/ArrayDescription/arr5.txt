@@ -1,0 +1,48 @@
+
+
+
+        SELECTED METHOD : 
+
+            5. DELETE NUMBER THE ARRAY         
+
+        DESCRIPTION :
+
+            Deleting the element dose not means we are going to 
+            delete array method. we are just going to override 
+            the next element on targeted element  and reduce 
+            the array limit by 1  , and that's how we will not          
+            able to see it  
+
+        EXAMPLE :
+
+            INPUT 1:
+
+                INPUT ARRAY 1 : 
+
+                    | 1 | 2 | 3 | 4 | 5 |
+
+                TARGETED ELEMENT :
+
+                    2
+
+            OUTPUT 1:
+
+                | 1 | 3 | 4 | 5 |
+            
+            INPUT 2:
+
+                INPUT ARRAY 2 : 
+
+                    | 1 | 2 | 3 | 4 | 5 |
+
+                TARGETED ELEMENT :
+
+                    10
+
+            OUTPUT 2:
+
+                    | 1 | 2 | 3 | 4 | 5 |
+
+
+            
+            

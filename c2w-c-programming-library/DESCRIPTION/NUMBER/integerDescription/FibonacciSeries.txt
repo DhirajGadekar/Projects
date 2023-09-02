@@ -1,0 +1,19 @@
+	
+	
+	
+	SELECTED:
+	
+		Fibonacci Series:
+		
+	DESCRIPTION:
+
+		In case of fibonacci series, next number is the sum of previous 
+		two numbers 
+		
+	EXAMPLE:
+	
+		0, 1, 1, 2, 3, 5, 8, 13, 21 etc. 
+	        The first two numbers of fibonacci series are 0 and 1.
+	        
+
+

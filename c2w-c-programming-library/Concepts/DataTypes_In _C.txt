@@ -1,0 +1,240 @@
+Data Types -:
+
+Data type in C programming Language are used to specify what kind of value can be stored in a variable
+The memory size and type of value of a variable are determined by the variable Data types.
+
+In the C Language, data types are classifed are as follows,
+
+Basically their are 3 types of data type in C.
+
+                 1)Pre-defned Data Type.
+
+                 2)Derived Data Type.
+
+                 3)User-defned Data Type.
+
+
+
+1)Pre-defined Data Type :-
+
+          All the Pre-defned data types are already defned in the system . Pre-defned data types are
+
+         also called as Built-in data types. The Following are the Pre-defned data types in C-Language .
+
+        i] Integer Data Type :-
+
+       Integer Data type is a set of Whole Numbers.
+
+        ex . int var = 10;
+
+       We use keyword "int" to represent the integer data type in C.
+
+       The integer data types is used with diferent types of modifers like short,long,signed and
+        unsigned.
+
+       The memory size of integer is 4 bytes i.e. 32 bits in C (1 byte = 8 bits).
+
+       The format specifer is used for integer data type is " %d ".
+
+
+
+        III]Character Data Type :-
+
+       The character data type is a set of characters enclosed in Single Quotatons.
+
+        ex . char c = 'A';
+
+       we use keyword "char" to represent the character data type in C.
+
+       The memory size of character is 1 byte i.e. 8 bits in C.
+      The format specifer in used for char data type is " %c ".
+
+
+
+        ii]Float Data Type :-
+
+      Float data type are a set of numbers with the decimal value.
+
+       ex . foat f = 10.000;
+
+      we use keyword "foat" to represent the foat data type in C.
+
+      The memory size of foat in 4 bytes i.e. 32 bits in C (1 byte = 8 bits).
+
+      The format specifer is used for foat data type is " %f ".
+
+
+
+        iv]Double Data Type :-
+
+      The Double data type are a set of numbers with the decimal value but here the decimal places
+       are 15 or 19 .
+
+       ex . double d = 100.00000;
+
+      we use keyword "double" to represent the double data type in C.
+
+      The memory size of double is 8 byte i.e 64 bits in C.
+
+      The format specifer is used for double data type is " %lf ".
+
+
+
+        v]Void Data Type :-
+
+      The void data type means nothing or no value.
+
+      The minimum memory for void is 1 byte.
+
+
+
+2)Derived Data Type :- Derived data types are derived from Pre-defned types.
+
+       The following are the Derived data types in C- Language...,
+
+       i] Array :-
+
+      Array is the collecton of Similar data type.
+
+      We can store the multple values in Single Variable Name in Array.
+   Syntax : data_type Var_Name[ size ] ;
+
+    ex. int arr[10];
+
+    ii] Pointer :-
+
+   The Pointer is a variable which stores the address of another variable.
+
+   We Can Store the address of any data using Pointer.
+
+   The Size of Pointer is 8 byte.
+
+   Syntax : data_type *Var_name = Address.
+
+    ex . int x = 10;
+
+       int *ptr = &x;
+
+   We Can Access the Variable using the pointer i.e store the address of variable.
+
+
+
+    iii] Functon :-
+
+   A Functon is a block of code which only runs when it is called.
+
+   You can pass the data , Known as arguments and Catch the data int functon know as
+    Parameters.
+
+   Functons are used to perform certain actons.
+
+   Functons are Used to reduce the Redundancy Of Code.
+
+   Defne the Code Once and used is many tmes...
+
+   Syntax : return_type Functon_Name ( parameters );
+
+    ex . void fun(){ ... return type is void with Zero parameters.
+
+             int x = 10;
+
+             printf("%d\n",x);
+
+             }
+
+        void main(){
+
+              fun();    ... Call the functon with zero Arguments.
+
+             }
+3)User-defned Data type :- User defned data types are derived from Pre-defned data type and
+
+      Derived data type.
+
+      The following are user-defned data type in C...,
+
+      i] Structure :-
+
+     Structures are the group of several related variables in one place.
+
+     Each variable in structure are know as member of structure.
+
+     We use " struct " keyword to represent the structure in C.
+
+     Structure can contain many diferent data type like int , foat , char , double etc.
+
+     Syntax : struct structure_Name {
+
+                        data_type var_name;
+
+                        data_type var_name;
+
+               };
+
+      ex . struct playerName{
+
+               char pName[20];
+
+               int jerNo;
+
+               foat avg;
+
+               };
+
+      ii] Union :-
+
+     Union is also a group of several related variables in one place as like structure.
+
+     We use " union " keyword to reprsent the Union in C.
+
+     Union can Contain many Diferent data type but one diference is related to memory.
+
+     In Union , Base size is Highest Fixed data type.
+
+     Their are multple data type in union but they get memory at a tme one only.
+
+     Syntax : union union_Name{
+
+                        data_type var_name;
+                      data_type var_name;
+
+            };
+
+    ex . union empData{
+
+            char empName[20];
+
+            int empId;
+
+            foat salary;
+
+    };
+
+
+
+    iii] Enumeration :-
+
+   Enumeraton is bydefault " Integer " Contant.
+
+   Syntax : enum enum_Name{
+
+                      name1,
+
+                      name2,
+
+                      name3
+
+            };
+
+    ex . enum Partners{
+
+            PramodSir,
+
+            ShashiSir,
+
+            SachinSir,
+
+            ShriSir
+
+    };
+

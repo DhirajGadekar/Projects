@@ -1,0 +1,39 @@
+
+
+
+	//consonant count
+	#include<stdio.h>
+
+	int consonantCount(char *str){
+		int count=0;
+		while(*str!='\0'){
+			//check character is consonant or not
+			if(*str!='A' && *str!='E' &&  *str!='I' &&  *str!='O' && *str!='U' && *str!='a' && *str!='e' &&  *str!='i' &&  *str!='o' && *str!='u'){				
+				if((*str>='a' && *str<='z') || (*str>='A' && *str<='Z')){
+					count++;
+				}
+			}
+			str++;
+		}
+		return count;
+	}
+
+	void main(){
+		char str[100];
+		
+		printf("Enter String:\n");
+		char ch;
+		int i=0;
+		//get string from user
+		while((ch=getchar())!='\n'){
+			str[i]=ch;
+			i++;
+		}
+		str[i]='\0';
+		
+		//print string
+		printf("%d\n",consonantCount(str));
+		
+	}
+
+

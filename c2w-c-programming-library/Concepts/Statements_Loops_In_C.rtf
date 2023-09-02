@@ -1,0 +1,354 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.22000}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs32\lang9 C - Statements :-\fs28\par
+
+\pard\sa200\sl276\slmult1\qj\b0\fs24 C statements consist of tokens, expressions, and other statements. \par
+
+\pard\sa200\sl276\slmult1\qj A statement that forms a component of another statement is called the "body" of the enclosing statement. \par
+\tab\tab\tab\tab\tab\b\i ---Control Statements---\par
+\i0 Conditional Statements\tab      \tab  Iterative Statements\tab       \tab Jump Statements\tab\b0\tab 1)if.\tab\tab\tab\tab    1)for loop.\tab\tab\tab   1)break.\par
+\tab 2)if-else.\tab\tab\tab    2)while loop.\tab\tab   2)continue.\par
+\tab 3)Nested if-else.\tab\tab    3)do-while loop.\tab\tab   3)goto.\par
+\tab 4)Switch.\par
+\par
+\ul\b Conditional Statements :-\par
+\ulnone\tab 1) if Statement :-\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\b0 The IF statement is a decision-making statement that guides a program to make decisions based on specified criteria.\par
+{\pntext\f1\'B7\tab}The condition of if statement is true then and only then they execute the statements in the body of 'if - stateement'.\par
+{\pntext\f1\'B7\tab}If the contion is zero or false then they didn't execute the statemnets in If-Body.  \par
+{\pntext\f1\'B7\tab}\b Syntax \b0 :-  if ( condition )\par
+
+\pard\sa200\sl276\slmult1\qj\tab\ul\b ex:1) \b0\i\par
+\ulnone\i0\tab\tab int x = 10;\par
+\tab          \tab if(x==10)\{\par
+\tab                 printf("Value of x : %d\\n",x);   ...Execute the ifBody Statement.\par
+\tab\tab      \}\par
+\tab\tab    \b output\b0  = Value of x : 10.\par
+\tab\ul\b ex:2)\b0\i\par
+\ulnone\i0\tab\tab int x = 5;\par
+\tab\tab if(x>10)\{\par
+\tab\tab     printf("Value of x :%d\\n",x);   ...Doesn'tExecute the ifBody statement.\par
+\tab\tab\tab\}\par
+\tab\tab printf("Value of x : %d\\n",x);\par
+\tab\tab\b output \b0 = Value of x : 5.\tab\par
+\par
+
+\pard\sa200\sl276\slmult1\qj\b\tab 2) if-else Statement :-\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\b0 The if-else statement is a decision-making statement that guides a program to make decisions based on specified criteria.\par
+{\pntext\f1\'B7\tab}The condition of if statement is true then and only then they execute the statements in the body of 'if - stateement' othet than they execute the statement in else body..\par
+{\pntext\f1\'B7\tab}If the condition is false then they execute the else body statements.  \par
+{\pntext\f1\'B7\tab}\b Syntax \b0 :-  if ( condition )\{\par
+
+\pard\sa200\sl276\slmult1\qj\tab\tab\tab body...\par
+\tab\tab     \}else \{\par
+\tab\tab\tab body...\par
+\tab\tab\tab\}\par
+\tab\ul\b ex:1) \par
+\ulnone\b0\tab\tab    int x = 10;\par
+\tab          \tab   if(x==10)\{\par
+\tab                   printf("Value of x : %d\\n",x);   ...Execute the ifBody Statement.\par
+\tab\tab      \}\par
+\tab\tab else\{\par
+\tab\tab       printf("Hello\\n");\par
+\tab\tab     \}\par
+\tab\tab    \b output\b0  = Value of x : 10.\par
+\tab  \ul\b ex:2)\ulnone\par
+\b0\tab\tab int x = 5;\par
+\tab\tab if(x>10)\{\par
+\tab\tab     printf("Value of x :%d\\n",x);   ...Doesn'tExecute the ifBody statement.\par
+\tab\tab      \}\par
+\tab\tab else\{\par
+\tab\tab\tab printf("Hello.\\n");\par
+\tab\tab     \}\par
+\tab\tab\b output \b0 = Hello.\tab\par
+\tab\par
+\tab\b 3)Nested if-else :-\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\b0 When an if else statement is present inside the body of another \ldblquote if\rdblquote  or \ldblquote else\rdblquote  then this is called nested if else.\par
+{\pntext\f1\'B7\tab}\b Syntax :-\par
+
+\pard\sa200\sl276\slmult1\qj\tab\tab\b0\i if(condition1)\{\i0\par
+\tab\tab\tab\i //Nested if else inside the body of "if"\par
+\i0    \tab\tab\b\tab  if(condition2) \{\par
+       \tab\tab\tab\tab //Statements inside the body of nested "if"\par
+   \tab\tab\tab  \}\par
+\tab\tab\tab    else \{\par
+       \tab\tab\tab\tab //Statements inside the body of nested "else"\par
+    \tab\tab\tab\}\par
+\b0\tab\tab\}\par
+\tab\tab\i else \{\par
+    \tab\tab\tab //Statements inside the body of "else"\par
+\tab\tab\}\par
+\i0\tab\par
+\tab\ul\b ex: \par
+\ulnone\b0\tab\tab #include <stdio.h>\par
+\tab\tab void main() \{\par
+   \tab\tab int var1, var2;\par
+   \tab\tab printf("Input the value of var1:");\par
+   \tab\tab scanf("%d", &var1);\par
+   \tab\tab printf("Input the value of var2:");\par
+   \tab\tab scanf("%d",&var2);\par
+   \tab\tab if (var1 != var2)\{\par
+   \tab\tab\tab printf("var1 is not equal to var2\\n");\par
+\tab\tab\tab //Nested if else\par
+\tab\tab\tab\tab if (var1 > var2)\{\par
+\tab\tab\tab\tab\tab printf("var1 is greater than var2\\n");\par
+\tab\tab\tab\tab\tab\}\par
+\tab\tab\tab\tab else\{\par
+\tab\tab\tab\tab\tab printf("var2 is greater than var1\\n");\par
+\tab\tab\tab\tab\tab\}\par
+\tab\tab\tab\}\par
+   \tab\tab\tab else \{\par
+\tab\tab\tab printf("var1 is equal to var2\\n");\par
+\tab\tab\}\par
+\tab\}\par
+\b Output:\b0\par
+\ul Input the value of var1 : 12\par
+Input the value of var2 : 21\par
+var1 is not equal to var2\par
+var2 is greater than var1\par
+\par
+
+\pard\sa200\sl276\slmult1\qj\ulnone\b\tab 4) Switch Statement :-\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\b0 The switch statement is used for executing one condition from multiple conditions. It is similar to an if-else-if ladder.\par
+{\pntext\f1\'B7\tab}Switch statement consists of conditional based cases and a default case.\par
+{\pntext\f1\'B7\tab}In a switch statement, the "case value" can be of "char" and "int" type.\par
+{\pntext\f1\'B7\tab}Following are some of the rules while using the switch statement:\par
+
+\pard\sa200\sl276\slmult1\qj\tab\tab 1. There can be one or N numbers of cases.\par
+\tab\tab 2. The values in the case must be unique.\par
+\tab\tab 3. Each statement of the case can have a break statement.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\b Syntax :-\par
+
+\pard\sa200\sl276\slmult1\qj\tab\tab\b0 switch(expression) \{    \par
+\tab\tab\tab case value1:    statement_1;\par
+\tab\tab\tab\tab\tab break;\par
+    \par
+\tab\tab\tab case value2:    statement_2;\par
+\tab\tab\tab\tab\tab break;\par
+
+\pard\li3600\sa200\sl276\slmult1\qj .....\par
+......\par
+......\par
+
+\pard\li2160\sa200\sl276\slmult1\qj case value_n:    statement_n;\par
+\tab\tab break;\par
+default:         default statement;\par
+\tab\tab break;\par
+\}\par
+\b\par
+
+\pard\sa200\sl276\slmult1\qj\b0\tab\ul\b ex: \ulnone\par
+\tab\tab\b0 #include<stdio.h>  \par
+
+\pard\li1440\sa200\sl276\slmult1\qj void main()\{    \par
+
+\pard\li2160\sa200\sl276\slmult1\qj int number;     \par
+printf("enter a number:");    \par
+scanf("%d",&number);    \par
+switch(number)\{    \par
+case 10:    \par
+
+\pard\li2880\sa200\sl276\slmult1\qj printf("number is equals to 10");    \par
+break;    \par
+
+\pard\li2160\sa200\sl276\slmult1\qj case 50:    \par
+
+\pard\li2880\sa200\sl276\slmult1\qj printf("number is equal to 50");    \par
+
+\pard\li2160\sa200\sl276\slmult1\qj\tab break;    \par
+case 100:    \par
+\tab printf("number is equal to 100");    \par
+\tab break;    \par
+default:    \par
+\tab printf("number is not equal to 10, 50 or 100");    \par
+\tab break;\par
+\}\par
+\}    \par
+
+\pard\sa200\sl276\slmult1\qj\ul\b Iterative Statements :-\par
+\ulnone\tab 1) for Loop :-\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\b0 A "For" Loop is used to repeat a specific block of code a known number of times.\par
+{\pntext\f1\'B7\tab}Loop is used to execute the block of code several times according to the condition given in the loop.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\b Syntax \b0 :-  for( initialization ; condition ; Incremnt/decrement)\{\par
+
+\pard\sa200\sl276\slmult1\qj\tab\tab\tab\tab body\par
+\tab\tab\tab\tab ....\par
+\tab\tab\tab\}\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\b How it Works ? \par
+
+\pard\sa200\sl276\slmult1\qj\tab\tab\b0 1)The initialization statement is executed only once.\par
+\tab\tab 2)Then, the condition is check.If the condition is evaluated to false, the \tab\tab    for loop is terminated.\par
+\tab\tab 3)However, if the condition is true, statements inside the body of the \tab\tab\tab    for loop are executed, and the update expression is updated.\par
+\tab\tab 4)Then they check the Increment/decrement and check the condition\par
+
+\pard\li1440\sa200\sl276\slmult1\qj This process goes on until the condition is false. When the condition is false, the loop terminates.\b\par
+
+\pard\sa200\sl276\slmult1\qj\b0\tab\ul\b ex:1)\par
+\ulnone\b0\tab\tab // Print numbers from 1 to 10\par
+
+\pard\li1440\sa200\sl276\slmult1\qj #include <stdio.h>\par
+void main() \{\par
+  \tab int i;\par
+  \tab for (i = 1; i < 11; ++i) \{\par
+    \tab\tab printf("%d ", i);\par
+\tab\}\par
+\}\par
+\par
+\ul\b output\ulnone  :-\b0   1 2 3 4 5 6 7 8 9 10.\ul\b\par
+\ulnone\b0\par
+
+\pard\sa200\sl276\slmult1\qj\b\tab 2) While Loop :-\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\b0 A while loop in C programming repeatedly executes a target statement as long as a given condition is true.\par
+{\pntext\f1\'B7\tab}\b Syntax \b0 :-   Initialization;\par
+
+\pard\sa200\sl276\slmult1\qj\tab\tab      while(condition)\{\par
+\tab\tab\tab body\par
+\tab\tab\tab ....\par
+\tab\tab\tab Increment / Decrement;\par
+\tab\tab\}\par
+\tab\ul\b ex:1) \par
+\ulnone\b0\tab\tab #include <stdio.h>\par
+
+\pard\li1440\sa200\sl276\slmult1\qj void main () \{\par
+   /* local variable definition */\par
+   int a = 10;\par
+   /* while loop execution */\par
+   while ( a < 20 ) \{\par
+      printf("value of a: %d\\n", a);\par
+      a++;\par
+\}\par
+\}\par
+
+\pard\sa200\sl276\slmult1\qj\tab\b Output\b0  : value of a : 10\par
+\tab\tab    value of a : 11\par
+\tab\tab\tab ....\par
+\tab\tab    value of a : 19\par
+\b\tab 3)Do - While Loop :-\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\b0 Do - While loop  is Posted tested loop.\b\par
+{\pntext\f1\'B7\tab}\b0  Using the do-while loop, we can repeat the execution of several parts of the statements. \b\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\b0 The do-while loop is mainly used in the case where we need to execute the loop at least once. \b\par
+{\pntext\f1\'B7\tab}\b0 The do-while loop is mostly used in menu-driven programs where the termination condition depends upon the end user.\b\par
+{\pntext\f1\'B7\tab}Synatx :- \b0  do\{\b\par
+
+\pard\sa200\sl276\slmult1\qj\b0\tab\tab\tab body\par
+\tab\tab\tab ....\par
+\tab\tab\}while(condition);\par
+\tab\ul\b ex:\par
+\ulnone\b0\tab\tab #include<stdio.h>  \par
+
+\pard\li1440\sa200\sl276\slmult1\qj void main ()  \{  \par
+    char c;  \par
+    do\{  \par
+    printf("\\n1. Print Hello\\n2. Core2web \\n3. Exit\\n");\par
+    int choice;  \par
+    scanf("%d",&choice);  \par
+    switch(choice)  \par
+    \{  \par
+        case 1 :   \par
+        \tab printf("Hello\\n");   \par
+        \tab break;  \par
+        case 2:    \par
+       \tab  printf("Core2web\\n");  \par
+        \tab break;  \par
+        case 3:  \par
+        \tab exit(0);   \par
+        \tab break;  \par
+        default:   \par
+        \tab printf("please enter valid choice");      \par
+    \}  \par
+    getchar();\par
+    printf("do you want to enter more?");   \par
+    scanf("%c",&c);  \par
+    \}while(c=='y' || c=='Y');  \par
+\}  \ul\b\par
+
+\pard\sa200\sl276\slmult1\qj Jump Statements :-\par
+\ulnone\tab 1) Break Statement :-\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\b0 The break statement terminates the execution of the nearest enclosing do, for, switch, or while statement in which it appears. \par
+{\pntext\f1\'B7\tab}Control passes to the statement that follows the terminated statement.\par
+{\pntext\f1\'B7\tab}Within nested statements, the break statement terminates only the do, for, switch, or while statement that immediately encloses it.\par
+
+\pard\sa200\sl276\slmult1\qj\tab\ul\b ex:1)\par
+\ulnone\b0\tab\tab #include <stdio.h>\par
+
+\pard\li1440\sa200\sl276\slmult1\qj void main() \{\par
+   for(int i=1 ; i<=5 ; i++ ) \{\par
+      printf( "%d ",i);\par
+      if (i == 5)\par
+          break;\par
+   \}\par
+\} // Loop exits only when i==5.\par
+\b\par
+Output \b0 :- 1 2 3\par
+
+\pard\sa200\sl276\slmult1\qj\b\tab 2)Continue Statement :-\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\b0 The continue statement is used to bring the program control to the beginning of the loop. \par
+{\pntext\f1\'B7\tab}The continue statement skips some lines of code inside the loop and continues with the next iteration. \par
+{\pntext\f1\'B7\tab}It is mainly used for a condition so that we can skip some code for a particular condition.\par
+{\pntext\f1\'B7\tab}\b Syntax\b0  :- // loop statements.\par
+
+\pard\sa200\sl276\slmult1\qj\tab\tab\tab continue;\par
+\tab\tab   // Some lines of code which is to be skipped.\par
+\tab\tab\ul\b ex\b0 :\ulnone\par
+
+\pard\sa200\sl276\slmult1\qj\tab\tab\tab #include <stdio.h>\par
+
+\pard\li1440\sa200\sl276\slmult1\qj\tab void main() \{\par
+   \tab for(int i=1 ; i<=5 ; i++ ) \{\par
+      \tab\tab printf( "%d ",i);\par
+     \tab\tab  if (i == 3)\par
+         \tab\tab     continue;\par
+   \}\par
+\} // Loop skip when i==3 and continues.\par
+\b\par
+Output \b0 :- 1 2 4 5\tab\tab\par
+
+\pard\sa200\sl276\slmult1\qj\b\tab 3)goto statement :-\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\b0 The goto statement can be used to jump from anywhere to anywhere within a function.\par
+{\pntext\f1\'B7\tab}\b Syntax \b0 :-  \tab Syntax1      |   Syntax2\par
+
+\pard\sa200\sl276\slmult1\qj\tab\tab\tab ----------------------------\par
+\tab\tab\tab goto label;  |    label:  \par
+\tab\tab\tab                     |    .\par
+\tab\tab\tab                     |    .\par
+\tab\tab\tab    label:       |    goto label;\par
+\tab\b\tab  \ul ex:\ulnone\par
+\tab\tab\tab\b0 #include<stdio.h>\par
+\tab\tab\tab void main()\{\par
+\tab\tab\tab\tab int x = 5;\par
+\tab\tab\tab\tab if(x==5)\{\par
+\tab\tab\tab\tab\tab goto goodMorning;\par
+\tab\tab\tab\tab\}\par
+\tab\tab\tab\tab goodMorning :\par
+\tab\tab\tab\tab\tab\tab printf("Good Morning\\n");\par
+\tab\tab\tab\tab\}\b\par
+\tab\tab\b0\par
+
+\pard\sa200\sl276\slmult1\qj\b\par
+\b0\par
+   \tab  \par
+
+\pard\li2160\sa200\sl276\slmult1\qj\par
+
+\pard\sa200\sl276\slmult1\qj\par
+
+\pard\sa200\sl276\slmult1\qj\b\tab\ul\b0\par
+\par
+\b\i\par
+\ulnone\par
+}
+ 

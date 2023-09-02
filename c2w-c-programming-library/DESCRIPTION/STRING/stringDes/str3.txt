@@ -1,0 +1,21 @@
+
+
+
+	SELECTED METHOD : 
+	
+			String is alphanemeric	
+
+	DESCRIPTION :  
+			
+			In a given string alphabates and number is also present.	
+
+	EXAMPLE :	
+
+		Input :“biencaps” 	
+		Output :"The String is not alphanumeric"	
+
+		Input :“core2web” 	
+		Output :"The String is alphanumeric"	
+
+
+

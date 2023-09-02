@@ -1,0 +1,65 @@
+
+
+
+	#include<stdio.h>
+	#include<string.h>
+
+	char *catUpton(char *str1,char *str2,int n){		
+		
+		while(*str1!='\0'){
+			str1++;
+		}
+
+		int i=0;
+		//add string uptp given number
+		while(n>i){
+			*str1=*str2;
+			str1++;
+			str2++;
+			i++;
+		}
+		*str1='\0';
+
+		return str1;
+	}
+
+	void main(){
+		char str1[100];
+		char str2[100];
+
+		printf("Enter String1:\n");
+		char ch1;
+		int i=0;
+		//get string from user
+		while((ch1=getchar())!='\n'){
+			str1[i]=ch1;
+			i++;
+		}
+		str[i]='\0';
+
+		printf("Enter String2:\n");
+		char ch2;
+		int j=0;
+		//get string from user
+		while((ch2=getchar())!='\n'){
+			str2[j]=ch2;
+			j++;
+		}
+
+		int n;
+		printf("Enter the number to concat:\n");
+		scanf("%d",&n);
+
+		int len=strlen(str2);
+		//if number is greater than length of string
+		if(n>len){
+			printf("String is less than given input\n");		
+		}else{
+			catUpton(str1,str2,n);
+
+			//print string
+			printf("%s\n",str1);	
+		}
+	}
+
+

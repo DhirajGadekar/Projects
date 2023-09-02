@@ -1,0 +1,48 @@
+
+
+
+	#include<stdio.h>
+	#include<string.h>
+	int rfind(char * str, char ch){		
+
+		//length of string
+		int len=strlen(str);
+		int temp=0;
+
+		for(int i=len-1; i>=0; i--){		
+			temp++;
+			//check character
+			if(ch==str[i]){	
+				return temp;
+			}
+		}
+		return -1;
+		
+	}
+	void main(){
+
+		char str[100];
+		printf("enter the string\n");
+		
+		char ch;
+			int i=0;
+			//to input the string from user			
+			while((ch=getchar())!='\n'){
+					str[i++]=ch;
+
+			}
+			str[i]='\0';
+
+		char ch1;
+		printf("enter the char\n");
+		scanf("%c",&ch1);
+
+		int ans;
+		if((ans = rfind(str,ch1)) != -1){
+			printf("%d\n",ans);
+		}else{
+			printf("char not found\n");
+		}
+	}
+
+

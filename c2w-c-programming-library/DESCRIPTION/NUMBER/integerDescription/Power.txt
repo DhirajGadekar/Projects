@@ -1,0 +1,19 @@
+
+
+
+	SELECTED:
+		
+		Power
+				
+	DESCRIPTION:
+		
+		The power of a number says how many times to use the number in a multiplication.
+    		Powers are also called Exponents or Indices.  
+	
+	EXAMPLE: 
+	
+		For example, 8^2 could be called “8 to 
+    		the power 2” or “8 to the second power”, or simply “8 squared”.
+		
+		
+		

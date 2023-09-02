@@ -1,0 +1,27 @@
+
+
+
+    SELECTED METHOD:
+
+        TOTAL OCCURRENCE OF ELEMENT IN LINKEDLIST.
+
+    DESCRIPTION:
+
+        This function checks if given number is present in LinkedList or not,
+        and return total count of occurrence.
+
+    EXAMPLE:
+
+        Input:
+                |--><--|40|<-->|20|<-->|30|<-->|30|-->|40|--><--|
+                |_______________________________________________|
+
+
+                Element:40
+
+        Output:
+                Count: 2
+
+                    
+
+                  

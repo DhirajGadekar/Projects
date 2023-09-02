@@ -1,0 +1,62 @@
+
+
+
+	#include <stdio.h>
+	#include <string.h>
+
+	//last Occurance function
+	int lastOccurance(char str[], char ch){
+
+		int index=0;
+		int flag=-1;
+		//to check char present or not in string
+		for(int i = 0; str[i] != '\0'; i++){
+
+			if(str[index] == ch){
+
+				flag=index;
+			}
+			index++;
+		}
+
+		return flag;
+	}
+
+	//Enntry function
+	int main(){
+
+		//variable Intitilisation
+		char str[100], ch;
+		int index;
+		
+		int i=0;
+		char c;
+		printf("Enter the String :  ");
+
+		//to get string from user
+		while((c=getchar())!='\n')
+			str[i++]=c;
+		str[i]='\0';
+		
+
+		printf("Enter the Character to search a index :  ");		
+		scanf("%c", &ch);
+		
+		//function call and return value store in variable index.
+		index = lastOccurance(str, ch);
+
+		//if char is not in string
+		if(index == -1){
+			
+			printf("Entered character %c is not present in Given String\n", ch);
+		
+		}else{
+			//string index starts from 0
+			printf("The Last Occurrence of the character %c is at index %d\n", ch, index);			
+		}
+		
+		return 0;
+	}
+
+
+

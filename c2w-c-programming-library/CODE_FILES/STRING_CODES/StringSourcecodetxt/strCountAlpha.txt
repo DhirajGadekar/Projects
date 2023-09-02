@@ -1,0 +1,52 @@
+
+
+
+	#include <stdio.h>
+	#include <string.h>
+
+	//find count of alphabet which is present in String.
+	int strAlphaCount(char str[]){
+
+		int count=0;
+		//for loop to search alphabet in string.
+		for(int i = 0; str[i] != '\0'; i++){
+
+			//condition for get alphabet count
+			if((str[i]>64 && str[i]<91)||(str[i]>96 && str[i]<123)){		
+
+				count++;
+			}
+		}
+
+		return count;
+	}
+
+	//Entry function
+	void main(){
+
+		//variable Intitilisation
+		char str[100];
+		int i=0;
+		char c;
+		printf("Enter the String :  ");
+
+		//to get string from user
+		while((c=getchar())!='\n')
+			str[i++]=c;
+
+		str[i]='\0';	
+		//function call and return value store in variable index.		
+		int alphacount = strAlphaCount(str);
+
+		//if string is empty
+		if(alphacount == 0){
+		
+			printf("String has No Digit\n");
+		
+		}else{
+			printf("The count of Alphabet present string %s is %d\n",str,alphacount);		
+		}
+	}
+
+
+

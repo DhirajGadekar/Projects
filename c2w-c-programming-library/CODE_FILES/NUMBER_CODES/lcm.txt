@@ -1,0 +1,42 @@
+
+#include<stdio.h>
+
+int lcm(int num1,int num2){
+
+	int lcm,x=1,y;
+
+	if(num1>num2){
+	
+		lcm=num1;
+	}else{
+	
+		lcm=num2;
+	}
+
+	y=lcm;
+
+	while(1){
+	
+		if(y%num1==0 && y%num2==0){
+		
+			x=y;
+			break;
+		}
+	
+	y+=lcm;
+	
+	}
+	printf("lcm of two numbers is: %d\n",x);
+
+}
+
+void main(){
+
+	int num1,num2;
+
+	printf("Enter two numbers to find lcm: ");
+	scanf("%d",&num1);
+	scanf("%d",&num2);
+
+	lcm(num1,num2);
+}

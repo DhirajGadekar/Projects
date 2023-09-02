@@ -1,0 +1,34 @@
+
+
+
+		SELECTED METHOD : 
+
+			11. FIRST NON REPEATING ELEMENT IN AN ARRAY
+
+		DESCRIPTION :
+
+			Given arr[] = {-1, 2, -1, 3, 0}
+
+			For element at i = 0: 
+
+			The value of element at index 2 is same, then this 
+			can’t be first non-repeating element
+			For element at i = 1:
+
+			After traversing the array arr[1] is not present is
+			not present in the array except at 1.Hence, element 		
+			is index 1 is the first non-repeating element which 
+			is 2
+
+		EXAMPLE :
+
+			INPUT ARRAY : 
+
+				| -1 | 2 | -1 | 3 | 0 |
+
+			OUTPUT : 
+
+				2 is first non-repeating number in the array
+
+
+

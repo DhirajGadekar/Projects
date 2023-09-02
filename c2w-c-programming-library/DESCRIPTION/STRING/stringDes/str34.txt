@@ -1,0 +1,20 @@
+
+
+
+	SELECTED METHOD : 
+	
+			Last occurance	
+
+	DESCRIPTION :  
+	
+			This function shows the position of character 
+			it will occur last time in a given string.	
+
+	EXAMPLE :	
+
+			Input :“Core2Web” 	
+			Input : e
+			Output : “The last occurance of character e is at index 6”  	
+
+
+

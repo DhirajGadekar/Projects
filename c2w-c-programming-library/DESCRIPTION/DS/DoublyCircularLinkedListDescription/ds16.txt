@@ -1,0 +1,22 @@
+
+
+
+    SELECTED METHOD:
+
+        MINIMUM ELEMENT IN LINKEDLIST.
+
+    DESCRIPTION:
+
+        This function gives the Minimum element in LinkedList.
+
+    EXAMPLE:
+
+        Input:
+                |--><--|10|<-->|20|<-->|30|<-->|40|--><--|
+                |________________________________________|
+
+        Output:
+                Minimum Element : 10
+
+                    
+                    

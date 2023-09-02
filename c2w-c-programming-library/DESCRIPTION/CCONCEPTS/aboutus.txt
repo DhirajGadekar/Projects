@@ -1,0 +1,22 @@
+
+
+
+
+	!!! Welcome to Core2web Programming Library !!!
+
+	-> The Library Have the Collection of Many Programs.
+
+	-> Libray is Very User Friendly, You Can Explore the CPL.
+
+	-> In Library , You can Explore the Different Topics like 
+	Concepts of C , Different Codes of Numbers , 	Strings , 
+	Array , Patterns , Data Structure etc...
+
+	-> Their are Many Function in Library like Run The code 
+	and output is Show in the Monitor , Also Download the Code.
+
+	-> If You Don't Want to Download the Code , You can also see 
+	the Code on Monitor...
+
+
+	>>> Let 's Explore the Core2web Programming Library......

@@ -1,0 +1,26 @@
+
+
+
+    SELECTED METHOD:
+
+        REVERSE LINKEDLIST INPLACE.
+
+    DESCRIPTION:
+
+        This function reverse LinkedList inplace.
+
+    EXAMPLE:
+
+        Input:
+
+            ---->|10|-->|20|-->|30|-->|40|----
+            |________________________________|
+            
+
+        Output:
+            ---->|40|-->|30|-->|20|-->|10|----
+            |________________________________|
+            
+
+
+                    

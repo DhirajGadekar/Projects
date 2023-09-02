@@ -1,0 +1,27 @@
+
+
+
+        SELECTED METHOD :   
+                
+            32. GROUPING OF PALINDROME NUMBER
+
+        DESCRIPTION :   
+            
+            An integer is a palindrome when it reads the same backward 
+            as forward.For example, 121 is a palindrome while 123 is not.           
+
+            This function takes array address and array length as input 
+            and group Palindrome elements in array.  
+
+        EXAMPLE :   
+            
+            INPUT ARRAY :  
+        
+                | 11 | 112 | 131 | 254 | 5656 | 6886 | 784 | 1 | 19 |    
+        
+            OUTPUT ARRAY :   
+        
+                | 11 | 131 | 6886 | 1 |    
+
+
+

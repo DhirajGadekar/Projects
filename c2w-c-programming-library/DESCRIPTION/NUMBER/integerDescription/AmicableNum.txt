@@ -1,0 +1,27 @@
+	
+	
+	
+	SELECTED:
+	
+		Ambicable Number:
+		
+	DESCRIPTION: 
+
+		An amicable pair of  numbers consists of two 
+		different  integers  where  the  sum  of the 
+		divisors  of  the  first integer is equal to 
+		the  second  integer,  and  the  sum  of the 
+		divisors  of  the second integer is equal to
+		the  first  integer.A perfect number is a 
+		number that equals the sum of its own divisors.
+ 
+		
+	EXAMPLE:
+	        
+	        1184 and 1210 are an almost perfect number pair. 
+	        1184 = 1+2+5+10+11+22+55+110+121+242+605,
+	        the sum of the divisors of 1210.
+		
+		
+		
+		

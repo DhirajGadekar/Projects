@@ -1,0 +1,32 @@
+
+
+
+    SELECTED METHOD:
+
+        DELETE FIRST NODE
+
+    DESCRIPTION:
+
+        In a circular Singly linked list, the last node of the list contains a pointer to the first node of the list. 
+        We traverse the circular singly linked list until we reach the same node where we started. The circular singly 
+        linked list has no beginning or end. No null value is present in the next part of any of the nodes
+        
+        The first node of the singly circular linked list can be deleted as follows:
+        
+        1.Make the head point to its next element.
+        2.Making last node point to second node.
+        3.Deleting first node using free()
+
+      EXAMPLE:
+
+            Input:
+
+                ---->|10|-->|20|-->|30|-->|40|----
+                |________________________________|
+            
+            Output:
+                                            
+                -->|20|-->|30|-->|40|----
+                |________________________|
+            
+

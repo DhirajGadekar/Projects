@@ -1,0 +1,25 @@
+
+
+
+        SELECTED METHOD : 
+
+            9. EVEN NUMBER FROM ARRAY
+
+        DESCRIPTION :
+
+            This method will remove all the odd element from the array      
+            and only keep the element which are even 
+
+        EXAMPLE :
+
+            INPUT ARRAY :
+                
+                | 1 | 2 | 3 | 4 |
+            
+            OUTPUT ARRAY :
+                
+                | 2 | 4 | 
+
+
+        
+                

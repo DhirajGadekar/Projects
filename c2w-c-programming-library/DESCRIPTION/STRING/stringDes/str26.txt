@@ -1,0 +1,19 @@
+
+
+
+	SELECTED METHOD : 
+	
+			Special char count	
+
+	DESCRIPTION :  
+	
+			This function gives number of special 
+			character count in a given string.	
+
+	EXAMPLE :	
+
+			Input :“Core2Web@123” 	
+			Output : “The number of special character is 1”  	
+
+
+

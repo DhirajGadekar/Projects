@@ -1,0 +1,18 @@
+
+
+
+	SELECTED METHOD :
+	
+			String length
+
+	DESCRIPTION : 
+	
+			Its show the length of given string.	
+
+	EXAMPLE :	
+
+			Input :“core2web” 	
+			Output :"The length of given string is 8"	
+
+
+

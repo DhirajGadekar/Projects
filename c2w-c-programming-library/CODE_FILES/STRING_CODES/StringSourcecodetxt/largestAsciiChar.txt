@@ -1,0 +1,50 @@
+
+
+
+	#include <stdio.h>
+	#include <string.h>
+
+	//find largest ascii value's character funcion
+	char largestChar(char str[]){
+
+		char ch=0;
+		//to find largest ascci value char which is present in string
+		for(int i = 0; str[i] != '\0'; i++){
+
+			if(str[i]>ch){
+
+				ch=str[i];
+			}
+		}
+
+		return ch;
+	}
+
+	//Enntry function
+	void main(){
+
+		//variable Intitilisation
+		char str[100];
+		int i=0;
+		char c;
+		printf("Enter the String :  ");
+
+		//to get string from user
+		while((c=getchar())!='\n')
+			str[i++]=c;
+		
+		//function call and return value store in variable index.
+		int largestchar = largestChar(str);
+
+		//if string is empty
+		if(largestChar == 0){
+		
+			printf("String Is Empty");
+		
+		}else{
+			printf("The Largest Ascii character present in String is %c\n",largestchar);			
+		}
+	}
+
+
+

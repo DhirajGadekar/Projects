@@ -1,0 +1,27 @@
+
+
+
+        SELECTED METHOD : 
+
+            10. FIND PEAK ELEMENT
+
+        DESCRIPTION :
+
+            Let’s understand Find Peak Element problem. Today we have with us 
+            an array that needs its peak element. Now, you must be wondering        
+            as to what do I mean by the peak element? The peak element is one
+            which is greater than all its neighbors.
+
+        EXAMPLE :
+        
+            INPUT ARRAY :
+
+                | 1 | 2 | 3 | 1 |
+
+            OUTPUT :
+
+                3 is the peak number in the array
+
+
+
+            

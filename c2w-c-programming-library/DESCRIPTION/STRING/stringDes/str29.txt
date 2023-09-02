@@ -1,0 +1,19 @@
+
+
+
+	SELECTED METHOD : 
+	
+			Word capitalize	
+
+	DESCRIPTION : 
+	
+			This function capitalize the first character 
+			in words in a given string.	
+
+	EXAMPLE :	
+
+			Input :“core2Web technologies biencaps” 	
+			Output : “Core2Web Technologies Biencaps”  	
+
+
+

@@ -1,0 +1,56 @@
+
+
+
+	#include<stdio.h>
+	#include <string.h>
+	//to Campare two Strings 
+	int myStrCmp(char *str1,char* str2){
+
+		//while loop to traverse str1 and str2 to check condition
+		while (*str1 != '\0' || *str2 != '\0'){
+
+			//if *str1 not equal to *str2 then return function unsuccessfully		
+			if (*str1 != *str2){
+				
+				return 0;
+			}
+			//pointer addition
+			str1++;
+			str2++;
+		}
+		return 1; 
+	}
+	//Entry Function
+	void main(){
+
+		//initilisation of variable
+		char str1[100],str2[100],ch;
+		int i = 0;
+
+		//to get string-1 input from user
+		printf("Enter string-1: ");
+		while((ch = getchar()) != '\n')
+			str1[i++] = ch;
+		str1[i]='\0';
+
+		//to get string-2 input from user
+		i=0;
+		printf("Enter string-2 : ");
+		while((ch = getchar()) != '\n')
+			str2[i++] = ch;
+		str2[i]='\0';
+
+		//calling the function and store the return value in variable
+		int flag=myStrCmp(str1,str2);
+
+		if(flag==1){
+
+			printf("'%s' and '%s' both String are same\n",str1,str2);
+		}else{
+			printf("'%s' and '%s' both String are Not same\n",str1,str2);		
+		
+		}
+	}
+
+
+

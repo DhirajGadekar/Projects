@@ -1,0 +1,23 @@
+
+
+
+     SELECTED METHOD:
+
+        DELETE LINKEDLIST.
+    
+    DESCRIPTION:
+
+        This function delete the all nodes in LinkedList.
+
+    EXAMPLE:
+
+        Input:
+
+            --->|10|-->|20|-->|30|-->|40|----
+            |________________________________|
+            
+
+        Output:
+                -
+
+

@@ -1,0 +1,36 @@
+
+
+
+	#include<stdio.h>
+
+	int lowerCount(char *str){
+		int count=0;
+		while(*str!='\0'){
+			//check character is lowercase alphabate			
+			if(*str>='a' && *str<='z')
+				count++;
+			str++;
+		}
+		return count;
+	}
+
+	void main(){
+		char str[100];
+		
+		printf("Enter String:\n");
+		char ch;
+		int i=0;
+		//get string from user
+		while((ch=getchar())!='\n'){
+			str[i]=ch;
+			i++;
+		}
+		str[i]='\0';
+		
+		//print string
+		printf("%d\n",lowerCount(str));
+		
+	}
+
+
+	

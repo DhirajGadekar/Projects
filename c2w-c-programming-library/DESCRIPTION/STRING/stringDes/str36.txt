@@ -1,0 +1,19 @@
+
+
+
+	SELECTED METHOD :
+	
+			String compare	
+
+	DESCRIPTION : 
+	
+			This function compare the two strings are equal or not.	
+
+	EXAMPLE :	
+
+			Input :“Core2Web” 	
+			Input :“Core2Web” 	
+			Output : “The given strings are same”  	
+
+
+

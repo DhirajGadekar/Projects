@@ -1,0 +1,28 @@
+
+
+
+        SELECTED METHOD :   
+                
+            41. GROUPING OF DISARIUM NUMBER
+
+        DESCRIPTION :   
+            
+            A number is said to be the Disarium number when the sum of          
+            its digit raised to the power of their respective positions 
+            is equal to the number itself.   
+
+            This function takes array address and array length as input         
+            and group Disarium elements in array.  
+
+        EXAMPLE :   
+        
+            INPUT ARRAY :  
+        
+                | 135 | 12 | 13 | 89 | 150 | 166 | 167 | 518 |   
+        
+            OUTPUT ARRAY :   
+        
+                | 135 | 89 | 518 |   
+
+
+

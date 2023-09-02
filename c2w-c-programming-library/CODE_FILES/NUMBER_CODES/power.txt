@@ -1,0 +1,30 @@
+
+#include<stdio.h>
+
+int power(int num, int pow){
+
+	int x=1;
+	long int sum=1;
+
+	while(x<=pow){
+	
+		sum=sum*num;
+		x++;
+	}
+
+	printf("%d to the power %d is : %ld\n",num,pow,sum);
+
+}
+
+void main(){
+
+	int pow,num;
+
+	printf("Enter Number: ");
+	scanf("%d",&num);
+
+	printf("Enter power: ");
+	scanf("%d",&pow);
+
+	power(num,pow);
+}

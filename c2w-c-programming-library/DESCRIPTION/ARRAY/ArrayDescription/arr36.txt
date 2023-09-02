@@ -1,0 +1,27 @@
+
+
+
+        SELECTED METHOD :   
+                
+            36. GROUPING OF HARSHAD NUMBER
+
+        DESCRIPTION :   
+            
+            An integer number in base 10 which is divisible by the sum of               
+            its digits is said to be a Harshad Number       
+
+            This function takes array address and array length as input 
+            and group Harshad elements in array.  
+
+        EXAMPLE :   
+            
+            INPUT ARRAY :  
+        
+                | 11 | 10 | 12 | 14 | 15 | 16 | 17 | 18 | 20 |    
+        
+            OUTPUT ARRAY :   
+        
+                | 10 | 12 | 18 | 20 | 
+
+
+

@@ -1,0 +1,29 @@
+
+
+
+        SELECTED METHOD :   
+                
+            42. GROUPING OF  DEFICIENT NUMBER
+
+
+        DESCRIPTION :   
+        
+            A number n is said to be Deficient Number if sum of             
+            all the divisors of the number denoted  is less than        
+            twice the value of the number n                       
+
+            This function takes array address and array length as 
+            input and group Deficient elements in array.  
+
+        EXAMPLE :   
+            
+            INPUT ARRAY :  
+        
+                | 112 | 123 | 13 | 140 | 15 | 16 | 23 | 18 | 35 |    
+        
+            OUTPUT ARRAY :   
+        
+                | 13 | 23 | 35 |   
+
+
+

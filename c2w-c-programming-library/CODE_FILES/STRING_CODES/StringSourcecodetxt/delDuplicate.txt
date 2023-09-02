@@ -1,0 +1,40 @@
+
+
+
+	#include<stdio.h>
+	#include<string.h>
+
+	char *delDuplicate(char* str){
+		for(int i = 0; i < strlen(str); i++){
+			for(int j = i+1; str[j] != '\0'; j++){
+				//check duplicate character
+				if(str[j] == str[i]){
+					for(int k = j; str[k] != '\0'; k++){		
+						str[k] = str[k + 1];
+					}
+				}
+			}
+		}
+		return str;
+	}
+
+	void main(){
+
+		char str[100];
+		
+		printf("Enter string:\n");
+		char ch;
+		int i=0;
+		//get string from user
+		while((ch=getchar())!='\n'){
+			str[i]=ch;
+			i++;
+		}
+		str[i]='\0';
+
+		//print string
+		printf("%s\n",delDuplicate(str));
+
+	}
+
+

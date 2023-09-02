@@ -1,0 +1,19 @@
+	
+	
+	
+	SELECTED:
+	
+		Disarium Number:
+
+        DESCRIPTION:
+         
+        	A number is said to be the Disarium number when the sum of its digit 
+    		raised to the power of their respective positions is equal to the 
+    		number itself.
+    		
+    	EXAMPLE:
+    	
+    		 175 is a disarium number
+    		 
+    		 
+    		 
