@@ -1,0 +1,27 @@
+.custom-button {
+    -fx-background-color: #3493db;
+    -fx-text-fill: #fffffff6;
+    -fx-font-size: 20px;
+}
+.custom-button1 {
+    -fx-background-color: #db9534;
+    -fx-text-fill: #fffffff6;
+    -fx-font-size: 20px;
+}
+.custom-button2 {
+    -fx-background-color: #131345;
+    -fx-text-fill: #fffffff6;
+    -fx-font-size: 20px;
+}
+.custom-button3 {
+    -fx-background-color: #853fe7;
+    -fx-text-fill: #e10a96f6;
+    -fx-font-size: 20px;
+}
+.rounded-button {
+    -fx-background-radius: 80 80 80 80;
+    -fx-font-weight: bold;
+    -fx-background-color: #9f56e9;
+    -fx-font-size: 35px;
+    -fx-padding: 10 20; /* Adjust padding to center the text vertically */
+}
