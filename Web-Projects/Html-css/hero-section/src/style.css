@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #181826;
+    overflow: hidden;
+}
+
+.container .hero-bg {
+    position: absolute;
+    width: 35vw;
+    height: 100vh;
+    background-color: #000000;
+    z-index: 0;
+    top: 0px;
+}
+
+.nav-section {
+    position: relative;
+    width: 100%;
+    height: 7vh;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+}
+
+.nav-list .logo {
+    width: 40%;
+}
+.nav-section .logo h2 {
+    font-family: "Staatliches", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 35px;
+    letter-spacing: 4px;
+}
+
+.nav-section .nav-list {
+    width: 60%;
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    align-items: center;
+    gap: 40px;
+    margin: 0 100px;
+}
+
+.nav-section .nav-list  li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.nav-section .nav-list  li:hover {
+    background-color: #f2f2f2;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.hero-section {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding-top: 50px;
+}
+
+.hero-img {
+    position: relative;
+    width: 60%;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-content {
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.hero-content .content {
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.hero-content .content h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 120px;
+    font-weight: bolder;
+    line-height: 1.2;
+}
+
+.hero-content .content h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 45px;
+    font-weight: bolder;
+    line-height: 1.2;
+    color: #9e9e9e;
+}
+
+.hero-content .content p {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #9e9e9e;
+}
