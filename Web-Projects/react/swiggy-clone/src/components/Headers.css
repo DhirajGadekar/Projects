@@ -1,0 +1,46 @@
+.header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 350px;
+    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header .logo-container img {
+    width: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.nav-items ul {
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+}
+
+.nav-items ul li {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.nav-items ul li div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: large;
+    color: #686b78;
+}
+.ppAwf {
+    fill: #686b78;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}

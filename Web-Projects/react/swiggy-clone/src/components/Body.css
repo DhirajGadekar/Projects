@@ -1,0 +1,37 @@
+.body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.body .body-heading {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 330px;
+}
+
+.body-heading .arrow-btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.body-container {
+    width: 100%;
+    display: flex;
+    padding: 0 330px;
+    gap: 6px;
+}
+
+.body-container img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
